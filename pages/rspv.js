@@ -1,6 +1,7 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
 import Login from "@/components/shared/Login"
+import Header from "@/components/shared/Header"
 
 export default function RSPV({ hasReadPermission }) {
 
@@ -16,7 +17,7 @@ export default function RSPV({ hasReadPermission }) {
         <title>RSPV Page</title>
       </Head>
 
-      <main>I am supposed to be RSPV.</main>
+      <main><h1>RSPV Page</h1> <Header /></main>
     </div>
   )
 }
