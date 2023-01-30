@@ -1,9 +1,8 @@
 import Head from "next/head"
 import { useRouter } from "next/router"
 import Login from "@/components/shared/Login"
-import Header from "@/components/shared/Header"
 
-export default function FAQ({ hasReadPermission }) {
+export default function Protected({ hasReadPermission }) {
 
 	const router = useRouter()
 
@@ -14,10 +13,10 @@ export default function FAQ({ hasReadPermission }) {
   return (
     <div>
       <Head>
-        <title>FAQ Page</title>
+        <title>Protected Page</title>
       </Head>
 
-      <main><h1>FAQ Page</h1><Header /></main>
+      <main>I am supposed to be protected.</main>
     </div>
   )
 }
