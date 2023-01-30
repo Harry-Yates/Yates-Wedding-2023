@@ -2,7 +2,7 @@ import Head from "next/head"
 import { useRouter } from "next/router"
 import Login from "@/components/shared/Login"
 
-export default function RSPV({ hasReadPermission }) {
+export default function Protected({ hasReadPermission }) {
 
 	const router = useRouter()
 
@@ -13,10 +13,10 @@ export default function RSPV({ hasReadPermission }) {
   return (
     <div>
       <Head>
-        <title>RSPV Page</title>
+        <title>Protected Page</title>
       </Head>
 
-      <main>I am supposed to be RSPV.</main>
+      <main>I am supposed to be protected.</main>
     </div>
   )
 }
