@@ -2,10 +2,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Header() {
-  const { locale, locales, push } = useRouter();
+  const { locale, locales, push, pathname } = useRouter();
 
   const handleClick = (l) => () => {
-    push("", undefined, { locale: l });
+    push(pathname, undefined, { locale: l });
   };
 
   return (
@@ -16,13 +16,6 @@ export default function Header() {
           {l}
         </button>
       ))}
-      {/* {locales.map((l) => (
-        <h4 key={l}>
-          <Link href={`/`} locale={l}>
-            {l}
-          </Link>
-        </h4>
-      ))} */}
       <Link href='/'>Home</Link>
       <Link href='/faq'>faq</Link>
       <Link href='/rspv'>rspv</Link>
