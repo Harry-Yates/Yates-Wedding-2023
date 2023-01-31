@@ -5,12 +5,12 @@ export default function Header() {
   const { locale, locales, push, pathname } = useRouter();
 
   const handleClick = (l) => () => {
-    push(pathname, undefined, { locale: l });
+    push(pathname, undefined, { locale: l, shallow: true });
   };
 
   const changeLanguage = (event) => {
     const l = event.target.value;
-    push(pathname, undefined, { locale: l });
+    push(pathname, undefined, { locale: l, shallow: true });
   };
 
   return (
