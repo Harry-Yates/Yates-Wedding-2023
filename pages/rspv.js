@@ -6,7 +6,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const RSPV = ({ hasReadPermission }) => {
-  const { locale, locales, push, router } = useRouter();
+  const { locale, router } = useRouter();
 
   const { t } = useTranslation("copy");
 
