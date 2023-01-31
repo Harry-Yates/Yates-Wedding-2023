@@ -1,18 +1,15 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
-import Login from "@/components/shared/Login";
-import Header from "@/components/shared/Header";
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Head from "next/head"
+import { useRouter } from "next/router"
+import Login from "@/components/shared/Login"
+import Header from "@/components/shared/Header"
 
-const FAQ = ({ hasReadPermission }) => {
-  const router = useRouter();
+export default function FAQ({ hasReadPermission }) {
 
-  const { t } = useTranslation("copy");
+	const router = useRouter()
 
-  if (!hasReadPermission) {
-    return <Login redirectPath={router.asPath} />;
-  }
+	if (!hasReadPermission) {
+		return <Login redirectPath={router.asPath} />
+	  }
 
   return (
     <div>
@@ -20,20 +17,7 @@ const FAQ = ({ hasReadPermission }) => {
         <title>FAQ Page</title>
       </Head>
 
-      <main>
-        <h2>{t("hello world")}</h2>
-        <h1>FAQ Page</h1> <Header />
-      </main>
+      <main><h1>FAQ Page</h1><Header /></main>
     </div>
-  );
-};
-
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["copy"]))
-    }
-  };
+  )
 }
-
-export default FAQ;
