@@ -6,12 +6,12 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const RSPV = ({ hasReadPermission }) => {
-  const { locale, router } = useRouter();
+  const router = useRouter();
 
   const { t } = useTranslation("copy");
 
   if (!hasReadPermission) {
-    return <Login redirectPath={router ? router.asPath : undefined} />;
+    return <Login redirectPath={router.asPath} />;
   }
 
   return (
@@ -21,7 +21,6 @@ const RSPV = ({ hasReadPermission }) => {
       </Head>
 
       <main>
-        {/* <h1>{locale}</h1> */}
         <h2>{t("hello world")}</h2>
         <h1>RSPV Page</h1> <Header />
       </main>
