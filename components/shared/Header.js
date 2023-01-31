@@ -8,19 +8,31 @@ export default function Header() {
     push(pathname, undefined, { locale: l });
   };
 
+  const changeLanguage = (event) => {
+    const l = event.target.value;
+    push(pathname, undefined, { locale: l });
+  };
+
   return (
     <>
       <h1>{locale}</h1>
-      {locales.map((l) => (
-        <button key={l} onClick={handleClick(l)}>
-          {l}
-        </button>
-      ))}
       <Link href='/'>Home</Link>
       <Link href='/faq'>faq</Link>
       <Link href='/rspv'>rspv</Link>
       <Link href='/schedule'>schedule</Link>
       <Link href='/travel'>travel</Link>
+      <div>
+        {locales.map((l) => (
+          <button key={l} onClick={handleClick(l)}>
+            {l}
+          </button>
+        ))}
+      </div>
+      <select defaultValue={locale} onChange={changeLanguage}>
+        <option value='en_GB'>EN</option>
+        <option value='sv_SE'>SE</option>
+        <option value='it_IT'>IT</option>
+      </select>
     </>
   );
 }
