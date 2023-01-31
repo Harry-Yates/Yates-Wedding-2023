@@ -28,10 +28,10 @@ const RSPV = ({ hasReadPermission }) => {
   );
 };
 
-export async function getServerSideProps({ locale }) {
+export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["copy"]))
+      ...(await serverSideTranslations(locale, ["copy", "common"]))
     }
   };
 }
