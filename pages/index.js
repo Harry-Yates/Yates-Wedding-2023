@@ -2,13 +2,26 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import Header from "@/components/shared/Header";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
-export default function Home({ hasReadPermission }) {
-  const router = useRouter();
+const Home = ({ hasReadPermission }) => {
+  // const router = useRouter();
+  const { locale, locales, push, pathname } = useRouter();
+  const { t } = useTranslation("copy");
 
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
   }
+
+  const handleClick = (l) => () => {
+    push("/", undefined, { locale: l });
+  };
+
+  const changeLanguage = (event) => {
+    const l = event.target.value;
+    push("/", undefined, { locale: l });
+  };
 
   return (
     <div>
@@ -18,8 +31,35 @@ export default function Home({ hasReadPermission }) {
 
       <main>
         <h1>Home Page</h1>
+        <h2>{t("hello world")}</h2>
+        <div>
+          {locales.map((l) => (
+            <button key={l} onClick={handleClick(l)}>
+              {l}
+            </button>
+          ))}
+        </div>
+        <select defaultValue={locale} onChange={changeLanguage}>
+          <option value='en_GB'>EN</option>
+          <option value='sv_SE'>SE</option>
+          <option value='it_IT'>IT</option>
+        </select>
         <Header />
       </main>
     </div>
   );
+};
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "copy"], null, [
+        "en_GB",
+        "sv_SE",
+        "it_IT"
+      ]))
+    }
+  };
 }
+
+export default Home;
