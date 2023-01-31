@@ -19,7 +19,6 @@ const RSPV = ({ hasReadPermission }) => {
       <Head>
         <title>RSPV Page</title>
       </Head>
-
       <main>
         <h2>{t("hello world")}</h2>
         <h1>RSPV Page</h1> <Header />
@@ -28,10 +27,14 @@ const RSPV = ({ hasReadPermission }) => {
   );
 };
 
-export async function getServerSideProps({ locale }) {
+export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["copy", "common"]))
+      ...(await serverSideTranslations(locale, ["common", "footer"], null, [
+        "en_GB",
+        "sv_SE",
+        "it_IT"
+      ]))
     }
   };
 }
