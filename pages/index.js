@@ -6,8 +6,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Home = ({ hasReadPermission }) => {
-  // const router = useRouter();
-  const { locale, locales, push, pathname } = useRouter();
+  const { locale, locales, push, router } = useRouter();
   const { t } = useTranslation("copy");
 
   if (!hasReadPermission) {
