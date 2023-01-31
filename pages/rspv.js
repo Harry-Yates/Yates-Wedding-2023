@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import Header from "@/components/shared/Header";
 import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const RSPV = ({ hasReadPermission }) => {
   const router = useRouter();
@@ -28,12 +28,12 @@ const RSPV = ({ hasReadPermission }) => {
   );
 };
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["copy"]))
-    }
-  };
-}
+// export async function getStaticProps({ locale }) {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, ["copy"]))
+//     }
+//   };
+// }
 
 export default RSPV;
