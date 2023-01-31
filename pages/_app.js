@@ -13,7 +13,7 @@ MyApp.getInitialProps = async (appContext) => {
       ? new Cookies(appContext.ctx.req.headers.cookie)
       : new Cookies();
 
-  const password = cookies.get(consts.SiteReadCookie) || "";
+  const password = cookies.get(consts.SiteReadCookie) || undefined;
   const appProps = await App.getInitialProps(appContext);
 
   appProps.pageProps.hasReadPermission = password === "italy";
