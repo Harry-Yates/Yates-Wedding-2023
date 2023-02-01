@@ -1,13 +1,12 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
-import Header from "@/components/shared/Header";
+import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 
 export default function Travel({ hasReadPermission }) {
   const router = useRouter();
   const { locale } = router;
-
   const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
 
   if (!hasReadPermission) {
@@ -15,16 +14,9 @@ export default function Travel({ hasReadPermission }) {
   }
 
   return (
-    <div>
-      <Head>
-        <title>Travel Page</title>
-      </Head>
-
-      <main>
-        <h1>Travel Page</h1>
-        <p>{t.welcome}</p>
-        <Header />
-      </main>
-    </div>
+    <BaseLayout>
+      <h1>{t.travelPageTitle}</h1>
+      <p>{t.welcome}</p>
+    </BaseLayout>
   );
 }

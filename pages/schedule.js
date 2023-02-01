@@ -1,23 +1,21 @@
-import Head from "next/head"
-import { useRouter } from "next/router"
-import Login from "@/components/shared/Login"
-import Header from "@/components/shared/Header"
+import Head from "next/head";
+import { useRouter } from "next/router";
+import Login from "@/components/shared/Login";
+import BaseLayout from "@/components/layouts/BaseLayout";
+import { enGB, svSE, itIT } from "@/translations";
 
 export default function Schedule({ hasReadPermission }) {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
 
-	const router = useRouter()
-
-	if (!hasReadPermission) {
-		return <Login redirectPath={router.asPath} />
-	  }
+  if (!hasReadPermission) {
+    return <Login redirectPath={router.asPath} />;
+  }
 
   return (
-    <div>
-      <Head>
-        <title>Schedule Page</title>
-      </Head>
-
-      <main><h1>Schedule Page</h1> <Header /></main>
-    </div>
-  )
+    <BaseLayout>
+      <h1>{t.schedulePageTitle}</h1>
+    </BaseLayout>
+  );
 }
