@@ -20,7 +20,7 @@ const Home = ({ hasReadPermission }) => {
 
   const changeLanguage = (event) => {
     const l = event.target.value;
-    push("/", undefined, { locale: l });
+    push("/", "/", { locale: l });
   };
 
   return (
