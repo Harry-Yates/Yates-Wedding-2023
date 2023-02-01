@@ -1,0 +1,157 @@
+//Left
+.containerLeft {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Right
+.containerRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Center
+.containerCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+//Logo
+.navbar-logo {
+  cursor: pointer;
+  min-width: 220px;
+  margin: 0;
+}
+
+//Navbar
+.navbar {
+  display: flex;
+  border-bottom: solid black 0.7px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+}
+
+.nav-links,
+.navbar-logo {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  transition: all 1s ease;
+}
+
+.nav-links:hover,
+.navbar-logo:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links:before,
+.nav-links:after,
+.navbar-logo:before,
+.navbar-logo:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: black;
+}
+
+.nav-links:before,
+.navbar-logo:before,
+.login:before {
+  left: -2.5px;
+}
+.nav-links:after,
+.navbar-logo:after,
+.login:after {
+  right: 2.5px;
+  background: black;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-links:hover:before,
+.navbar-logo:hover:before,
+.login:hover:before {
+  background: black;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.nav-links:hover:after,
+.navbar-logo:hover:after,
+.login:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.nav-menu-active {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  margin: 0.5rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  .nav-menu {
+    border-bottom: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2.5rem;
+    align-items: flex-start;
+    width: 230px;
+    height: 100vh;
+    position: absolute;
+    top: 60px;
+    opacity: 1;
+    background-color: var(--clr-white);
+    z-index: 1;
+  }
+
+  .nav-menu-active {
+    display: none;
+  }
+
+  .nav-links {
+    padding: 1rem 0rem;
+    display: table;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-logo,
+  .navbar-logo {
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0.6rem;
+    left: 2rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}

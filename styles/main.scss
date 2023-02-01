@@ -1,10 +1,10 @@
 @import "./shared/fonts";
 
 /* Components */
-/* @import "./components/header"; */
+@import "./styles/componentStyles/header";
 
 /* Pages */
-/* @import "./index"; */
+@import "./index";
 
 // Variables
 @import "./shared/variables";
