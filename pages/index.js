@@ -32,13 +32,13 @@ const Home = ({ hasReadPermission }) => {
       <main>
         <h1>Home Page</h1>
         <h2>{t("hello world")}</h2>
-        <div>
+        {/* <div>
           {locales.map((l) => (
             <button key={l} onClick={handleClick(l)}>
               {l}
             </button>
           ))}
-        </div>
+        </div> */}
         <select defaultValue={locale} onChange={changeLanguage}>
           <option value='en_GB'>EN</option>
           <option value='sv_SE'>SE</option>
