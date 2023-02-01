@@ -4,7 +4,6 @@ import Login from "@/components/shared/Login";
 import Header from "@/components/shared/Header";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { GetStaticProps, InferGetStaticPropsType } from "next";
 
 const Home = ({ hasReadPermission }) => {
   const { locale, locales, push, router } = useRouter();
@@ -51,10 +50,12 @@ const Home = ({ hasReadPermission }) => {
   );
 };
 
-// or getServerSideProps: GetServerSideProps<Props> = async ({ locale })
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale ?? "en", ["common", "copy"]))
-  }
-});
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["copy"]))
+    }
+  };
+}
+
 export default Home;
