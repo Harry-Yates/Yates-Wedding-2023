@@ -1,14 +1,13 @@
-import Head from "next/head"
-import { useRouter } from "next/router"
-import Login from "@/components/shared/Login"
+import Head from "next/head";
+import { useRouter } from "next/router";
+import Login from "@/components/shared/Login";
 
 export default function Protected({ hasReadPermission }) {
+  const router = useRouter();
 
-	const router = useRouter()
-
-	if (!hasReadPermission) {
-		return <Login redirectPath={router.asPath} />
-	  }
+  if (!hasReadPermission) {
+    return <Login redirectPath={router.asPath} />;
+  }
 
   return (
     <div>
@@ -18,5 +17,5 @@ export default function Protected({ hasReadPermission }) {
 
       <main>I am supposed to be protected.</main>
     </div>
-  )
+  );
 }
