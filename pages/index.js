@@ -51,23 +51,11 @@ const Home = ({ hasReadPermission }) => {
 };
 
 export async function getServerSideProps({ locale }) {
-  try {
-    return {
-      props: {
-        ...(await serverSideTranslations(locale, ["copy"]))
-      }
-    };
-  } catch (error) {
-    // log the error
-    console.error(error);
-
-    // return a proper error message or status code
-    return {
-      props: {
-        error: "An error occurred while fetching initial data."
-      }
-    };
-  }
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["copy"]))
+    }
+  };
 }
 
 export default Home;
