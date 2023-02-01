@@ -11,7 +11,7 @@ const RSPV = ({ hasReadPermission }) => {
   const { t } = useTranslation("copy");
 
   if (!hasReadPermission) {
-    return <Login redirectPath={router.asPath} />;
+    return <Login redirectPath={router?.asPath} />;
   }
 
   return (
