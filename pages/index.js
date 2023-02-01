@@ -53,11 +53,7 @@ const Home = ({ hasReadPermission }) => {
 export async function getServerSideProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["common", "copy"], null, [
-        "en_GB",
-        "sv_SE",
-        "it_IT"
-      ]))
+      ...(await serverSideTranslations(locale, ["copy"]))
     }
   };
 }
