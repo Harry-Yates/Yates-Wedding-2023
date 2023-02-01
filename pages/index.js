@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import { enGB, svSE, itIT } from "@/translations";

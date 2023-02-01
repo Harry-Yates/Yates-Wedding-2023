@@ -1,0 +1,83 @@
+@import "./shared/fonts";
+
+/* Components */
+/* @import "./components/header"; */
+
+/* Pages */
+/* @import "./index"; */
+
+// Variables
+@import "./shared/variables";
+
+.absolute {
+  position: absolute;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Hiragino Kaku Gothic", "Helvetica";
+  font-size: var(--fs-small);
+  background: var(--clr-white);
+}
+
+.self-typed {
+  font-family: "Calibre-Bold", "Helvetica";
+  font-size: var(--fs-large);
+  font-weight: var(--fw-heavy);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-primary);
+}
+
+.base-page {
+  padding-top: 100px;
+}
+
+h1 {
+  font-family: "Calibre-Bold", "Helvetica";
+  font-size: var(--fs-larger);
+  font-weight: var(--fw-heavy);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--clr-primary);
+}
+
+h2 {
+  font-family: "Calibre-Bold", "Helvetica";
+  font-size: var(--fs-large);
+  font-weight: var(--fw-heavy);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--clr-primary);
+}
+
+h3 {
+  font-family: "Calibre-Regular", "Helvetica";
+  font-size: var(--fs-large);
+  list-style: none;
+  color: var(--clr-primary);
+  text-transform: uppercase;
+}
+
+li {
+  font-family: "Calibre-Regular", "Helvetica";
+  font-size: var(--fs-large);
+  list-style: none;
+}
+
+p {
+  font-family: "Hiragino Kaku Gothic", "Helvetica";
+  font-size: var(--fs-small);
+}
+
+a {
+  font-family: "Calibre-Bold", "Helvetica";
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-heavy);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--clr-primary);
+  cursor: pointer;
+}
