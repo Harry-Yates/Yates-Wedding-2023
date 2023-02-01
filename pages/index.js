@@ -2,27 +2,20 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import Header from "@/components/shared/Header";
-import { enGB, svSE } from "@/translations";
+import { enGB, svSE, itIT } from "@/translations";
 
 export default function Home({ hasReadPermission }) {
   const router = useRouter();
   const { locale } = router;
 
-  const t = locale === "en-GB" ? enGB : svSE;
+  const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
 
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
   }
 
-  const handleLanguageToggle = () => {
-    switch (locale) {
-      case "en-GB":
-        router.push("/", "/", { locale: "sv-SE" });
-        break;
-      case "sv-SE":
-        router.push("/", "/", { locale: "en-GB" });
-        break;
-    }
+  const handleLanguageToggle = (e) => {
+    router.push("/", "/", { locale: e.target.value });
   };
 
   return (
@@ -34,8 +27,12 @@ export default function Home({ hasReadPermission }) {
       <main>
         <h1>Home Page</h1>
         <p>{t.welcome}</p>
-        <p onClick={handleLanguageToggle}>{locale}</p>
         <Header />
+        <select value={locale} onChange={handleLanguageToggle}>
+          <option value='en-GB'>GB 🇬🇧</option>
+          <option value='sv-SE'>SE 🇸🇪</option>
+          <option value='it-IT'>IT 🇮🇹</option>
+        </select>
       </main>
     </div>
   );

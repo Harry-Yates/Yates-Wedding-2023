@@ -1,7 +1,11 @@
 export const svSE = {
-  welcome: "Howdy"
+  welcome: "Hej"
 };
 
 export const enGB = {
   welcome: "Hello"
+};
+
+export const itIT = {
+  welcome: "Bonjorno"
 };
