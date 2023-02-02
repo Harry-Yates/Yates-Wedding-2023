@@ -20,9 +20,21 @@ export default function Protected({ hasReadPermission }) {
       </Head>
 
       <main>
-        <h1>Protected Page</h1>
-        <p>{t.welcome}</p>
         <Header />
+        <h1>Protected Page</h1>
+        <br />
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <ul>
+          <li>list item</li>
+          <li>list item</li>
+        </ul>
+        <p>Paragraph</p>
+        <a href=''>Link 1</a>
+        <br />
+        <a href=''>Link 2</a>
       </main>
     </div>
   );

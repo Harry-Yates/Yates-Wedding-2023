@@ -2,47 +2,63 @@ import { useState } from "react";
 import Link from "next/link";
 import { enGB, svSE, itIT } from "@/translations";
 import { useRouter } from "next/router";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
-  const [isOpen, setIsOpen] = useState(false);
+
+  function navSlide() {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+
+    // Toggle Nav
+    nav.classList.toggle("nav-active");
+
+    // Animate Links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.7s ease forwards ${index / 7 + 0.3}s`;
+      }
+    });
+
+    // Burger Animation
+    burger.classList.toggle("toggle");
+  }
 
   return (
-    <nav className='navbar'>
-      <div className='containerLeft'></div>
-      <div className='containerCenter'>
-        <Link href='/'>
-          <h1 className='navbar-logo'>Harry & Johanna</h1>
-        </Link>
-        <div>
-          <div className='menu-icon' onClick={() => setIsOpen(!isOpen)}>
-            <i>{isOpen ? <FaTimes /> : <FaBars />}</i>
-          </div>
-          <div className={!isOpen ? "nav-menu-active" : "nav-menu"}>
-            <ul className={!isOpen ? "nav-menu-active" : "nav-menu"}>
-              <li>
-                <Link href='/'>Home</Link>
-              </li>
-              <li>
-                <Link href='/faq'>faq</Link>
-              </li>
-              <li>
-                <Link href='/rspv'>rspv</Link>
-              </li>
-              <li>
-                <Link href='/schedule'>schedule</Link>
-              </li>
-              <li>
-                <Link href='/travel'>travel</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+    //  Nav Bar
+    <nav>
+      <div className='logo'>
+        <Link href='/'>{t.welcome} </Link>
       </div>
-      <div className='containerRight'></div>
+      <ul className='nav-links'>
+        <li>
+          <Link href='/faq'>faq</Link>
+        </li>
+        <li>
+          <Link href='/rspv'>RSVP</Link>
+        </li>
+        <li>
+          <Link href='/schedule'>Schedule</Link>
+        </li>
+        <li>
+          <Link href='/travel'>Casazza</Link>
+        </li>
+      </ul>
+      {/* Burger Menu */}
+      <div className='burger' onClick={navSlide}>
+        <div className='line1'></div>
+        <div className='line2'></div>
+        <div className='line3'></div>
+      </div>
     </nav>
   );
+}
+
+{
+  /* <Link href='/faq'>faq</Link> */
 }

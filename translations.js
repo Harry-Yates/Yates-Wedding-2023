@@ -1,5 +1,5 @@
 export const enGB = {
-  welcome: "Hey",
+  welcome: "Colognola Di Casazza, Bergamo",
   homePageTitle: "Invitation Page",
   faqPageTitle: "FAQ Page",
   rspvPageTitle: "RSPV Page",
@@ -8,7 +8,7 @@ export const enGB = {
 };
 
 export const svSE = {
-  welcome: "Hej",
+  welcome: "Colognola Di Casazza, Bergamo",
   homePageTitle: "Inbjudan Page",
   faqPageTitle: "FAQ Page",
   rspvPageTitle: "RSPV Page",
@@ -17,7 +17,7 @@ export const svSE = {
 };
 
 export const itIT = {
-  welcome: "ciao",
+  welcome: "Colognola Di Casazza, Bergamo",
   homePageTitle: "Invito Page",
   faqPageTitle: "FAQ Page",
   rspvPageTitle: "RSPV Page",
