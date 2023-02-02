@@ -20,7 +20,7 @@ export default function Home({ hasReadPermission }) {
   return (
     <BaseLayout>
       <h1>{t.homePageTitle}</h1>
-      <p>{t.welcome}</p>
+      <h1>hello</h1>
       <select value={locale} onChange={handleLanguageToggle}>
         <option value='en-GB'>GB 🇬🇧</option>
         <option value='sv-SE'>SE 🇸🇪</option>

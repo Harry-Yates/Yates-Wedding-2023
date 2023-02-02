@@ -33,20 +33,20 @@ export default function Header() {
     //  Nav Bar
     <nav>
       <div className='logo'>
-        <Link href='/'>{t.welcome} </Link>
+        <Link href='/'>{t.headerTitle}</Link>
       </div>
       <ul className='nav-links'>
         <li>
-          <Link href='/faq'>faq</Link>
+          <Link href='/faq'>{t.faqPageTitle}</Link>
         </li>
         <li>
-          <Link href='/rspv'>RSVP</Link>
+          <Link href='/rspv'>{t.rspvPageTitle}</Link>
         </li>
         <li>
-          <Link href='/schedule'>Schedule</Link>
+          <Link href='/schedule'>{t.schedulePageTitle}</Link>
         </li>
         <li>
-          <Link href='/travel'>Casazza</Link>
+          <Link href='/travel'>{t.travelPageTitle}</Link>
         </li>
       </ul>
       {/* Burger Menu */}
