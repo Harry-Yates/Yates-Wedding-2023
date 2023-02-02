@@ -6,9 +6,10 @@ export default function LoginPage({ hasReadPermission }) {
   if (hasReadPermission) {
     return (
       <>
-        <div className='w-1/3 max-w-sm mx-auto'>
+        <div className='c-login'>
+          {/* <h1 className='c-login__title'>Thank you</h1> */}
           <button
-            className='mt-3 bg-green-400 text-white p-2 font-bold rounded hover:bg-green-600'
+            className='btn'
             onClick={(e) => {
               e.preventDefault();
               const cookies = new Cookies();

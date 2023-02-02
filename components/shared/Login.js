@@ -22,7 +22,7 @@ const Login = ({ redirectPath }) => {
         </label>
         <button
           type='submit'
-          className='c-btn c-btn--login'
+          className='btn c-btn--login'
           onClick={(e) => {
             e.preventDefault();
             const cookies = new Cookies();
