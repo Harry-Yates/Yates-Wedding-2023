@@ -64,6 +64,10 @@ a {
   }
 
   .nav-links {
+    display: none;
+  }
+
+  .nav-links {
     position: absolute;
     right: 0px;
     height: 92vh;
@@ -74,7 +78,7 @@ a {
     align-items: center;
     width: 50%;
     width: 100%;
-    transform: translateX(100%);
+    transform: translateX(200%);
   }
 
   .nav-links li {
