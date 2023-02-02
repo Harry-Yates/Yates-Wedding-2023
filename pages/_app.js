@@ -16,8 +16,7 @@ MyApp.getInitialProps = async (appContext) => {
   const password = cookies.get(consts.SiteReadCookie) || "";
   const appProps = await App.getInitialProps(appContext);
 
-  // appProps.pageProps.hasReadPermission = password === process.env.DB_PASS;
-  appProps.pageProps.hasReadPermission = password === "italy";
+  appProps.pageProps.hasReadPermission = password === process.env.NEXT_PUBLIC_PASS;
 
   return { ...appProps };
 };
