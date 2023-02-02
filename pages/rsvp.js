@@ -14,7 +14,7 @@ const RSPV = ({ hasReadPermission }) => {
 
   return (
     <BaseLayout>
-      <h1>{t.rspvPageTitle}</h1>
+      <h1>{t.rsvpPageTitle}</h1>
     </BaseLayout>
   );
 };
