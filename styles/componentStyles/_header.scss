@@ -78,7 +78,7 @@ a {
     align-items: center;
     width: 50%;
     width: 100%;
-    transform: translateX(200%);
+    transform: translate&(-1000%);
   }
 
   .nav-links li {
@@ -89,6 +89,10 @@ a {
     display: block;
     cursor: pointer;
   }
+
+  // .toggle .nav-links {
+  //   display: block;
+  // }
 }
 
 .nav-active {
