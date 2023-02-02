@@ -2,6 +2,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { enGB, svSE, itIT } from "@/translations";
 import { useRouter } from "next/router";
+import Cookies from "universal-cookie";
+import consts from "consts";
 
 export default function Header() {
   const router = useRouter();
@@ -40,13 +42,28 @@ export default function Header() {
           <Link href='/faq'>{t.faqPageTitle}</Link>
         </li>
         <li>
-          <Link href='/rspv'>{t.rspvPageTitle}</Link>
-        </li>
-        <li>
           <Link href='/schedule'>{t.schedulePageTitle}</Link>
         </li>
         <li>
           <Link href='/travel'>{t.travelPageTitle}</Link>
+        </li>
+        <li id='highlight'>
+          <Link href='/rsvp' className='colorHigh'>
+            {t.rsvpPageTitle}
+          </Link>
+        </li>
+        <li>
+          <button
+            className='btn'
+            id='btn--logout'
+            onClick={(e) => {
+              e.preventDefault();
+              const cookies = new Cookies();
+              cookies.remove(consts.SiteReadCookie, { path: "/" });
+              window.location.href = "/login";
+            }}>
+            Logout
+          </button>
         </li>
       </ul>
       {/* Burger Menu */}

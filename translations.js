@@ -2,25 +2,25 @@ export const enGB = {
   headerTitle: "Colognola Di Casazza, Bergamo",
   homePageTitle: "Invitation",
   faqPageTitle: "FAQ",
-  rspvPageTitle: "RSPV",
+  rsvpPageTitle: "RSVP",
   schedulePageTitle: "Schedule",
-  travelPageTitle: "Travel"
+  travelPageTitle: "Casazza"
 };
 
 export const svSE = {
   headerTitle: "Colognola Di Casazza, Bergamo",
   homePageTitle: "Inbjudan",
   faqPageTitle: "FAQ",
-  rspvPageTitle: "RSPV",
+  rsvpPageTitle: "RSVP",
   schedulePageTitle: "Schema",
-  travelPageTitle: "Resa"
+  travelPageTitle: "Casazza"
 };
 
 export const itIT = {
   headerTitle: "Colognola Di Casazza, Bergamo",
   homePageTitle: "Invito",
   faqPageTitle: "FAQ",
-  rspvPageTitle: "RSPV",
+  rsvpPageTitle: "RSVP",
   schedulePageTitle: "Programma",
-  travelPageTitle: "Viaggiare"
+  travelPageTitle: "Casazza"
 };
