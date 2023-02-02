@@ -1,0 +1,32 @@
+:root {
+  // Colors
+  --clr-primary: #1a1a1a;
+  --clr-secondary: #f2f2f2;
+
+  --clr-white: #ffffff;
+  --clr-black: #171717;
+
+  // Colour of text
+  //   --clr-text-primary: #1a1a1a;
+  --clr-text-primary: #333f48;
+  --clr-text-secondary: #b1acac;
+
+  // Font family
+  --ff-primary: "Source Code Pro", monospace;
+  --ff-secondary: ...;
+
+  // Font size
+  --fs-tiny: 0.6rem;
+  --fs-small: 0.9rem;
+  --fs-medium: 1rem;
+  --fs-large: 1.1rem;
+  --fs-larger: 1.25rem;
+  --fs-largest: 3rem;
+
+  // Font weight
+  --fw-thin: 200;
+  --fw-normal: 300;
+  --fw-bold: 400;
+  --fw-bolder: 500;
+  --fw-heavy: 700;
+}

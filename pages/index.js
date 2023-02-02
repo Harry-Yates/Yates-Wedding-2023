@@ -1,8 +1,7 @@
-import Head from "next/head";
 import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
-import Header from "@/components/shared/Header";
 import { enGB, svSE, itIT } from "@/translations";
+import BaseLayout from "../components/layouts/BaseLayout";
 
 export default function Home({ hasReadPermission }) {
   const router = useRouter();
@@ -19,21 +18,14 @@ export default function Home({ hasReadPermission }) {
   };
 
   return (
-    <div>
-      <Head>
-        <title>Home Page</title>
-      </Head>
-
-      <main>
-        <h1>Home Page</h1>
-        <p>{t.welcome}</p>
-        <Header />
-        <select value={locale} onChange={handleLanguageToggle}>
-          <option value='en-GB'>GB 🇬🇧</option>
-          <option value='sv-SE'>SE 🇸🇪</option>
-          <option value='it-IT'>IT 🇮🇹</option>
-        </select>
-      </main>
-    </div>
+    <BaseLayout>
+      <h1>{t.homePageTitle}</h1>
+      <h1>hello</h1>
+      <select value={locale} onChange={handleLanguageToggle}>
+        <option value='en-GB'>GB 🇬🇧</option>
+        <option value='sv-SE'>SE 🇸🇪</option>
+        <option value='it-IT'>IT 🇮🇹</option>
+      </select>
+    </BaseLayout>
   );
 }

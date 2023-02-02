@@ -1,11 +1,26 @@
-export const svSE = {
-  welcome: "Hej"
+export const enGB = {
+  headerTitle: "Colognola Di Casazza, Bergamo",
+  homePageTitle: "Invitation",
+  faqPageTitle: "FAQ",
+  rspvPageTitle: "RSPV",
+  schedulePageTitle: "Schedule",
+  travelPageTitle: "Travel"
 };
 
-export const enGB = {
-  welcome: "Hello"
+export const svSE = {
+  headerTitle: "Colognola Di Casazza, Bergamo",
+  homePageTitle: "Inbjudan",
+  faqPageTitle: "FAQ",
+  rspvPageTitle: "RSPV",
+  schedulePageTitle: "Schema",
+  travelPageTitle: "Resa"
 };
 
 export const itIT = {
-  welcome: "Bonjorno"
+  headerTitle: "Colognola Di Casazza, Bergamo",
+  homePageTitle: "Invito",
+  faqPageTitle: "FAQ",
+  rspvPageTitle: "RSPV",
+  schedulePageTitle: "Programma",
+  travelPageTitle: "Viaggiare"
 };
