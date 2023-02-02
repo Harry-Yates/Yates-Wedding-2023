@@ -1,0 +1,54 @@
+.c-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .c-login-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    inset: 0;
+    padding: 2rem;
+  }
+
+  .c-login__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    padding: 1rem;
+
+    .c-login__title {
+      margin-bottom: 1rem;
+    }
+
+    .c-login__input {
+      width: 100%;
+      height: 40px;
+      padding: 0.5rem;
+      font-size: var(--fs-medium);
+      border-radius: 5px;
+      border: 1px solid lightgray;
+    }
+  }
+
+  .c-btn--login {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    background-color: var(--clr-primary);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+}

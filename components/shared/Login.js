@@ -1,41 +1,41 @@
-
-import { useState } from "react"
-import Cookies from "universal-cookie"
-import consts from "consts"
+import { useState } from "react";
+import Cookies from "universal-cookie";
+import consts from "consts";
+import Image from "next/image";
+import yatesLogo from "@/public//loginImages/yates-logo.png";
 
 const Login = ({ redirectPath }) => {
-  const [password, setPassword] = useState("")
+  const [password, setPassword] = useState("");
 
   return (
-    <div className="w-1/3 max-w-sm mx-auto">
+    <div className='c-login'>
       <form>
-        <label className="block">
-          <span className="text-gray-700">Password</span>
+        <label className='c-login__label'>
+          <Image src={yatesLogo} alt='yates logo' className='c-login-logo' />
+          <h1 className='c-login__title'>Guest Area</h1>
           <input
-            type="text"
-            className="form-input mt-1 block w-full bg-gray-50"
-            placeholder="Your site password"
+            type='text'
+            className='c-login__input'
+            placeholder='Enter rspv password'
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          ></input>
+            onChange={(e) => setPassword(e.target.value)}></input>
         </label>
         <button
-          type="submit"
-          className="mt-3 bg-green-400 text-white p-2 font-bold rounded hover:bg-green-600"
+          type='submit'
+          className='c-btn c-btn--login'
           onClick={(e) => {
-            e.preventDefault()
-            const cookies = new Cookies()
+            e.preventDefault();
+            const cookies = new Cookies();
             cookies.set(consts.SiteReadCookie, password, {
-              path: "/",
-            })
-            window.location.href = redirectPath ?? "/"
-          }}
-        >
+              path: "/"
+            });
+            window.location.href = redirectPath ?? "/";
+          }}>
           Login
         </button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
