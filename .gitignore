@@ -30,3 +30,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# pages
+/pages/copy.js
+/pages/protected.js
