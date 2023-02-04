@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Hiragino Kaku Gothic";
-  src: url("/fonts/Hiragino-Kaku-Gothic-Pro-W3.otf");
+  // src: url("/fonts/Hiragino-Kaku-Gothic-Pro-W3.otf");
+  src: url("/fonts/hiragino-kaku-gothic-pro-w3-webfont") format("woff2"),
+    url("/fonts/hiragino-kaku-gothic-pro-w3-webfont") format("woff");
   font-weight: normal;
   font-style: normal;
 }

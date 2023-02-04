@@ -1,26 +1,47 @@
 export const enGB = {
+  "Login Page": "",
+  "Navigation Bar": "",
   headerTitle: "Colognola Di Casazza, Bergamo",
+  "Home Page": "",
   homePageTitle: "Invitation",
+  "FAQ Page": "",
   faqPageTitle: "FAQ",
-  rsvpPageTitle: "RSVP",
+  "Schedule Page": "",
   schedulePageTitle: "Schedule",
-  travelPageTitle: "Casazza"
+  "Casazza Page": "",
+  travelPageTitle: "Casazza",
+  RSVPPage: "",
+  rsvpPageTitle: "RSVP"
 };
 
 export const svSE = {
+  "Login Page": "",
+  "Navigation Bar": "",
   headerTitle: "Colognola Di Casazza, Bergamo",
+  "Home Page": "",
   homePageTitle: "Inbjudan",
+  "FAQ Page": "",
   faqPageTitle: "FAQ",
-  rsvpPageTitle: "RSVP",
+  "Schedule Page": "",
   schedulePageTitle: "Schema",
-  travelPageTitle: "Casazza"
+  "Casazza Page": "",
+  travelPageTitle: "Casazza",
+  RSVPPage: "",
+  rsvpPageTitle: "RSVP"
 };
 
 export const itIT = {
+  "Login Page": "",
+  "Navigation Bar": "",
   headerTitle: "Colognola Di Casazza, Bergamo",
+  "Home Page": "",
   homePageTitle: "Invito",
+  "FAQ Page": "",
   faqPageTitle: "FAQ",
-  rsvpPageTitle: "RSVP",
+  "Schedule Page": "",
   schedulePageTitle: "Programma",
-  travelPageTitle: "Casazza"
+  "Casazza Page": "",
+  travelPageTitle: "Casazza",
+  RSVPPage: "",
+  rsvpPageTitle: "RSVP"
 };
