@@ -1,22 +1,26 @@
 @font-face {
   font-family: "Hiragino Kaku Gothic";
   // src: url("/fonts/Hiragino-Kaku-Gothic-Pro-W3.otf");
-  src: url("/fonts/hiragino-kaku-gothic-pro-w3-webfont") format("woff2"),
-    url("/fonts/hiragino-kaku-gothic-pro-w3-webfont") format("woff");
+  src: url("/fonts/hiragino-kaku-gothic-pro-w3-webfont.woff2") format("woff2"),
+    url("/fonts/hiragino-kaku-gothic-pro-w3-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Calibre-Bold";
-  src: url("/fonts/Calibre-Bold.ttf");
+  // src: url("/fonts/Calibre-Bold.ttf");
+  src: url("/fonts/calibre-bold-webfont.woff2") format("woff2"),
+    url("/fonts/calibre-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Calibre-Regular";
-  src: url("/fonts/CalibreRegular.otf");
+  // src: url("/fonts/CalibreRegular.otf");
+  src: url("/fonts/calibreregular-webfont.woff2") format("woff2"),
+    url("/fonts/calibreregular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
