@@ -1,0 +1,14 @@
+select {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 2rem;
+
+  &:focus {
+    outline: none;
+    border-color: #aaa;
+  }
+}

@@ -1,5 +1,6 @@
 import Header from "../shared/Header";
 import { useRouter } from "next/router";
+``;
 import { enGB, svSE, itIT } from "@/translations";
 
 const BaseLayout = (props) => {
@@ -10,7 +11,9 @@ const BaseLayout = (props) => {
   return (
     <>
       <Header />
-      {props.children}
+      <main>
+        <div className='wrapper'>{props.children}</div>
+      </main>
     </>
   );
 };
