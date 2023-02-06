@@ -115,8 +115,10 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
 .base-page {
   padding-top: 1rem;
+  z-index: 0;
 }
