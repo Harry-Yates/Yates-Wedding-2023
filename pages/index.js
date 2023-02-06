@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import { enGB, svSE, itIT } from "@/translations";
 import BaseLayout from "../components/layouts/BaseLayout";
+import BasePage from "../components/BasePage";
 
 export default function Home({ hasReadPermission }) {
   const router = useRouter();
@@ -19,12 +20,14 @@ export default function Home({ hasReadPermission }) {
 
   return (
     <BaseLayout>
-      <h1>{t.homePageTitle}</h1>
-      <select value={locale} onChange={handleLanguageToggle}>
-        <option value='en-GB'>GB 🇬🇧</option>
-        <option value='sv-SE'>SE 🇸🇪</option>
-        <option value='it-IT'>IT 🇮🇹</option>
-      </select>
+      <BasePage>
+        <select value={locale} onChange={handleLanguageToggle}>
+          <option value='en-GB'>GB 🇬🇧</option>
+          <option value='sv-SE'>SE 🇸🇪</option>
+          <option value='it-IT'>IT 🇮🇹</option>
+        </select>
+        <h1>{t.homePageTitle}</h1>
+      </BasePage>
     </BaseLayout>
   );
 }

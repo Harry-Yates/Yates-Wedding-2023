@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
+import BasePage from "../components/BasePage";
 
 export default function Schedule({ hasReadPermission }) {
   const router = useRouter();
@@ -14,7 +15,9 @@ export default function Schedule({ hasReadPermission }) {
 
   return (
     <BaseLayout>
-      <h1>{t.schedulePageTitle}</h1>
+      <BasePage>
+        <h1>{t.schedulePageTitle}</h1>
+      </BasePage>
     </BaseLayout>
   );
 }

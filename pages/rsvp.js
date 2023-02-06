@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
+import BasePage from "../components/BasePage";
 
 const RSPV = ({ hasReadPermission }) => {
   const router = useRouter();
@@ -14,7 +15,9 @@ const RSPV = ({ hasReadPermission }) => {
 
   return (
     <BaseLayout>
-      <h1>{t.rsvpPageTitle}</h1>
+      <BasePage>
+        <h1>{t.rsvpPageTitle}</h1>
+      </BasePage>
     </BaseLayout>
   );
 };
