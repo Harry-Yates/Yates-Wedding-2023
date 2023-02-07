@@ -7,6 +7,7 @@ import BasePage from "../components/BasePage";
 import Head from "next/head";
 import Image from "next/image";
 import weeHee from "@/public/gif/wee-hee.gif";
+import confetti from "canvas-confetti";
 
 const RSPV = ({ hasReadPermission }) => {
   const router = useRouter();
@@ -22,6 +23,12 @@ const RSPV = ({ hasReadPermission }) => {
     if (confirmMessage) {
       setTimeout(() => {
         setShowConfirmMessage(true);
+        confetti({
+          particleCount: 200,
+          angle: 90,
+          spread: 45,
+          startVelocity: 45
+        });
       }, 1000);
     }
   }, [confirmMessage]);
