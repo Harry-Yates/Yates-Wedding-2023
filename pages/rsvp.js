@@ -29,7 +29,7 @@ const RSPV = ({ hasReadPermission }) => {
     const formData = new FormData(formEle);
     setConfirmMessage(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbzOJKdw6vOjrVqgWVBHY50sWlM5l-8pJ6Ad6mYmJsoQxpe118BpzCjmQytQkINOvYxr/exec",
+      "https://script.google.com/macros/s/AKfycbyLi0E2HYUTh43DEELHuH3upM9yTsVfa-HH-yXbV90ahWTabQHKkK-7s6d_t868oJXV/exec",
       {
         method: "POST",
         body: formData
@@ -54,8 +54,8 @@ const RSPV = ({ hasReadPermission }) => {
         <div className='rsvp_details'>
           <h3>Invite only</h3>
           <p>
-            Kindly RSVP no later than{" "}
-            <time datetime='2023-05-25'>
+            Kindly RSVP no later than
+            <time dateTime='2023-05-25'>
               <b>25th May 2023</b>
             </time>
           </p>
@@ -65,6 +65,15 @@ const RSPV = ({ hasReadPermission }) => {
           </small>
         </div>
 
+        {confirmMessage && (
+          <>
+            <div className={`rsvp__confirm-message ${confirmMessage ? "show" : ""}`}>
+              <h5>RSVP Received!</h5>
+              <h5>Thank You</h5>
+            </div>
+          </>
+        )}
+
         <div className='rsvp__form-container'>
           <form className='rsvp__form' onSubmit={(e) => Submit(e)}>
             <div className='rsvp__checkbox--container'>
@@ -72,7 +81,6 @@ const RSPV = ({ hasReadPermission }) => {
                 <label htmlFor='attending' className='rsvp__label'>
                   Happy to be there
                 </label>
-
                 <input
                   type='checkbox'
                   id='attending'
@@ -89,7 +97,6 @@ const RSPV = ({ hasReadPermission }) => {
                 <label htmlFor='notAttending' className='rsvp__label'>
                   Sad to miss it
                 </label>
-
                 <input
                   type='checkbox'
                   id='notAttending'
@@ -195,6 +202,10 @@ const RSPV = ({ hasReadPermission }) => {
               id='extraGuestNames'
               className='rsvp__input'
             />
+            <label htmlFor='comments' className='rsvp__label'>
+              Anyting we should know?
+            </label>
+            <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
 
             <button
               name='Name'
@@ -202,13 +213,8 @@ const RSPV = ({ hasReadPermission }) => {
               value='RSVP Now'
               className='btn-rsvp-btn'
               disabled={isDisabled}>
-              Send RSVP
+              {confirmMessage ? "Sent" : "Send RSVP"}
             </button>
-            {confirmMessage && (
-              <h4 className={`rsvp__confirm-message ${confirmMessage ? "show" : ""}`}>
-                We have received your RSVP!
-              </h4>
-            )}
           </form>
         </div>
       </BasePage>

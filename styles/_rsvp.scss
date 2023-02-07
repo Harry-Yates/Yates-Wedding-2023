@@ -14,7 +14,7 @@
   &__form {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     padding: 2rem;
     background-color: var(--clr-gray);
     border-radius: 1rem;
@@ -34,7 +34,7 @@
 .rsvp__confirm-message {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
   align-self: center;
   color: #68d965;
