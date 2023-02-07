@@ -71,13 +71,6 @@ const RSPV = ({ hasReadPermission }) => {
           <small>{t.rsvp_noKids}</small>
         </div>
 
-        {confirmMessage && (
-          <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
-            <h5>{t.rsvp_confirmUpper}</h5>
-            <h5>{t.rsvp_confirmLower}</h5>
-          </div>
-        )}
-
         <div className='rsvp__form-container'>
           <form className='rsvp__form' onSubmit={(e) => Submit(e)}>
             <div className='rsvp__checkbox--container'>
@@ -210,6 +203,13 @@ const RSPV = ({ hasReadPermission }) => {
               {t.rsvp_anythingElse}
             </label>
             <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
+
+            {confirmMessage && (
+              <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
+                <h5>{t.rsvp_confirmUpper}</h5>
+                <h5>{t.rsvp_confirmLower}</h5>
+              </div>
+            )}
 
             <button
               name='Name'
