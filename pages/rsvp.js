@@ -4,6 +4,7 @@ import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
+import Head from "next/head";
 
 const RSPV = ({ hasReadPermission }) => {
   const router = useRouter();
@@ -58,6 +59,12 @@ const RSPV = ({ hasReadPermission }) => {
   return (
     <BaseLayout>
       <BasePage>
+        <Head>
+          <title>RSPV</title>
+          <meta
+            name='viewport'
+            content='width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no'></meta>
+        </Head>
         <h1 className='rsvp__title'>{t.rsvp_title}</h1>
 
         <div className='rsvp_details'>
