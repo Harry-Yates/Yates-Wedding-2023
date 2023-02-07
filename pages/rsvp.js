@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
@@ -10,9 +10,18 @@ const RSPV = ({ hasReadPermission }) => {
   const { locale } = router;
   const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
   const [confirmMessage, setConfirmMessage] = useState(false);
+  const [showConfirmMessage, setShowConfirmMessage] = useState(false);
   const [attending, setAttending] = useState(false);
   const [notAttending, setNotAttending] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+
+  useEffect(() => {
+    if (confirmMessage) {
+      setTimeout(() => {
+        setShowConfirmMessage(true);
+      }, 1000);
+    }
+  }, [confirmMessage]);
 
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
@@ -56,7 +65,7 @@ const RSPV = ({ hasReadPermission }) => {
           <p>
             Kindly RSVP no later than
             <time dateTime='2023-05-25'>
-              <b>25th May 2023</b>
+              <b> 25th May 2023</b>
             </time>
           </p>
           <small>
@@ -66,12 +75,10 @@ const RSPV = ({ hasReadPermission }) => {
         </div>
 
         {confirmMessage && (
-          <>
-            <div className={`rsvp__confirm-message ${confirmMessage ? "show" : ""}`}>
-              <h5>RSVP Received!</h5>
-              <h5>Thank You</h5>
-            </div>
-          </>
+          <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
+            <h5>RSVP Received!</h5>
+            <h5>Thank You</h5>
+          </div>
         )}
 
         <div className='rsvp__form-container'>
@@ -203,7 +210,7 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             />
             <label htmlFor='comments' className='rsvp__label'>
-              Anyting we should know?
+              Anything we should know?
             </label>
             <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
 
