@@ -4,6 +4,7 @@ import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
+import Head from "next/head";
 
 const RSPV = ({ hasReadPermission }) => {
   const router = useRouter();
@@ -58,6 +59,12 @@ const RSPV = ({ hasReadPermission }) => {
   return (
     <BaseLayout>
       <BasePage>
+        <Head>
+          <title>RSPV</title>
+          <meta
+            name='viewport'
+            content='width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no'></meta>
+        </Head>
         <h1 className='rsvp__title'>{t.rsvp_title}</h1>
 
         <div className='rsvp_details'>
@@ -204,10 +211,26 @@ const RSPV = ({ hasReadPermission }) => {
             </label>
             <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
 
-            {confirmMessage && (
+            {/* {confirmMessage && (
               <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
                 <h5>{t.rsvp_confirmUpper}</h5>
                 <h5>{t.rsvp_confirmLower}</h5>
+              </div>
+            )} */}
+
+            {confirmMessage && (
+              <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
+                <iframe
+                  src='https://giphy.com/embed/HloNK1z39EkEQcreIo'
+                  width='280'
+                  title='wee-hee giff'
+                  height='280'
+                  loading='lazy'
+                  class='giphy-embed'
+                  allowFullScreen></iframe>
+                <p>
+                  <a href='https://giphy.com/gifs/hbo-white-lotus-the-thewhitelotus-HloNK1z39EkEQcreIo'></a>
+                </p>
               </div>
             )}
 
