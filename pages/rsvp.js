@@ -12,6 +12,7 @@ const RSPV = ({ hasReadPermission }) => {
   const [confirmMessage, setConfirmMessage] = useState(false);
   const [attending, setAttending] = useState(false);
   const [notAttending, setNotAttending] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
 
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
@@ -20,9 +21,10 @@ const RSPV = ({ hasReadPermission }) => {
   function Submit(e) {
     if (!attending && !notAttending) {
       alert("Please select either 'Happy to be there' or 'Sad to miss it'");
-      return;
+      return false;
     }
     e.preventDefault();
+    setIsDisabled(true);
     const formEle = document.querySelector("form");
     const formData = new FormData(formEle);
     setConfirmMessage(true);
@@ -35,8 +37,8 @@ const RSPV = ({ hasReadPermission }) => {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        confirmMessage.classList.add("fade-in");
+        // console.log(data);
+        confirmMessage.classList.add("show");
         setConfirmMessage(true);
       })
       .catch((error) => {
@@ -179,7 +181,14 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             />
 
-            <input name='Name' type='submit' value='RSVP Now' className='btn rsvp-btn' />
+            <button
+              name='Name'
+              type='submit'
+              value='RSVP Now'
+              className='btn-rsvp-btn'
+              disabled={isDisabled}>
+              RSVP Now
+            </button>
             {confirmMessage && (
               <h4 className={`rsvp__confirm-message ${confirmMessage ? "show" : ""}`}>
                 We have received your RSVP!

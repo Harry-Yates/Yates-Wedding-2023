@@ -95,6 +95,12 @@ span {
   cursor: pointer;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  // &__btn[disabled] {
+  //   background-color: gray;
+  //   color: lightgray;
+  //   cursor: not-allowed;
+  // }
 }
 
 .wrapper {
