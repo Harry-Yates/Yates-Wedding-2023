@@ -1,0 +1,93 @@
+.rsvp {
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--clr-gray);
+    border-radius: 1rem;
+    // box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem;
+    background-color: var(--clr-gray);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+  }
+
+  &__label {
+    // font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+    display: block;
+  }
+}
+
+.rsvp__confirm-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+  color: green;
+  opacity: 0;
+  transition: opacity 5s ease-in;
+  &.show {
+    opacity: 1;
+  }
+}
+
+input {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-medium);
+  color: var(--clr-text-primary);
+  padding: 10px;
+  border: 1px solid var(--clr-gray);
+  border-radius: 5px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+
+  &:focus {
+    outline: none;
+    border-color: var(--clr-primary);
+  }
+}
+
+.rsvp__checkbox--container {
+  display: flex;
+  // flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+
+  .rsvp__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .rsvp__label {
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      margin-right: 1rem;
+
+      &:checked {
+        background-color: green;
+      }
+    }
+  }
+}
