@@ -29,7 +29,8 @@ const RSPV = ({ hasReadPermission }) => {
 
   function Submit(e) {
     if (!attending && !notAttending) {
-      alert("Please select either 'Happy to be there' or 'Sad to miss it'");
+      // alert("Please select either 'Happy to be there' or 'Sad to miss it'");
+      alert(`${t.rsvp_alert}`);
       return false;
     }
     e.preventDefault();
@@ -58,26 +59,23 @@ const RSPV = ({ hasReadPermission }) => {
   return (
     <BaseLayout>
       <BasePage>
-        <h1 className='rsvp__title'>{t.rsvpPageTitle}</h1>
+        <h1 className='rsvp__title'>{t.rsvp_title}</h1>
 
         <div className='rsvp_details'>
-          <h3>Invite only</h3>
+          <h3>{t.rsvp_secondHeader}</h3>
           <p>
-            Kindly RSVP no later than
+            {t.rsvp_deadline}
             <time dateTime='2023-05-25'>
-              <b> 25th May 2023</b>
+              <b>{t.rsvp_deadline_date}</b>
             </time>
           </p>
-          <small>
-            UNFORTUNATELY WE ARE NOT ABLE TO EXTEND AN INVITE TO PLUS ONES OR CHILDREN FOR THIS
-            OCCASION
-          </small>
+          <small>{t.rsvp_noKids}</small>
         </div>
 
         {confirmMessage && (
           <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
-            <h5>RSVP Received!</h5>
-            <h5>Thank You</h5>
+            <h5>{t.rsvp_confirmUpper}</h5>
+            <h5>{t.rsvp_confirmLower}</h5>
           </div>
         )}
 
