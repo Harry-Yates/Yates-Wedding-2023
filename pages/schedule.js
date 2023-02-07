@@ -16,7 +16,7 @@ export default function Schedule({ hasReadPermission }) {
   return (
     <BaseLayout>
       <BasePage>
-        <h1>{t.schedulePageTitle}</h1>
+        <h1>{t.schedule_title}</h1>
       </BasePage>
     </BaseLayout>
   );

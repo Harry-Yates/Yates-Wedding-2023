@@ -35,21 +35,21 @@ export default function Header() {
     //  Nav Bar
     <nav>
       <div className='logo'>
-        <Link href='/'>{t.headerTitle}</Link>
+        <Link href='/'>{t.header_title}</Link>
       </div>
       <ul className='nav-links'>
         <li>
-          <Link href='/faq'>{t.faqPageTitle}</Link>
+          <Link href='/faq'>{t.faq_title}</Link>
         </li>
         <li>
-          <Link href='/schedule'>{t.schedulePageTitle}</Link>
+          <Link href='/schedule'>{t.schedule_title}</Link>
         </li>
         <li>
-          <Link href='/travel'>{t.travelPageTitle}</Link>
+          <Link href='/casazza'>{t.casazza_title}</Link>
         </li>
         <li id='highlight'>
           <Link href='/rsvp' className='colorHigh'>
-            {t.rsvpPageTitle}
+            {t.rsvp_title}
           </Link>
         </li>
         <li>
@@ -62,7 +62,7 @@ export default function Header() {
               cookies.remove(consts.SiteReadCookie, { path: "/" });
               window.location.href = "/login";
             }}>
-            Logout
+            {t.header_logout}
           </button>
         </li>
       </ul>

@@ -26,7 +26,7 @@ export default function Home({ hasReadPermission }) {
           <option value='sv-SE'>SE 🇸🇪</option>
           <option value='it-IT'>IT 🇮🇹</option>
         </select>
-        <h1>{t.homePageTitle}</h1>
+        <h1>{t.home_title}</h1>
       </BasePage>
     </BaseLayout>
   );

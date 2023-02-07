@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
@@ -10,9 +10,18 @@ const RSPV = ({ hasReadPermission }) => {
   const { locale } = router;
   const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
   const [confirmMessage, setConfirmMessage] = useState(false);
+  const [showConfirmMessage, setShowConfirmMessage] = useState(false);
   const [attending, setAttending] = useState(false);
   const [notAttending, setNotAttending] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+
+  useEffect(() => {
+    if (confirmMessage) {
+      setTimeout(() => {
+        setShowConfirmMessage(true);
+      }, 1000);
+    }
+  }, [confirmMessage]);
 
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
@@ -20,7 +29,8 @@ const RSPV = ({ hasReadPermission }) => {
 
   function Submit(e) {
     if (!attending && !notAttending) {
-      alert("Please select either 'Happy to be there' or 'Sad to miss it'");
+      // alert("Please select either 'Happy to be there' or 'Sad to miss it'");
+      alert(`${t.rsvp_alert}`);
       return false;
     }
     e.preventDefault();
@@ -37,7 +47,6 @@ const RSPV = ({ hasReadPermission }) => {
     )
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
         confirmMessage.classList.add("show");
         setConfirmMessage(true);
       })
@@ -49,37 +58,25 @@ const RSPV = ({ hasReadPermission }) => {
   return (
     <BaseLayout>
       <BasePage>
-        <h1 className='rsvp__title'>{t.rsvpPageTitle}</h1>
+        <h1 className='rsvp__title'>{t.rsvp_title}</h1>
 
         <div className='rsvp_details'>
-          <h3>Invite only</h3>
+          <h3>{t.rsvp_secondHeader}</h3>
           <p>
-            Kindly RSVP no later than
+            {t.rsvp_deadline}
             <time dateTime='2023-05-25'>
-              <b>25th May 2023</b>
+              <b>{t.rsvp_deadline_date}</b>
             </time>
           </p>
-          <small>
-            UNFORTUNATELY WE ARE NOT ABLE TO EXTEND AN INVITE TO PLUS ONES OR CHILDREN FOR THIS
-            OCCASION
-          </small>
+          <small>{t.rsvp_noKids}</small>
         </div>
-
-        {confirmMessage && (
-          <>
-            <div className={`rsvp__confirm-message ${confirmMessage ? "show" : ""}`}>
-              <h5>RSVP Received!</h5>
-              <h5>Thank You</h5>
-            </div>
-          </>
-        )}
 
         <div className='rsvp__form-container'>
           <form className='rsvp__form' onSubmit={(e) => Submit(e)}>
             <div className='rsvp__checkbox--container'>
               <div className='rsvp__checkbox'>
                 <label htmlFor='attending' className='rsvp__label'>
-                  Happy to be there
+                  {t.rsvp_yes}
                 </label>
                 <input
                   type='checkbox'
@@ -95,7 +92,7 @@ const RSPV = ({ hasReadPermission }) => {
               </div>
               <div className='rsvp__checkbox'>
                 <label htmlFor='notAttending' className='rsvp__label'>
-                  Sad to miss it
+                  {t.rsvp_no}
                 </label>
                 <input
                   type='checkbox'
@@ -111,7 +108,7 @@ const RSPV = ({ hasReadPermission }) => {
               </div>
             </div>
             <label htmlFor='firstName' className='rsvp__label'>
-              First Name:
+              {t.rsvp_firstName}
             </label>
             <input
               // placeholder='John'
@@ -122,7 +119,7 @@ const RSPV = ({ hasReadPermission }) => {
               required
             />
             <label htmlFor='lastName' className='rsvp__label'>
-              Last Name:
+              {t.rsvp_lastName}
             </label>
             <input
               // placeholder='Last Name'
@@ -133,7 +130,7 @@ const RSPV = ({ hasReadPermission }) => {
               required
             />
             <label htmlFor='email' className='rsvp__label'>
-              Email Address:
+              {t.rsvp_email}
             </label>
             <input
               // placeholder='Email'
@@ -144,14 +141,14 @@ const RSPV = ({ hasReadPermission }) => {
               required
             />
             <label htmlFor='phone' className='rsvp__label'>
-              Phone Number:
+              {t.rsvp_phone}
             </label>
             <input
               //  placeholder='Phone'
               name='Phone'
               className='rsvp__input'></input>
             <label htmlFor='address' className='rsvp__label'>
-              Address:
+              {t.rsvp_address}
             </label>
             <input
               // placeholder='Address'
@@ -172,7 +169,7 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             /> */}
             <label htmlFor='dietary' className='rsvp__label'>
-              Do you have any dietary restrictions?
+              {t.rsvp_dietary}
             </label>
             <input
               // placeholder='Number of guests'
@@ -182,7 +179,7 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             />
             <label htmlFor='guests' className='rsvp__label'>
-              How many in your party <small>(invite only)</small>:
+              {t.rsvp_partySize} <small>{t.rsvp_partySize_reminder}</small>:
             </label>
             <input
               // placeholder='Number of guests'
@@ -190,10 +187,10 @@ const RSPV = ({ hasReadPermission }) => {
               type='number'
               id='guests'
               className='rsvp__input'
-              placeholder='Enter party total'
+              placeholder={t.rsvp_partySize_placeholder}
             />
             <label htmlFor='extraGuestNames' className='rsvp__label'>
-              Additional party member names:
+              {t.rsvp_partySize_names}
             </label>
             <input
               // placeholder='Number of guests'
@@ -203,9 +200,16 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             />
             <label htmlFor='comments' className='rsvp__label'>
-              Anyting we should know?
+              {t.rsvp_anythingElse}
             </label>
             <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
+
+            {confirmMessage && (
+              <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
+                <h5>{t.rsvp_confirmUpper}</h5>
+                <h5>{t.rsvp_confirmLower}</h5>
+              </div>
+            )}
 
             <button
               name='Name'
@@ -213,7 +217,7 @@ const RSPV = ({ hasReadPermission }) => {
               value='RSVP Now'
               className='btn-rsvp-btn'
               disabled={isDisabled}>
-              {confirmMessage ? "Sent" : "Send RSVP"}
+              {confirmMessage ? `${t.rsvp_btn_sent}` : `${t.rsvp_btn_send}`}
             </button>
           </form>
         </div>
