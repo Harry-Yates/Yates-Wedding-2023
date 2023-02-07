@@ -211,14 +211,14 @@ const RSPV = ({ hasReadPermission }) => {
             </label>
             <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
 
-            {/* {confirmMessage && (
-              <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
-                <h5>{t.rsvp_confirmUpper}</h5>
-                <h5>{t.rsvp_confirmLower}</h5>
-              </div>
-            )} */}
+            {confirmMessage && !attending && (
+                <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
+                  <h5>{t.rsvp_confirmUpper}</h5>
+                  <h5>{t.rsvp_confirmLower}</h5>
+                </div>
+              )}
 
-            {confirmMessage && (
+            {confirmMessage && attending && (
               <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
                 <iframe
                   src='https://giphy.com/embed/HloNK1z39EkEQcreIo'
