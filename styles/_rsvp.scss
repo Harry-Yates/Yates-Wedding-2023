@@ -36,7 +36,7 @@
   margin-top: 2rem;
   text-align: center;
   align-self: center;
-  color: green;
+  color: #68d965;
   opacity: 0;
   transition: opacity 2s ease-in;
   &.show {
@@ -88,7 +88,7 @@ input {
       margin-right: 1rem;
 
       &:checked {
-        background-color: green;
+        background-color: #68d965;
       }
     }
   }
@@ -103,7 +103,7 @@ input {
   margin-right: 1rem;
 
   &:checked {
-    background-color: red;
+    background-color: #f2452f;
   }
 }
 
@@ -121,11 +121,21 @@ input {
   margin-top: 2rem;
   max-width: 600px;
   align-self: center;
-  
 }
 
 .btn-rsvp-btn[disabled] {
   background-color: gray;
   color: lightgray;
   cursor: not-allowed;
+}
+
+.rsvp_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  line-height: 0.9rem;
 }

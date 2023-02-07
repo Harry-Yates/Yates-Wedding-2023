@@ -50,6 +50,21 @@ const RSPV = ({ hasReadPermission }) => {
     <BaseLayout>
       <BasePage>
         <h1 className='rsvp__title'>{t.rsvpPageTitle}</h1>
+
+        <div className='rsvp_details'>
+          <h3>Invite only</h3>
+          <p>
+            Kindly RSVP no later than{" "}
+            <time datetime='2023-05-25'>
+              <b>25th May 2023</b>
+            </time>
+          </p>
+          <small>
+            UNFORTUNATELY WE ARE NOT ABLE TO EXTEND AN INVITE TO PLUS ONES OR CHILDREN FOR THIS
+            OCCASION
+          </small>
+        </div>
+
         <div className='rsvp__form-container'>
           <form className='rsvp__form' onSubmit={(e) => Submit(e)}>
             <div className='rsvp__checkbox--container'>
@@ -111,7 +126,7 @@ const RSPV = ({ hasReadPermission }) => {
               required
             />
             <label htmlFor='email' className='rsvp__label'>
-              Email:
+              Email Address:
             </label>
             <input
               // placeholder='Email'
@@ -122,7 +137,7 @@ const RSPV = ({ hasReadPermission }) => {
               required
             />
             <label htmlFor='phone' className='rsvp__label'>
-              Phone:
+              Phone Number:
             </label>
             <input
               //  placeholder='Phone'
@@ -150,7 +165,7 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             /> */}
             <label htmlFor='dietary' className='rsvp__label'>
-              Dietary requirements:
+              Do you have any dietary restrictions?
             </label>
             <input
               // placeholder='Number of guests'
@@ -160,7 +175,7 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             />
             <label htmlFor='guests' className='rsvp__label'>
-              RSVP for others, please confirm your party size (invitation only):
+              How many in your party <small>(invite only)</small>:
             </label>
             <input
               // placeholder='Number of guests'
@@ -168,10 +183,10 @@ const RSPV = ({ hasReadPermission }) => {
               type='number'
               id='guests'
               className='rsvp__input'
-              value='1'
+              placeholder='Enter party total'
             />
             <label htmlFor='extraGuestNames' className='rsvp__label'>
-              Full names of additional party members:
+              Additional party member names:
             </label>
             <input
               // placeholder='Number of guests'
@@ -187,7 +202,7 @@ const RSPV = ({ hasReadPermission }) => {
               value='RSVP Now'
               className='btn-rsvp-btn'
               disabled={isDisabled}>
-              RSVP Now
+              Send RSVP
             </button>
             {confirmMessage && (
               <h4 className={`rsvp__confirm-message ${confirmMessage ? "show" : ""}`}>
