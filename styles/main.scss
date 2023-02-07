@@ -6,6 +6,7 @@
 
 /* Pages */
 @import "./index";
+@import "./rsvp";
 
 // Variables
 @import "./shared/variables";
@@ -94,6 +95,12 @@ span {
   cursor: pointer;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  // &__btn[disabled] {
+  //   background-color: gray;
+  //   color: lightgray;
+  //   cursor: not-allowed;
+  // }
 }
 
 .wrapper {
@@ -105,7 +112,6 @@ span {
 
 .base-page {
   padding-top: 150px;
-  color: white;
 }
 
 .base-page-container {

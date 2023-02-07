@@ -14,7 +14,7 @@ const Login = ({ redirectPath }) => {
           <Image src={yatesLogo} alt='yates logo' className='c-login-logo' />
           <h1 className='c-login__title'>Guest Area</h1>
           <input
-            type='text'
+            type='password'
             className='c-login__input'
             placeholder='Enter rspv password'
             value={password}
