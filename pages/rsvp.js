@@ -204,10 +204,26 @@ const RSPV = ({ hasReadPermission }) => {
             </label>
             <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
 
-            {confirmMessage && (
+            {/* {confirmMessage && (
               <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
                 <h5>{t.rsvp_confirmUpper}</h5>
                 <h5>{t.rsvp_confirmLower}</h5>
+              </div>
+            )} */}
+
+            {confirmMessage && (
+              <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
+                <iframe
+                  src='https://giphy.com/embed/HloNK1z39EkEQcreIo'
+                  width='280'
+                  title='wee-hee giff'
+                  height='280'
+                  loading='lazy'
+                  class='giphy-embed'
+                  allowFullScreen></iframe>
+                <p>
+                  <a href='https://giphy.com/gifs/hbo-white-lotus-the-thewhitelotus-HloNK1z39EkEQcreIo'></a>
+                </p>
               </div>
             )}
 
