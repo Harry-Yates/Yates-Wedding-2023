@@ -30,10 +30,12 @@ export const enGB = {
   rsvp_address: "Address:",
   rsvp_dietary: "Do you have any dietary restrictions?",
   rsvp_partySize: "How many in your party",
-  rsvp_srsvp_partySize_placeholder: "Enter party total",
+  rsvp_partySize_placeholder: "Enter party total",
   rsvp_partySize_reminder: "(invite only)",
   rsvp_partySize_names: "Additional party member names:",
-  rsvp_anythingElse: "Anything we should know?"
+  rsvp_anythingElse: "Anything we should know?",
+  rsvp_btn_send: "Send RSVP",
+  rsvp_btn_sent: "Sent"
 };
 
 export const svSE = {
@@ -67,10 +69,12 @@ export const svSE = {
   rsvp_address: "Adress:",
   rsvp_dietary: "Har du några dietbegränsningar?",
   rsvp_partySize: "Hur många i ditt parti",
-  rsvp_srsvp_partySize_placeholder: "Ange partiets totala",
+  rsvp_partySize_placeholder: "Ange partiets totala",
   rsvp_partySize_reminder: "(endast inbjudna)",
   rsvp_partySize_names: "Ytterligare partimedlemnamn:",
-  rsvp_anythingElse: "Något vi borde veta?"
+  rsvp_anythingElse: "Något vi borde veta?",
+  rsvp_btn_send: "Skicka RSVP",
+  rsvp_btn_sent: "Skickad"
 };
 
 export const itIT = {
@@ -105,8 +109,10 @@ export const itIT = {
   rsvp_address: "Indirizzo:",
   rsvp_dietary: "Hai delle restrizioni dietetiche?",
   rsvp_partySize: "Quanti nella tua festa",
-  rsvp_srsvp_partySize_placeholder: "Entra in totale della festa",
+  rsvp_partySize_placeholder: "Entra in totale della festa",
   rsvp_partySize_reminder: "(solo su invito)",
   rsvp_partySize_names: "Nomi dei membri del partito aggiuntivi:",
-  rsvp_anythingElse: "Qualcosa che dovremmo sapere?"
+  rsvp_anythingElse: "Qualcosa che dovremmo sapere?",
+  rsvp_btn_send: "Invia RSVP",
+  rsvp_btn_sent: "Inviato"
 };

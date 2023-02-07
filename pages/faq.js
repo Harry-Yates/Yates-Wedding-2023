@@ -16,7 +16,7 @@ export default function FAQ({ hasReadPermission }) {
   return (
     <BaseLayout>
       <BasePage>
-        <h1>{t.faqPageTitle}</h1>
+        <h1>{t.faq_title}</h1>
       </BasePage>
     </BaseLayout>
   );

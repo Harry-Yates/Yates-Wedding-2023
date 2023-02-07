@@ -47,7 +47,6 @@ const RSPV = ({ hasReadPermission }) => {
     )
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
         confirmMessage.classList.add("show");
         setConfirmMessage(true);
       })
@@ -84,7 +83,7 @@ const RSPV = ({ hasReadPermission }) => {
             <div className='rsvp__checkbox--container'>
               <div className='rsvp__checkbox'>
                 <label htmlFor='attending' className='rsvp__label'>
-                  Happy to be there
+                  {t.rsvp_yes}
                 </label>
                 <input
                   type='checkbox'
@@ -100,7 +99,7 @@ const RSPV = ({ hasReadPermission }) => {
               </div>
               <div className='rsvp__checkbox'>
                 <label htmlFor='notAttending' className='rsvp__label'>
-                  Sad to miss it
+                  {t.rsvp_no}
                 </label>
                 <input
                   type='checkbox'
@@ -116,7 +115,7 @@ const RSPV = ({ hasReadPermission }) => {
               </div>
             </div>
             <label htmlFor='firstName' className='rsvp__label'>
-              First Name:
+              {t.rsvp_firstName}
             </label>
             <input
               // placeholder='John'
@@ -127,7 +126,7 @@ const RSPV = ({ hasReadPermission }) => {
               required
             />
             <label htmlFor='lastName' className='rsvp__label'>
-              Last Name:
+              {t.rsvp_lastName}
             </label>
             <input
               // placeholder='Last Name'
@@ -138,7 +137,7 @@ const RSPV = ({ hasReadPermission }) => {
               required
             />
             <label htmlFor='email' className='rsvp__label'>
-              Email Address:
+              {t.rsvp_email}
             </label>
             <input
               // placeholder='Email'
@@ -149,14 +148,14 @@ const RSPV = ({ hasReadPermission }) => {
               required
             />
             <label htmlFor='phone' className='rsvp__label'>
-              Phone Number:
+              {t.rsvp_phone}
             </label>
             <input
               //  placeholder='Phone'
               name='Phone'
               className='rsvp__input'></input>
             <label htmlFor='address' className='rsvp__label'>
-              Address:
+              {t.rsvp_address}
             </label>
             <input
               // placeholder='Address'
@@ -177,7 +176,7 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             /> */}
             <label htmlFor='dietary' className='rsvp__label'>
-              Do you have any dietary restrictions?
+              {t.rsvp_dietary}
             </label>
             <input
               // placeholder='Number of guests'
@@ -187,7 +186,7 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             />
             <label htmlFor='guests' className='rsvp__label'>
-              How many in your party <small>(invite only)</small>:
+              {t.rsvp_partySize} <small>{t.rsvp_partySize_reminder}</small>:
             </label>
             <input
               // placeholder='Number of guests'
@@ -195,10 +194,10 @@ const RSPV = ({ hasReadPermission }) => {
               type='number'
               id='guests'
               className='rsvp__input'
-              placeholder='Enter party total'
+              placeholder={t.rsvp_partySize_placeholder}
             />
             <label htmlFor='extraGuestNames' className='rsvp__label'>
-              Additional party member names:
+              {t.rsvp_partySize_names}
             </label>
             <input
               // placeholder='Number of guests'
@@ -208,7 +207,7 @@ const RSPV = ({ hasReadPermission }) => {
               className='rsvp__input'
             />
             <label htmlFor='comments' className='rsvp__label'>
-              Anything we should know?
+              {t.rsvp_anythingElse}
             </label>
             <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
 
@@ -218,7 +217,7 @@ const RSPV = ({ hasReadPermission }) => {
               value='RSVP Now'
               className='btn-rsvp-btn'
               disabled={isDisabled}>
-              {confirmMessage ? "Sent" : "Send RSVP"}
+              {confirmMessage ? `${t.rsvp_btn_sent}` : `${t.rsvp_btn_send}`}
             </button>
           </form>
         </div>
