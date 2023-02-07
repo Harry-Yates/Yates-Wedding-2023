@@ -10,18 +10,24 @@ const RSPV = ({ hasReadPermission }) => {
   const { locale } = router;
   const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
   const [confirmMessage, setConfirmMessage] = useState(false);
+  const [attending, setAttending] = useState(false);
+  const [notAttending, setNotAttending] = useState(false);
 
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
   }
 
   function Submit(e) {
+    if (!attending && !notAttending) {
+      alert("Please select either 'Happy to be there' or 'Sad to miss it'");
+      return;
+    }
     e.preventDefault();
     const formEle = document.querySelector("form");
     const formData = new FormData(formEle);
     setConfirmMessage(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbz2a-4sHCMB1IazN0o5xfyO763LxdcLyvjqOeODyShDC5dYfTyHJkorYMIsc9LNDfA1/exec",
+      "https://script.google.com/macros/s/AKfycbzOJKdw6vOjrVqgWVBHY50sWlM5l-8pJ6Ad6mYmJsoQxpe118BpzCjmQytQkINOvYxr/exec",
       {
         method: "POST",
         body: formData
@@ -44,6 +50,42 @@ const RSPV = ({ hasReadPermission }) => {
         <h1 className='rsvp__title'>{t.rsvpPageTitle}</h1>
         <div className='rsvp__form-container'>
           <form className='rsvp__form' onSubmit={(e) => Submit(e)}>
+            <div className='rsvp__checkbox--container'>
+              <div className='rsvp__checkbox'>
+                <label htmlFor='attending' className='rsvp__label'>
+                  Happy to be there
+                </label>
+
+                <input
+                  type='checkbox'
+                  id='attending'
+                  name='Attending'
+                  value='Attending'
+                  checked={attending}
+                  onChange={() => {
+                    setAttending(!attending);
+                    setNotAttending(false);
+                  }}
+                />
+              </div>
+              <div className='rsvp__checkbox'>
+                <label htmlFor='notAttending' className='rsvp__label'>
+                  Sad to miss it
+                </label>
+
+                <input
+                  type='checkbox'
+                  id='notAttending'
+                  name='NotAttending'
+                  value='Not Attending'
+                  checked={notAttending}
+                  onChange={() => {
+                    setNotAttending(!notAttending);
+                    setAttending(false);
+                  }}
+                />
+              </div>
+            </div>
             <label htmlFor='firstName' className='rsvp__label'>
               First Name:
             </label>
@@ -94,7 +136,7 @@ const RSPV = ({ hasReadPermission }) => {
               id='address'
               className='rsvp__input'
             />
-            <label htmlFor='arrival' className='rsvp__label'>
+            {/* <label htmlFor='arrival' className='rsvp__label'>
               Day of arrival:
             </label>
             <input
@@ -104,9 +146,19 @@ const RSPV = ({ hasReadPermission }) => {
               type='date'
               id='arrival'
               className='rsvp__input'
+            /> */}
+            <label htmlFor='dietary' className='rsvp__label'>
+              Dietary requirements:
+            </label>
+            <input
+              // placeholder='Number of guests'
+              name='DietaryRequirements'
+              type='textarea'
+              id='guests'
+              className='rsvp__input'
             />
             <label htmlFor='guests' className='rsvp__label'>
-              Number of guests:
+              RSVP for others, please confirm your party size (invitation only):
             </label>
             <input
               // placeholder='Number of guests'
@@ -114,31 +166,20 @@ const RSPV = ({ hasReadPermission }) => {
               type='number'
               id='guests'
               className='rsvp__input'
+              value='1'
+            />
+            <label htmlFor='extraGuestNames' className='rsvp__label'>
+              Full names of additional party members:
+            </label>
+            <input
+              // placeholder='Number of guests'
+              name='ExtraGuestNames'
+              type='textarea'
+              id='extraGuestNames'
+              className='rsvp__input'
             />
 
-            <div className='rsvp__checkbox--container'>
-              <div className='rsvp__checkbox'>
-                <label htmlFor='attending' className='rsvp__label'>
-                  Attending
-                </label>
-
-                <input type='checkbox' id='attending' name='Attending' value='Attending' />
-              </div>
-              <div className='rsvp__checkbox'>
-                <label htmlFor='notAttending' className='rsvp__label'>
-                  Not Attending
-                </label>
-
-                <input
-                  type='checkbox'
-                  id='notAttending'
-                  name='NotAttending'
-                  value='Not Attending'
-                />
-              </div>
-            </div>
-
-            <input name='Name' type='submit' value='RSVP Now' className='btn' />
+            <input name='Name' type='submit' value='RSVP Now' className='btn rsvp-btn' />
             {confirmMessage && (
               <h4 className={`rsvp__confirm-message ${confirmMessage ? "show" : ""}`}>
                 We have received your RSVP!
