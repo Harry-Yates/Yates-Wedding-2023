@@ -67,7 +67,7 @@ export default function FAQ({ hasReadPermission }) {
     },
     {
       question: `${t.faq_question_12}`,
-      answer: `${t.faq_answer_11}`
+      answer: `${t.faq_answer_12}`
     }
   ];
 
