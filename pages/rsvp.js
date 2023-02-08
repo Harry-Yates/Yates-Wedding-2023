@@ -23,12 +23,33 @@ const RSPV = ({ hasReadPermission }) => {
     if (confirmMessage) {
       setTimeout(() => {
         setShowConfirmMessage(true);
-        confetti({
-          particleCount: 200,
-          angle: 90,
-          spread: 45,
-          startVelocity: 45
-        });
+        // do this for 30 seconds
+        if (attending) {
+          var duration = 5 * 1000;
+          var end = Date.now() + duration;
+
+          (function frame() {
+            // launch a few confetti from the left edge
+            confetti({
+              particleCount: 7,
+              angle: 60,
+              spread: 55,
+              origin: { x: 0 }
+            });
+            // and launch a few from the right edge
+            confetti({
+              particleCount: 7,
+              angle: 120,
+              spread: 55,
+              origin: { x: 1 }
+            });
+
+            // keep going until we are out of time
+            if (Date.now() < end) {
+              requestAnimationFrame(frame);
+            }
+          })();
+        }
       }, 1000);
     }
   }, [confirmMessage]);
