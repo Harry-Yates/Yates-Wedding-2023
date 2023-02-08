@@ -55,25 +55,25 @@ body {
 }
 
 @media (max-width: 767px) {
-  #title {
+  .index__title {
     font-size: 4rem;
   }
 
-  #secondary {
+  .index__title--name {
     font-size: 1.5rem;
   }
 
-  #third {
+  .index__title--invite {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 375px) {
-  #title {
+  .index__title {
     font-size: 3rem;
   }
 
-  #secondary {
+  .index__title--name {
     font-size: 1.2rem;
   }
 
