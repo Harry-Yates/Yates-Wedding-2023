@@ -86,10 +86,17 @@ export default function FAQ({ hasReadPermission }) {
               key={index}>
               <div className='faq__question' onClick={() => handleQuestionClick(index)}>
                 <h3>{question.question}</h3>
-
-                <svg width='15' height='10' viewBox='0 0 42 25'>
-                  <path d='M3 3L21 21L39 3' stroke='black' stroke-width='7' fill='none' />
-                </svg>
+                <div className='faq__toggle'>
+                  <svg width='15' height='10' viewBox='0 0 42 25'>
+                    <path
+                      d='M3 3L21 21L39 3'
+                      stroke='black'
+                      stroke-width='7'
+                      fill='none'
+                      aria-hidden='true'
+                    />
+                  </svg>
+                </div>
               </div>
 
               {activeQuestionIndex === index && (

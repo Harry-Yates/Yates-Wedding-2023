@@ -9,17 +9,30 @@ section {
 
 .faq {
   max-width: 700px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
   cursor: pointer;
   width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 5px 5px 0 0;
+  padding: 1rem;
+}
 
-  &__question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.faq--active {
+  background-color: #f5f4f49c;
+}
+
+.faq__question {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.faq__toggle {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .faq__answer {
