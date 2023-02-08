@@ -11,6 +11,40 @@ export const enGB = {
   schedule_title: "Schedule",
   "Casazza Page": "",
   casazza_title: "Casazza",
+  faq_question_1: "Who do I contact if I want to make a speech?",
+  faq_answer_1:
+    "For speech requests, please contact the Receptions toastmadame Johanna Strand at Johanna.strand@nicks.com or on +46 70 885 85 41.​",
+  faq_question_2: "We are not able to attend all the days, is that ok?",
+  faq_answer_2: "Of course! Inform in the RSVP, what You can attend. ",
+  faq_question_3: "How do we get from the accommodation to the celebrations, church etc?",
+  faq_answer_3:
+    "Buses will be organised from Vulcano Village hotel, Locanda Del Boscaiolo and Hotel San Pancrazio for pick up and return on both days. If you are staying somewhere else, you will need to organise your own transportation. ",
+  faq_question_4: "Are children welcome?",
+  faq_answer_4:
+    "While we love your little ones, we want you to relax and enjoy the weekend. We appreciate you making arrangements ahead of time and leaving the kids at home so you can celebrate with us.",
+  faq_question_5: "What is the best place to stay?",
+  faq_answer_5:
+    "We recommend accommodation close to Casazza, and in the hotels we have recommended above. If you decide to stay at other hotels, we won’t be able to support you with transfers however of course there are local taxi companies or cars to hire.",
+  faq_question_6: "What taxi company can I use?",
+  faq_answer_6:
+    "We recommend using the local taxi service Autoservizi Zambetti S.N.C. - +3935 810742.",
+  faq_question_7: "What is the dress code?",
+  faq_answer_7:
+    "In the section 'Celebration Schedule' above You can see the dress code for each day. \n\nLake Party: La Dolce Vita. Imagine the Italian riviera, colourful, linen\n\nWedding & Reception: Semi-Formal. Ladies should wear a dress (please avoid white, beige or ivory) and Gentlemen should wear suit and tie/bowtie\n\nAdjust the attire by the weather & temperature since most time of all festivities will be outdoors. ",
+  faq_question_8: "Do you have a gift registry?",
+  faq_answer_8:
+    "We are so honored that you will be coming all the way to Italy to celebrate us, your presence on our day is all we ask for. However if you want to gift us in some other way some help towards our honeymoon is something we would appreciate!",
+  faq_question_9: "What if I have a dietary restriction?",
+  faq_answer_9:
+    "Please make sure to update your details once you RSVP to let us know! We want you to be safe and comfortable!",
+  faq_question_10: "Can I bring a date?",
+  faq_answer_10:
+    "We have a strict guest list to stay on budget.  Our wedding is strictly RSVP only. We will only able to accommodate those listed on your invitation.",
+  faq_question_11: "Do you have a wedding hashtag?",
+  faq_answer_11: "Yes we do, when sharing and uploading pics, please use our hashtag ",
+  faq_question_12: "Who could I contact for other questions?",
+  faq_answer_12:
+    "We ask you to primarily email wedding@yates.com, but of course You are also welcome to reach out directly to Johanna & Harry. ",
   "RSVP Page": "",
   rsvp_title: "RSVP",
   rsvp_alert: "Please select the checkbox (Happy to be there) or (Sad to miss it)",
@@ -51,6 +85,40 @@ export const svSE = {
   schedule_title: "Schema",
   "Casazza Page": "",
   casazza_title: "Casazza",
+  faq_question_1: "Vem kontaktar jag om jag vill hålla ett tal?",
+  faq_answer_1:
+    "För talförfrågningar, vänligen kontakta mottagningarna Toastmadame Johanna Strand på Johanna.strand@nicks.com eller på +46 70 885 85 41.",
+  faq_question_2: "Vi kan inte delta i alla dagar, är det OK?",
+  faq_answer_2: "Självklart! Informera i RSVP, vad du kan delta.",
+  faq_question_3: "Hur kommer vi från boendet till firandet, kyrkan osv?",
+  faq_answer_3:
+    "Bussar kommer att organiseras från Vulcano Village Hotel, Locanda del Boscaiolo och Hotel San Pancrazio för att hämta och återvända på båda dagarna. Om du bor någon annanstans måste du organisera din egen transport.",
+  faq_question_4: "Är barn välkomna?",
+  faq_answer_4:
+    "Medan vi älskar dina små, vill vi att du ska koppla av och njuta av helgen. Vi uppskattar att du ordnar i förväg och lämnar barnen hemma så att du kan fira med oss.",
+  faq_question_5: "Vad är det bästa stället att bo på?",
+  faq_answer_5:
+    "Vi rekommenderar boende nära Casazza och på hotellen har vi rekommenderat ovan. Om du bestämmer dig för att bo på andra hotell kommer vi inte att kunna stödja dig med överföringar men naturligtvis finns det lokala taxibolag eller bilar att anställa.",
+  faq_question_6: "Vilket taxibolag kan jag använda?",
+  faq_answer_6:
+    "Vi rekommenderar att du använder den lokala taxitjänsten AutoServizi ZambeTi S.N.C. - +3935 810742.",
+  faq_question_7: "Vad är klädkoden?",
+  faq_answer_7:
+    'I avsnittet "Celebration Schedule" ovan kan du se klädkoden för varje dag.\n\nLake Party: La Dolce Vita. Föreställ dig den italienska rivieran, färgglada, linne\n\nBröllop och mottagning: Halvformell. Damer ska bära en klänning (undvik vit, beige eller elfenben) och herrar bör ha på sig kostym och slips/bowtie\n\nJustera klädseln med väder och temperatur eftersom de flesta tid av alla festligheter kommer att vara utomhus.',
+  faq_question_8: "Har du ett presentregister?",
+  faq_answer_8:
+    "Vi är så hedrade att du kommer hela vägen till Italien för att fira oss, din närvaro på vår dag är allt vi ber om. Men om du vill gåva oss på något annat sätt är en viss hjälp till vår smekmånad något vi skulle uppskatta!",
+  faq_question_9: "Vad händer om jag har en dietbegränsning?",
+  faq_answer_9:
+    "Se till att uppdatera dina uppgifter när du RSVP för att meddela oss! Vi vill att du ska vara säker och bekväm!",
+  faq_question_10: "Kan jag ta med ett datum?",
+  faq_answer_10:
+    "Vi har en strikt gästlista för att hålla på budgeten. Vårt bröllop är bara strikt RSVP. Vi kan bara rymma de som listas på din inbjudan.",
+  faq_question_11: "Har du en bröllopshashtag?",
+  faq_answer_11: "Ja det gör vi när du delar och laddar upp bilder, använd vår hashtag",
+  faq_question_12: "Vem kan jag kontakta för andra frågor?",
+  faq_answer_12:
+    "Vi ber dig främst maila wedding@yates.com, men naturligtvis är du också välkommen att nå direkt till Johanna & Harry.",
   "RSVP Page": "",
   rsvp_title: "RSVP",
   rsvp_alert: "Välj kryssrutan (glad att vara där) eller (ledsen att missa den)",
@@ -90,6 +158,40 @@ export const itIT = {
   schedule_title: "Programma",
   "Casazza Page": "",
   casazza_title: "Casazza",
+  faq_question_1: "Chi contatto se voglio fare un discorso?",
+  faq_answer_1:
+    "Per le richieste di parole, si prega di contattare i ricevimenti Toastmadame Johanna Strand a Johanna.strand@nicks.com o su +46 70 885 85 41.",
+  faq_question_2: "Non siamo in grado di partecipare a tutti i giorni, va bene?",
+  faq_answer_2: "Ovviamente! Informa in RSVP, cosa puoi partecipare.",
+  faq_question_3: "Come possiamo arrivare dall'alloggio alle celebrazioni, alla chiesa, ecc.?",
+  faq_answer_3:
+    "Gli autobus saranno organizzati dal Vulcano Village Hotel, Locanda del Boscaiolo e Hotel San Pancrazio per il ritiro e il ritorno in entrambi i giorni. Se stai altrove, dovrai organizzare il tuo trasporto.",
+  faq_question_4: "I bambini sono i benvenuti?",
+  faq_answer_4:
+    "Mentre amiamo i tuoi piccoli, vogliamo che ti rilassi e ti godi il fine settimana. Apprezziamo che tu prenda accordi in anticipo e lasciassi i bambini a casa in modo da poter festeggiare con noi.",
+  faq_question_5: "Qual è il posto migliore in cui soggiornare?",
+  faq_answer_5:
+    "Raccomandiamo alloggi vicino a Casazza e negli hotel abbiamo raccomandato sopra. Se decidi di soggiornare in altri hotel, non saremo in grado di supportarti con i trasferimenti, tuttavia, ci sono compagnie di taxi locali o auto da assumere.",
+  faq_question_6: "Che compagnia di taxi posso usare?",
+  faq_answer_6:
+    "Si consiglia di utilizzare il servizio di taxi locale Autoservizi Zambetti S.N.C. - +3935 810742.",
+  faq_question_7: "Qual è il codice di abbigliamento?",
+  faq_answer_7:
+    "Nella sezione \"Programma di celebrazione\" sopra puoi vedere il codice di abbigliamento per ogni giorno.\n\nLake Party: La Dolce Vita. Immagina la Riviera italiana, colorata, lino\n\nMatrimonio e ricevimento: semi-formale. Le donne dovrebbero indossare un vestito (per favore evita il bianco, il beige o l'avorio) e i signori dovrebbero indossare abiti e cravatta/bowtie\n\nRegola l'abbigliamento per tempo e temperatura poiché la maggior parte di tutti i festeggiamenti saranno all'aperto.",
+  faq_question_8: "Hai un registro regalo?",
+  faq_answer_8:
+    "Siamo così onorati che arriverai fino in Italia per celebrarci, la tua presenza nella nostra giornata è tutto ciò che chiediamo. Tuttavia, se vuoi regalarci in qualche altro modo un aiuto per la nostra luna di miele è qualcosa che apprezzeremo!",
+  faq_question_9: "E se avessi una restrizione dietetica?",
+  faq_answer_9:
+    "Assicurati di aggiornare i tuoi dettagli una volta che RSVP per farcelo sapere! Vogliamo che tu sia sicuro e a tuo agio!",
+  faq_question_10: "Posso portare un appuntamento?",
+  faq_answer_10:
+    "Abbiamo un elenco di ospiti rigoroso per rimanere in budget. Il nostro matrimonio è rigorosamente solo RSVP. Saremo in grado di accogliere solo quelli elencati sul tuo invito.",
+  faq_question_11: "Hai un hashtag di nozze?",
+  faq_answer_11: "Sì, quando condividiamo e caricando foto, usa il nostro hashtag",
+  faq_question_12: "Chi potrei contattare per altre domande?",
+  faq_answer_12:
+    "Ti chiediamo di e -mail principalmente di email wedding@yates.com, ma ovviamente sei anche invitato a contattarti direttamente a Johanna e Harry.",
   "RSVP Page": "",
   rsvp_title: "RSVP",
   rsvp_alert: "Seleziona la casella di controllo (felice di essere lì) o (triste di perderla)",
