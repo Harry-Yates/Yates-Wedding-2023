@@ -4,7 +4,7 @@ select {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  padding: 10px;
+  padding: 8px;
   // margin-bottom: 1rem;
 
   &:focus {
@@ -23,32 +23,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
-  // height: 300px;
-  // max-height: 100vh;
   padding: 0 1rem;
 }
 
-#title {
+.index__title {
   font-size: 6rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
 
-#secondary {
+.index__title--name {
   font-size: 2rem;
   text-align: center;
 }
 
-#third {
+.index__title--invite {
   font-size: 1.3rem;
   text-align: center;
 }
 
 .keen-slider {
-  // height: 100vh;
-  // max-height: 400px;
-  // max-width: 1000px;
   max-width: 100%;
   overflow: hidden;
   max-width: 1000px;
