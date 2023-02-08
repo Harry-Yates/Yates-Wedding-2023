@@ -11,6 +11,7 @@ import midsommar from "@/public/slider/midsommar.png";
 import leaving from "@/public/slider/leaving.png";
 import birthday from "@/public/slider/birthday.png";
 import Footer from "@/components/Footer";
+import Countdown from "react-countdown";
 
 // Link to docs
 // https://keen-slider.io/docs#usage
@@ -18,6 +19,15 @@ import Footer from "@/components/Footer";
 export default function Home({ hasReadPermission }) {
   const router = useRouter();
   const { locale } = router;
+  const Completionist = () => <p>Welcome to Italy 🇮🇹</p>;
+  const futureDate = new Date(2023, 8, 9);
+  const renderer = ({ days, hours, minutes, seconds }) => {
+    return (
+      <span>
+        {days} days {hours} hours {minutes} minutes {seconds} seconds
+      </span>
+    );
+  };
   const [sliderRef] = useKeenSlider(
     {
       loop: true
@@ -77,6 +87,9 @@ export default function Home({ hasReadPermission }) {
         <h2 className='index__title--invite'>Invite you to Celebrate their wedding!</h2>
         <h2 className='index__title--invite'>8-9 SEPTEMBER 2023</h2>
         <br />
+        <Countdown date={futureDate} renderer={renderer}>
+          <Completionist />
+        </Countdown>
         {/* <h4>8-9 September 2023</h4>
         <h4>Colognola Di Casazza, Italy</h4>
         <h5>#YatesWedding23</h5> */}
