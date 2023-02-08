@@ -153,7 +153,39 @@ nav {
 a {
   align-items: center;
   justify-content: center;
+  font-weight: var(--fw-thin);
+  color: var(--clr-primary);
+  font-size: var(--fs-medium);
 }
+
+// a:hover,
+// .nav-links > li:hover {
+//   /* Start the shake animation and make the animation last for 0.5 seconds */
+//   animation: tilt-shaking 0.4s;
+
+//   /* When the animation is finished, start again */
+//   // animation-iteration-count: 1;
+//   animation-iteration-count: infinite;
+// }
+
+// @keyframes tilt-shaking {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   25% {
+//     transform: rotate(0.4deg);
+//   }
+//   50% {
+//     transform: rotate(0deg);
+//   }
+//   75% {
+//     transform: rotate(-0.4deg);
+//     // transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }
 
 // Logout button
 #btn--logout {

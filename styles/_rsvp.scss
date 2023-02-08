@@ -126,10 +126,34 @@ input {
   align-self: center;
 }
 
+.btn-rsvp-btn:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: tilt-n-move-shaking 0.5s infinite;
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(0.8px, 0.8px) rotate(0.8deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  75% {
+    transform: translate(-0.8px, 0.8px) rotate(-0.8deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
 .btn-rsvp-btn[disabled] {
   background-color: gray;
   color: lightgray;
   cursor: not-allowed;
+  animation: none;
 }
 
 .rsvp_details {
