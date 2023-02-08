@@ -3,6 +3,8 @@ import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
+import React, { useState } from "react";
+import Head from "next/head";
 
 export default function FAQ({ hasReadPermission }) {
   const router = useRouter();
@@ -16,6 +18,9 @@ export default function FAQ({ hasReadPermission }) {
   return (
     <BaseLayout>
       <BasePage>
+        <Head>
+          <title>FAQ</title>
+        </Head>
         <h1>{t.faq_title}</h1>
       </BasePage>
     </BaseLayout>

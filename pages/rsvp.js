@@ -104,7 +104,7 @@ const RSPV = ({ hasReadPermission }) => {
         }
       }, 1000);
     }
-  }, [confirmMessage]);
+  }, [confirmMessage, attending]);
 
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
