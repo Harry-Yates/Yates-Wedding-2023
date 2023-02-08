@@ -5,6 +5,9 @@ import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import Head from "next/head";
+import Image from "next/image";
+import weeHee from "@/public/gif/wee-hee.gif";
+import confetti from "canvas-confetti";
 
 const RSPV = ({ hasReadPermission }) => {
   const router = useRouter();
@@ -15,11 +18,90 @@ const RSPV = ({ hasReadPermission }) => {
   const [attending, setAttending] = useState(false);
   const [notAttending, setNotAttending] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+  const [guest, setGuest] = useState(1);
 
+  // FIREWORK STYLE
+  // useEffect(() => {
+  //   if (confirmMessage) {
+  //     setTimeout(() => {
+  //       setShowConfirmMessage(true);
+  //       // do this for 30 seconds
+  //       if (attending) {
+  //         var duration = 5 * 1000;
+  //         var end = Date.now() + duration;
+
+  //         (function frame() {
+  //           var duration = 15 * 1000;
+  //           var animationEnd = Date.now() + duration;
+  //           var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+  //           function randomInRange(min, max) {
+  //             return Math.random() * (max - min) + min;
+  //           }
+
+  //           var interval = setInterval(function () {
+  //             var timeLeft = animationEnd - Date.now();
+
+  //             if (timeLeft <= 0) {
+  //               return clearInterval(interval);
+  //             }
+
+  //             var particleCount = 50 * (timeLeft / duration);
+  //             // since particles fall down, start a bit higher than random
+  //             confetti(
+  //               Object.assign({}, defaults, {
+  //                 particleCount,
+  //                 origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }
+  //               })
+  //             );
+  //             confetti(
+  //               Object.assign({}, defaults, {
+  //                 particleCount,
+  //                 origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
+  //               })
+  //             );
+  //           }, 250);
+  //         })();
+  //       }
+  //     }, 1000);
+  //   }
+  // }, [confirmMessage]);
+
+  // CONFETTI STYLE
   useEffect(() => {
     if (confirmMessage) {
       setTimeout(() => {
         setShowConfirmMessage(true);
+        // do this for 30 seconds
+        if (attending) {
+          var duration = 5 * 1000;
+          var end = Date.now() + duration;
+          var colors = ["#c83936", "#ffffff", "#418e45"];
+
+          (function frame() {
+            // launch a few confetti from the left edge
+            confetti({
+              particleCount: 7,
+              angle: 60,
+              spread: 55,
+              origin: { x: 0 },
+              colors: colors
+            });
+            // and launch a few from the right edge
+            confetti({
+              particleCount: 7,
+              angle: 120,
+              spread: 55,
+              origin: { x: 1 },
+              colors: colors
+            });
+
+            // keep going until we are out of time
+            if (Date.now() < end) {
+              requestAnimationFrame(frame);
+            }
+          })();
+        }
       }, 1000);
     }
   }, [confirmMessage]);
@@ -55,6 +137,10 @@ const RSPV = ({ hasReadPermission }) => {
         console.log(error);
       });
   }
+
+  const handleGuestChange = (value) => {
+    setGuest(value);
+  };
 
   return (
     <BaseLayout>
@@ -195,8 +281,25 @@ const RSPV = ({ hasReadPermission }) => {
               id='guests'
               className='rsvp__input'
               placeholder={t.rsvp_partySize_placeholder}
+              value={guest}
+              onChange={(e) => handleGuestChange(e.target.value)}
             />
-            <label htmlFor='extraGuestNames' className='rsvp__label'>
+
+            {guest > 1 && (
+              <>
+                <label htmlFor='extraGuestNames' className='rsvp__label'>
+                  {t.rsvp_partySize_names}
+                </label>
+                <input
+                  // placeholder='Number of guests'
+                  name='ExtraGuestNames'
+                  type='textarea'
+                  id='extraGuestNames'
+                  className='rsvp__input'
+                />
+              </>
+            )}
+            {/* <label htmlFor='extraGuestNames' className='rsvp__label'>
               {t.rsvp_partySize_names}
             </label>
             <input
@@ -205,35 +308,22 @@ const RSPV = ({ hasReadPermission }) => {
               type='textarea'
               id='extraGuestNames'
               className='rsvp__input'
-            />
+            /> */}
             <label htmlFor='comments' className='rsvp__label'>
               {t.rsvp_anythingElse}
             </label>
             <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
-
             {confirmMessage && !attending && (
-                <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
-                  <h5>{t.rsvp_confirmUpper}</h5>
-                  <h5>{t.rsvp_confirmLower}</h5>
-                </div>
-              )}
-
-            {confirmMessage && attending && (
               <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
-                <iframe
-                  src='https://giphy.com/embed/HloNK1z39EkEQcreIo'
-                  width='280'
-                  title='wee-hee giff'
-                  height='280'
-                  loading='lazy'
-                  class='giphy-embed'
-                  allowFullScreen></iframe>
-                <p>
-                  <a href='https://giphy.com/gifs/hbo-white-lotus-the-thewhitelotus-HloNK1z39EkEQcreIo'></a>
-                </p>
+                <h5>{t.rsvp_confirmUpper}</h5>
+                <h5>{t.rsvp_confirmLower}</h5>
               </div>
             )}
-
+            {confirmMessage && attending && (
+              <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
+                <Image src={weeHee} alt='cheersGif' width={280} height={280} loading='lazy' />
+              </div>
+            )}
             <button
               name='Name'
               type='submit'
