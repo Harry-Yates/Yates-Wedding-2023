@@ -73,7 +73,7 @@ const RSPV = ({ hasReadPermission }) => {
         setShowConfirmMessage(true);
         // do this for 30 seconds
         if (attending) {
-          var duration = 4 * 1000;
+          var duration = 5 * 1000;
           var end = Date.now() + duration;
           var colors = ["#c83936", "#ffffff", "#418e45"];
 
