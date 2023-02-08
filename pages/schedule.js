@@ -3,6 +3,7 @@ import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
+import Footer from "@/components/Footer";
 
 export default function Schedule({ hasReadPermission }) {
   const router = useRouter();
@@ -18,6 +19,7 @@ export default function Schedule({ hasReadPermission }) {
       <BasePage>
         <h1>{t.schedule_title}</h1>
       </BasePage>
+      <Footer />
     </BaseLayout>
   );
 }

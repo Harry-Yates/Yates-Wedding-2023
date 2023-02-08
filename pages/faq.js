@@ -5,6 +5,7 @@ import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import React, { useState } from "react";
 import Head from "next/head";
+import Footer from "@/components/Footer";
 
 export default function FAQ({ hasReadPermission }) {
   const router = useRouter();
@@ -107,6 +108,7 @@ export default function FAQ({ hasReadPermission }) {
             </div>
           ))}
         </section>
+        <Footer />
       </BasePage>
     </BaseLayout>
   );

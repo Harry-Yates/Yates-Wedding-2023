@@ -8,6 +8,7 @@ import Head from "next/head";
 import Image from "next/image";
 import weeHee from "@/public/gif/wee-hee.gif";
 import confetti from "canvas-confetti";
+import Footer from "@/components/Footer";
 
 const RSPV = ({ hasReadPermission }) => {
   const router = useRouter();
@@ -334,6 +335,7 @@ const RSPV = ({ hasReadPermission }) => {
             </button>
           </form>
         </div>
+        <Footer />
       </BasePage>
     </BaseLayout>
   );

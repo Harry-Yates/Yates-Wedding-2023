@@ -13,6 +13,7 @@ footer {
   align-items: center;
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +50,7 @@ footer {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    padding: 0 0rem;
   }
   .container-left,
   .container-right {
