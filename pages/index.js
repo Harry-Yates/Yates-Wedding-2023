@@ -51,7 +51,6 @@ export default function Home({ hasReadPermission }) {
   var future = new Date(
     now.getTime() + 212 * 24 * 60 * 60 * 1000 + 17 * 60 * 60 * 1000 + 23 * 60 * 1000 + 27 * 1000
   );
-  console.log(future.toLocaleString());
 
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
