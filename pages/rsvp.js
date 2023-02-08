@@ -18,6 +18,7 @@ const RSPV = ({ hasReadPermission }) => {
   const [attending, setAttending] = useState(false);
   const [notAttending, setNotAttending] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+  const [guest, setGuest] = useState(1);
 
   // FIREWORK STYLE
   // useEffect(() => {
@@ -136,6 +137,10 @@ const RSPV = ({ hasReadPermission }) => {
         console.log(error);
       });
   }
+
+  const handleGuestChange = (value) => {
+    setGuest(value);
+  };
 
   return (
     <BaseLayout>
@@ -276,8 +281,25 @@ const RSPV = ({ hasReadPermission }) => {
               id='guests'
               className='rsvp__input'
               placeholder={t.rsvp_partySize_placeholder}
+              value={guest}
+              onChange={(e) => handleGuestChange(e.target.value)}
             />
-            <label htmlFor='extraGuestNames' className='rsvp__label'>
+
+            {guest > 1 && (
+              <>
+                <label htmlFor='extraGuestNames' className='rsvp__label'>
+                  {t.rsvp_partySize_names}
+                </label>
+                <input
+                  // placeholder='Number of guests'
+                  name='ExtraGuestNames'
+                  type='textarea'
+                  id='extraGuestNames'
+                  className='rsvp__input'
+                />
+              </>
+            )}
+            {/* <label htmlFor='extraGuestNames' className='rsvp__label'>
               {t.rsvp_partySize_names}
             </label>
             <input
@@ -286,25 +308,22 @@ const RSPV = ({ hasReadPermission }) => {
               type='textarea'
               id='extraGuestNames'
               className='rsvp__input'
-            />
+            /> */}
             <label htmlFor='comments' className='rsvp__label'>
               {t.rsvp_anythingElse}
             </label>
             <input name='Comments' type='textarea' id='comments' className='rsvp__input' />
-
             {confirmMessage && !attending && (
               <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
                 <h5>{t.rsvp_confirmUpper}</h5>
                 <h5>{t.rsvp_confirmLower}</h5>
               </div>
             )}
-
             {confirmMessage && attending && (
               <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
                 <Image src={weeHee} alt='cheersGif' width={280} height={280} loading='lazy' />
               </div>
             )}
-
             <button
               name='Name'
               type='submit'
