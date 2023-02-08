@@ -20,7 +20,15 @@ export default function Home({ hasReadPermission }) {
   const router = useRouter();
   const { locale } = router;
   const Completionist = () => <p>Welcome to Italy 🇮🇹</p>;
-  const futureDate = new Date(2023, 8, 9);
+  const weddingDate = new Date(Date.UTC(2023, 8, 9, 14, 0, 0, 0));
+  // UTC 2:00pm September 9th 2023
+
+  var now = new Date();
+  var future = new Date(
+    now.getTime() + 212 * 24 * 60 * 60 * 1000 + 17 * 60 * 60 * 1000 + 23 * 60 * 1000 + 27 * 1000
+  );
+  console.log(future.toLocaleString());
+
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <span>
@@ -87,7 +95,7 @@ export default function Home({ hasReadPermission }) {
         <h2 className='index__title--invite'>Invite you to Celebrate their wedding!</h2>
         <h2 className='index__title--invite'>8-9 SEPTEMBER 2023</h2>
         <br />
-        <Countdown date={futureDate} renderer={renderer}>
+        <Countdown date={weddingDate} renderer={renderer}>
           <Completionist />
         </Countdown>
         {/* <h4>8-9 September 2023</h4>
