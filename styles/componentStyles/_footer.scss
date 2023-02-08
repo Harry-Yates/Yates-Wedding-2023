@@ -30,10 +30,33 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
+  text-align: center;
 }
 
 .text-center {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+// Logout button
+#btn--logout {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.182);
+  color: rgba(0, 0, 0, 0.387);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .container-left,
+  .container-right {
+    width: 100%;
+    max-width: none;
+  }
+
+  #btn--logout {
+    margin-top: 3rem;
+  }
 }

@@ -12,6 +12,9 @@ import leaving from "@/public/slider/leaving.png";
 import birthday from "@/public/slider/birthday.png";
 import Footer from "@/components/Footer";
 
+// Link to docs
+// https://keen-slider.io/docs#usage
+
 export default function Home({ hasReadPermission }) {
   const router = useRouter();
   const { locale } = router;
