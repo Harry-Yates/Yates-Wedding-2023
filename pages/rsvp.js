@@ -19,14 +19,63 @@ const RSPV = ({ hasReadPermission }) => {
   const [notAttending, setNotAttending] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
 
+  // FIREWORK STYLE
+  // useEffect(() => {
+  //   if (confirmMessage) {
+  //     setTimeout(() => {
+  //       setShowConfirmMessage(true);
+  //       // do this for 30 seconds
+  //       if (attending) {
+  //         var duration = 5 * 1000;
+  //         var end = Date.now() + duration;
+
+  //         (function frame() {
+  //           var duration = 15 * 1000;
+  //           var animationEnd = Date.now() + duration;
+  //           var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+  //           function randomInRange(min, max) {
+  //             return Math.random() * (max - min) + min;
+  //           }
+
+  //           var interval = setInterval(function () {
+  //             var timeLeft = animationEnd - Date.now();
+
+  //             if (timeLeft <= 0) {
+  //               return clearInterval(interval);
+  //             }
+
+  //             var particleCount = 50 * (timeLeft / duration);
+  //             // since particles fall down, start a bit higher than random
+  //             confetti(
+  //               Object.assign({}, defaults, {
+  //                 particleCount,
+  //                 origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }
+  //               })
+  //             );
+  //             confetti(
+  //               Object.assign({}, defaults, {
+  //                 particleCount,
+  //                 origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
+  //               })
+  //             );
+  //           }, 250);
+  //         })();
+  //       }
+  //     }, 1000);
+  //   }
+  // }, [confirmMessage]);
+
+  // CONFETTI STYLE
   useEffect(() => {
     if (confirmMessage) {
       setTimeout(() => {
         setShowConfirmMessage(true);
         // do this for 30 seconds
         if (attending) {
-          var duration = 5 * 1000;
+          var duration = 4 * 1000;
           var end = Date.now() + duration;
+          var colors = ["#c83936", "#ffffff", "#418e45"];
 
           (function frame() {
             // launch a few confetti from the left edge
@@ -34,14 +83,16 @@ const RSPV = ({ hasReadPermission }) => {
               particleCount: 7,
               angle: 60,
               spread: 55,
-              origin: { x: 0 }
+              origin: { x: 0 },
+              colors: colors
             });
             // and launch a few from the right edge
             confetti({
               particleCount: 7,
               angle: 120,
               spread: 55,
-              origin: { x: 1 }
+              origin: { x: 1 },
+              colors: colors
             });
 
             // keep going until we are out of time
