@@ -10,6 +10,30 @@ import hurlingham from "@/public/slider/hurlingham.png";
 import midsommar from "@/public/slider/midsommar.png";
 import leaving from "@/public/slider/leaving.png";
 import birthday from "@/public/slider/birthday.png";
+import cyprusbluedress from "@/public/slider/cyprus-bluedress.png";
+import johannabday from "@/public/slider/johannabday.png";
+import arholma from "@/public/slider/arholma.png";
+import shed from "@/public/slider/shed.png";
+import sunset from "@/public/slider/sunset.png";
+import venicepink from "@/public/slider/venicepink.png";
+import whisky from "@/public/slider/whisky.png";
+import fields from "@/public/slider/fields.png";
+import abba from "@/public/slider/abba.png";
+import walks from "@/public/slider/walks.png";
+import cray from "@/public/slider/cray.png";
+import jsea from "@/public/slider/jsea.png";
+import imran from "@/public/slider/imran.png";
+import snow from "@/public/slider/snow.png";
+import carnival from "@/public/slider/carnival.png";
+import ciro from "@/public/slider/ciro.png";
+import cabin from "@/public/slider/cabin.png";
+import boat from "@/public/slider/boat.png";
+import mountain from "@/public/slider/mountain.png";
+import venice from "@/public/slider/venice.png";
+import jacket from "@/public/slider/jacket.png";
+import jitaly from "@/public/slider/jitaly.png";
+import italy3 from "@/public/slider/italy3.png";
+import chuckle from "@/public/slider/chuckle.png";
 import Footer from "@/components/Footer";
 import Countdown from "react-countdown";
 
@@ -111,8 +135,15 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
-            src={leaving}
-            alt='leaving'
+            src={sunset}
+            alt='sunset'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={jitaly}
+            alt='jitaly'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
@@ -125,8 +156,169 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
+            src={boat}
+            alt='boat'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={johannabday}
+            alt='johannabday'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={cabin}
+            alt='cabin'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={imran}
+            alt='imran'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={mountain}
+            alt='mountain'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={abba}
+            alt='abba'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
             src={birthday}
             alt='birthday'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={italy3}
+            alt='italy3'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={jsea}
+            alt='jsea'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={venice}
+            alt='venice'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={arholma}
+            alt='arholma'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={cyprusbluedress}
+            alt='cyprusbluedress'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={fields}
+            alt='fields'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={jacket}
+            alt='jacket'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={venicepink}
+            alt='venicepink'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={cray}
+            alt='cray'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={carnival}
+            alt='carnival'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={walks}
+            alt='walks'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={whisky}
+            alt='whisky'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={leaving}
+            alt='leaving'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={snow}
+            alt='snow'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={shed}
+            alt='shed'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={ciro}
+            alt='ciro'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={chuckle}
+            alt='chuckle'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
