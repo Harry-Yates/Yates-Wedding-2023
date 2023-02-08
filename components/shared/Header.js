@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Link from "next/link";
 import { enGB, svSE, itIT } from "@/translations";
 import { useRouter } from "next/router";
@@ -39,6 +38,9 @@ export default function Header() {
       </div>
       <ul className='nav-links'>
         <li>
+          <Link href='/'>Welcome</Link>
+        </li>
+        <li>
           <Link href='/faq'>{t.faq_title}</Link>
         </li>
         <li>
@@ -52,7 +54,10 @@ export default function Header() {
             {t.rsvp_title}
           </Link>
         </li>
-        <li>
+        {/* <li>
+          <Link href='/photos'>Photos</Link>
+        </li> */}
+        {/* <li>
           <button
             className='btn'
             id='btn--logout'
@@ -64,7 +69,7 @@ export default function Header() {
             }}>
             {t.header_logout}
           </button>
-        </li>
+        </li> */}
       </ul>
       {/* Burger Menu */}
       <div className='burger' onClick={navSlide}>

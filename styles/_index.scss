@@ -5,7 +5,7 @@ select {
   border-radius: 5px;
   font-size: 16px;
   padding: 10px;
-  margin-bottom: 2rem;
+  // margin-bottom: 1rem;
 
   &:focus {
     outline: none;
@@ -14,27 +14,50 @@ select {
 }
 
 body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 [class^="number-slide"],
 [class*=" number-slide"] {
-  background: grey;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 50px;
-  color: #fff;
   font-weight: 500;
-  height: 300px;
-  max-height: 100vh;
+  // height: 300px;
+  // max-height: 100vh;
+  padding: 0 1rem;
+}
+
+#title {
+  font-size: 7rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+#secondary {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#third {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.keen-slider {
+  // height: 100vh;
+  // max-height: 400px;
+  // max-width: 1000px;
+  max-width: 100%;
+  overflow: hidden;
+  max-width: 1000px;
+  margin-top: 2rem;
 }
 
 .keen-slider__slide {
-  height: 20rem;
+  width: 100%;
+  height: auto;
 }
 
 .number-slide1 {

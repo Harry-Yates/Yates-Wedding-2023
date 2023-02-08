@@ -4,7 +4,13 @@ import { enGB, svSE, itIT } from "@/translations";
 import BaseLayout from "../components/layouts/BaseLayout";
 import BasePage from "../components/BasePage";
 import "keen-slider/keen-slider.min.css";
-import { useKeenSlider } from "keen-slider/react"; // import from 'keen-slider/react.es' for to get an ES module
+import { useKeenSlider } from "keen-slider/react";
+import Image from "next/image";
+import hurlingham from "@/public/slider/hurlingham.png";
+import midsommar from "@/public/slider/midsommar.png";
+import leaving from "@/public/slider/leaving.png";
+import birthday from "@/public/slider/birthday.png";
+import Footer from "@/components/Footer";
 
 export default function Home({ hasReadPermission }) {
   const router = useRouter();
@@ -63,15 +69,53 @@ export default function Home({ hasReadPermission }) {
           <option value='sv-SE'>SE 🇸🇪</option>
           <option value='it-IT'>IT 🇮🇹</option>
         </select>
-        <h1>{t.home_title}</h1>
+        <h1 id='title'>Welcome</h1>
+        <h2 id='secondary'>Johanna & Harry</h2>
+        <br />
+        <h2 id='third'>Invite you</h2>
+        <h2 id='third'>to </h2>
+        <h2 id='third'>Celebrate their wedding!</h2>
+        <br />
+        {/* <h4>8-9 September 2023</h4>
+        <h4>Colognola Di Casazza, Italy</h4>
+        <h5>#YatesWedding23</h5> */}
         <div ref={sliderRef} className='keen-slider'>
-          <div className='keen-slider__slide number-slide1'>1</div>
-          <div className='keen-slider__slide number-slide2'>2</div>
+          {/* <div className='keen-slider__slide number-slide1'>1</div> */}
+          <Image
+            src={midsommar}
+            alt='midsommar'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={leaving}
+            alt='leaving'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={hurlingham}
+            alt='hurlingham'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={birthday}
+            alt='birthday'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          {/* <div className='keen-slider__slide number-slide2'>2</div>
           <div className='keen-slider__slide number-slide3'>3</div>
           <div className='keen-slider__slide number-slide4'>4</div>
           <div className='keen-slider__slide number-slide5'>5</div>
-          <div className='keen-slider__slide number-slide6'>6</div>
+          <div className='keen-slider__slide number-slide6'>6</div> */}
         </div>
+        <Footer />
       </BasePage>
     </BaseLayout>
   );
