@@ -59,11 +59,11 @@ export default function FAQ({ hasReadPermission }) {
     },
     {
       question: `${t.faq_question_10}`,
-      answer: `${t.faq_answer_2}`
+      answer: `${t.faq_answer_10}`
     },
     {
-      question: `${t.faq_question_11 + "#YatesWedding23"}`,
-      answer: `${t.faq_answer_2}`
+      question: `${t.faq_question_11}`,
+      answer: `${t.faq_answer_11 + " " + "#YatesWedding23"}`
     },
     {
       question: `${t.faq_question_12}`,
