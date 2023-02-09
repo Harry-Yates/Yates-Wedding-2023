@@ -165,7 +165,7 @@ select {
 
 @media (max-width: 644px) {
   .ohhfancy {
-    font-size: var(--fs-larger1);
+    font-size: var(--fs-larger2);
   }
 
   .ohhfancy-medium {
@@ -173,7 +173,7 @@ select {
   }
 
   .ohhfancy-small {
-    font-size: var(--fs-larger);
+    font-size: var(--fs-larger2);
 
     &__sup {
       font-size: var(--fs-medium);
@@ -185,25 +185,25 @@ select {
     font-family: var(--ff-primary-alt);
     font-weight: 500;
     text-transform: none;
-    font-size: var(--fs-large);
+    font-size: var(--fs-larger1);
   }
 }
 
 @media (max-width: 375px) {
   .ohhfancy {
-    font-size: var(--fs-larger);
+    font-size: var(--fs-larger2);
   }
 
   .ohhfancy-medium {
-    font-size: var(--fs-large);
+    font-size: var(--fs-larger);
   }
 
   .ohhfancy-small {
-    font-size: var(--fs-large);
+    font-size: var(--fs-larger1);
 
     &__sup {
-      font-size: var(--fs-small);
-      margin-left: 0.2rem;
+      font-size: var(--fs-larger);
+      margin-left: 0.5rem;
     }
   }
 
@@ -211,6 +211,6 @@ select {
     font-family: var(--ff-primary-alt);
     font-weight: 500;
     text-transform: none;
-    font-size: var(--fs-medium);
+    font-size: var(--fs-larger1);
   }
 }

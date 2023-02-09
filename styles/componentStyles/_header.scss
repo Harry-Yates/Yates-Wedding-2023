@@ -275,3 +275,9 @@ a {
   transform: rotate(45deg) translate(-4px, -6px);
   transition: transform 0.4s ease-in;
 }
+
+@media (max-width: 375px) {
+  .logo > a > span {
+    font-size: 0.75rem;
+  }
+}
