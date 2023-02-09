@@ -77,7 +77,7 @@ const RSPV = ({ hasReadPermission }) => {
         setShowConfirmMessage(true);
         // do this for 30 seconds
         if (attending) {
-          var duration = 5 * 1000;
+          var duration = 6 * 1000;
           var end = Date.now() + duration;
           var colors = ["#c83936", "#ffffff", "#418e45"];
 
@@ -99,13 +99,22 @@ const RSPV = ({ hasReadPermission }) => {
               colors: colors
             });
 
+            // and launch a few from the right edge
+            // confetti({
+            //   particleCount: 7,
+            //   angle: 90,
+            //   spread: 155,
+            //   origin: { y: 1 },
+            //   colors: colors
+            // });
+
             // keep going until we are out of time
             if (Date.now() < end) {
               requestAnimationFrame(frame);
             }
           })();
         }
-      }, 1000);
+      }, 1);
     }
   }, [confirmMessage, attending]);
 
