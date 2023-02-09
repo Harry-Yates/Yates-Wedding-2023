@@ -8,12 +8,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem;
+  // padding: 0 1rem;
 }
 
 select {
   appearance: none;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #ccc;
   border-radius: 5px;
   // font-size: 16px;
@@ -54,11 +54,20 @@ select {
   overflow: hidden;
   max-width: 1000px;
   margin-top: 2rem;
+  border-radius: 20px;
+  background: #fbfaf9;
+  box-shadow: 26px 26px 52px #d0d0cf, -26px -26px 52px #ffffff;
 }
 
 .keen-slider__slide {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 989px) {
+  .keen-slider {
+    border-radius: 0px;
+  }
 }
 
 @media (max-width: 767px) {

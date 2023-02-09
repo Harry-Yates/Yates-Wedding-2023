@@ -23,8 +23,59 @@ body {
   height: 100%;
   font-family: var(--ff-primary), "Helvetica";
   font-size: var(--fs-small);
-  background: var(--clr-white);
+  // background-color: var(--clr-white);
+  background-color: #fbfaf9;
+  background-image: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 2%,
+      #fbfaf9 2%,
+      #fbfaf9 100%
+    ),
+    linear-gradient(to right, transparent 0%, transparent 2%, #fbfaf9 2%, #fbfaf9 100%),
+    repeating-linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.02) 0%,
+      rgba(0, 0, 0, 0.02) 90%,
+      transparent 1%,
+      transparent 2%
+    ),
+    repeating-linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.09) 0%,
+      rgba(0, 0, 0, 0.09) 1%,
+      transparent 1%,
+      transparent 2%
+    );
+  background-size: 10px 10px;
 }
+
+// background-image: url(https://i.imgur.com/xH6U4pr.jpg);
+// background-size: cover;
+// background-repeat: no-repeat;
+
+// body {
+//   background-color: #f2f2f2;
+//   background-image: linear-gradient(
+//       to right,
+//       transparent 0%,
+//       transparent 47%,
+//       rgba(255, 255, 255, 0.07) 47%,
+//       rgba(255, 255, 255, 0.07) 53%,
+//       transparent 53%,
+//       transparent 100%
+//     ),
+//     linear-gradient(
+//       to bottom,
+//       transparent 0%,
+//       transparent 47%,
+//       rgba(255, 255, 255, 0.07) 47%,
+//       rgba(255, 255, 255, 0.07) 53%,
+//       transparent 53%,
+//       transparent 100%
+//     );
+//   background-size: 40px 40px;
+// }
 
 h1 {
   font-family: var(--ff-secondary-bold), "Helvetica";
@@ -128,8 +179,11 @@ span {
   color: white;
   border-radius: 5px;
   border: none;
+  outline: none;
   cursor: pointer;
   letter-spacing: 2px;
+  background: #fbfaf9;
+  box-shadow: 7px 7px 14px #ecebea, -7px -7px 14px #ffffff;
   // text-transform: uppercase;
 
   // &__btn[disabled] {
