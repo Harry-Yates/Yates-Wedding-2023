@@ -12,12 +12,12 @@ const Footer = () => {
   return (
     <footer>
       <div className='container'>
-        <div className='container-left'>
-          <h3>
+        <div className='container-left '>
+          <h4>
             8<sup>th</sup>-9<sup>th</sup> September 2023
-          </h3>
-          <h3>Colognola Di Casazza, Italy</h3>
-          <h4>#YatesWedding23</h4>
+          </h4>
+          <h4>Colognola Di Casazza, Italy</h4>
+          <h5>#YatesWedding23</h5>
         </div>
         <div className='container-right'>
           <button

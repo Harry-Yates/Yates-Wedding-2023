@@ -16,7 +16,7 @@ const Login = ({ redirectPath }) => {
           <input
             type='password'
             className='c-login__input'
-            placeholder='Enter rspv password'
+            placeholder='Enter password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}></input>
         </label>

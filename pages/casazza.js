@@ -1,9 +1,11 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import Footer from "@/components/Footer";
+import hydrangea from "@/public/decoration/hydrangea.png";
 
 export default function Casazza({ hasReadPermission }) {
   const router = useRouter();
@@ -18,6 +20,11 @@ export default function Casazza({ hasReadPermission }) {
     <BaseLayout>
       <BasePage>
         <h1>{t.casazza_title}</h1>
+        <div className='hydrangea' >
+          <Image  src={hydrangea} alt='hydrangea' width='50' />
+          <Image  src={hydrangea} alt='hydrangea' width='100' />
+          <Image  src={hydrangea} alt='hydrangea' width='50' />
+        </div>
         <p>{t.welcome}</p>
         <Footer />
       </BasePage>

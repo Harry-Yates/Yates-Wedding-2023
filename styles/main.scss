@@ -23,7 +23,7 @@ body {
   height: 100%;
   font-family: var(--ff-primary), "Helvetica";
   font-size: var(--fs-small);
-  // background-color: var(--clr-white);
+  background-color: var(--clr-white);
   background-color: #fbfaf9;
   background-image: linear-gradient(
       to bottom,
@@ -93,7 +93,7 @@ h2 {
 
 h3 {
   font-family: var(--ff-secondary-regular), "Helvetica";
-  font-size: var(--fs-large);
+  font-size: var(--fs-medium);
 }
 
 h4 {
@@ -167,7 +167,8 @@ sup {
 }
 
 span {
-  font-size: var(--fs-tiny);
+  color: var(--clr-primary);
+  font-size: 0.8rem;
   letter-spacing: 4px;
 }
 
@@ -176,21 +177,20 @@ span {
   font-size: var(--fs-medium);
   padding: 0.75rem 2rem;
   background-color: var(--clr-primary);
-  color: white;
+  color: #090909;
   border-radius: 5px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  letter-spacing: 2px;
-  background: #fbfaf9;
-  box-shadow: 7px 7px 14px #ecebea, -7px -7px 14px #ffffff;
-  // text-transform: uppercase;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  text-transform: uppercase;
+}
 
-  // &__btn[disabled] {
-  //   background-color: gray;
-  //   color: lightgray;
-  //   cursor: not-allowed;
-  // }
+.btn:hover {
+  border: 1px solid white;
+}
+
+.btn:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
 
 .wrapper {

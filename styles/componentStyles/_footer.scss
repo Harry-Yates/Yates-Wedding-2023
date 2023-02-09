@@ -5,6 +5,7 @@ footer {
   box-sizing: border-box;
   display: flex;
   height: 200px;
+  // margin-top: 2rem;
 }
 
 .container {
@@ -45,11 +46,27 @@ footer {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.387);
+  border: 1px solid #e8e8e8;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+#btn--logout:hover {
+  border: 1px solid white;
+}
+
+#btn--logout:active {
+  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
 }
 
 @media (max-width: 768px) {
+  footer {
+    margin-top: 1.5rem;
+  }
+
   .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0 0rem;
   }
   .container-left,
@@ -59,6 +76,6 @@ footer {
   }
 
   #btn--logout {
-    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }

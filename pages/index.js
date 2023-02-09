@@ -25,13 +25,14 @@ import imran from "@/public/slider/imran.png";
 import snow from "@/public/slider/snow.png";
 import carnival from "@/public/slider/carnival.png";
 import cabin from "@/public/slider/cabin.png";
-import boat from "@/public/slider/boat.png";
 import mountain from "@/public/slider/mountain.png";
 import venice from "@/public/slider/venice.png";
 import jacket from "@/public/slider/jacket.png";
 import jitaly from "@/public/slider/jitaly.png";
 import italy3 from "@/public/slider/italy3.png";
-import hydrangea from "@/public/flowers/hydrangea.png";
+import hydrangea from "@/public/decoration/hydrangea.png";
+import wave from "@/public/decoration/wave.png";
+import pinkwave from "@/public/decoration/pinkwave.png";
 import Footer from "@/components/Footer";
 import Countdown from "react-countdown";
 
@@ -54,7 +55,7 @@ export default function Home({ hasReadPermission }) {
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <span>
-        {days} days {hours} hours {minutes} minutes {seconds} seconds
+        {days} days {hours} hrs {minutes} min {seconds} sec
       </span>
     );
   };
@@ -118,23 +119,25 @@ export default function Home({ hasReadPermission }) {
           <option value='sv-SE'>SE 🇸🇪</option>
           <option value='it-IT'>IT 🇮🇹</option>
         </select>
-        <h1 className='index__title'>Welcome</h1>
-        <Image
-          className='index__title--flower'
-          src={hydrangea}
-          alt='hydrangea'
-          height={100}
-          width={100}
-        />
-        <h2 className='index__title--name'>Johanna & Harry</h2>
-        <h2 className='index__title--invite'>Invite you to Celebrate their wedding!</h2>
-        <h2 className='index__title--invite'>
+        {/* <h1 className='index__title'>Welcome</h1> */}
+        <h2 className='index__title--name ohhfancy'>Johanna & Harry</h2>
+        <h2 className='index__title--invite ohhfancy-medium'>
+          Invite you to Celebrate their wedding
+        </h2>
+        <h2 className='index__title--invite ohhfancy-small'>
           8<sup>th</sup>-9<sup>th</sup> September 2023
         </h2>
         <br />
         <Countdown date={weddingDate} renderer={renderer}>
           <Completionist />
         </Countdown>
+        {/* <Image className='hydrangea' src={hydrangea} alt='wave' width='100' /> */}
+        <div className='hydrangea' >
+          <Image  src={hydrangea} alt='hydrangea' width='50' />
+          <Image  src={hydrangea} alt='hydrangea' width='100' />
+          <Image  src={hydrangea} alt='hydrangea' width='50' />
+        </div>
+
         {/* <h4>8-9 September 2023</h4>
         <h4>Colognola Di Casazza, Italy</h4>
         <h5>#YatesWedding23</h5> */}
@@ -164,13 +167,6 @@ export default function Home({ hasReadPermission }) {
           <Image
             src={hurlingham}
             alt='hurlingham'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={boat}
-            alt='boat'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
@@ -308,12 +304,10 @@ export default function Home({ hasReadPermission }) {
             height={400}
             width={1000}
           />
-          {/* <div className='keen-slider__slide number-slide2'>2</div>
-          <div className='keen-slider__slide number-slide3'>3</div>
-          <div className='keen-slider__slide number-slide4'>4</div>
-          <div className='keen-slider__slide number-slide5'>5</div>
-          <div className='keen-slider__slide number-slide6'>6</div> */}
         </div>
+        {/* <Image className='wave' src={wave} alt='wave' width={800} /> */}
+        {/* <Image className='pinkwave' src={pinkwave} alt='wave' /> */}
+        <div className='pinkwave' />
         <Footer />
       </BasePage>
     </BaseLayout>
