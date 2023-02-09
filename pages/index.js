@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import { enGB, svSE, itIT } from "@/translations";
@@ -34,6 +35,7 @@ import jacket from "@/public/slider/jacket.png";
 import jitaly from "@/public/slider/jitaly.png";
 import italy3 from "@/public/slider/italy3.png";
 import chuckle from "@/public/slider/chuckle.png";
+import hydrangea from "@/public/flowers/hydrangea.png";
 import Footer from "@/components/Footer";
 import Countdown from "react-countdown";
 
@@ -46,6 +48,7 @@ export default function Home({ hasReadPermission }) {
   const Completionist = () => <p>Welcome to Italy 🇮🇹</p>;
   const weddingDate = new Date(Date.UTC(2023, 8, 9, 14, 0, 0, 0));
   // UTC 2:00pm September 9th 2023
+  const [showCountdown, setShowCountdown] = useState(false);
 
   var now = new Date();
   var future = new Date(
@@ -95,6 +98,12 @@ export default function Home({ hasReadPermission }) {
     ]
   );
 
+  useEffect(() => {
+    setShowCountdown(true);
+  }, []);
+
+  if (!showCountdown) return null;
+
   const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
 
   if (!hasReadPermission) {
@@ -114,6 +123,13 @@ export default function Home({ hasReadPermission }) {
           <option value='it-IT'>IT 🇮🇹</option>
         </select>
         <h1 className='index__title'>Welcome</h1>
+        <Image
+          className='index__title--flower'
+          src={hydrangea}
+          alt='hydrangea'
+          height={100}
+          width={100}
+        />
         <h2 className='index__title--name'>Johanna & Harry</h2>
         <h2 className='index__title--invite'>Invite you to Celebrate their wedding!</h2>
         <h2 className='index__title--invite'>
