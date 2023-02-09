@@ -81,10 +81,10 @@ export default function FAQ({ hasReadPermission }) {
           <title>FAQ</title>
         </Head>
         <h1>{t.faq_title}</h1>
-        <div className='hydrangea' >
-          <Image  src={hydrangea} alt='hydrangea' width='50' />
-          <Image  src={hydrangea} alt='hydrangea' width='100' />
-          <Image  src={hydrangea} alt='hydrangea' width='50' />
+        <div className='hydrangea'>
+          <Image src={hydrangea} alt='hydrangea' width='50' />
+          <Image src={hydrangea} alt='hydrangea' width='100' />
+          <Image src={hydrangea} alt='hydrangea' width='50' />
         </div>
         <section>
           {questions.map((question, index) => (
@@ -98,7 +98,7 @@ export default function FAQ({ hasReadPermission }) {
                     <path
                       d='M3 3L21 21L39 3'
                       stroke='black'
-                      stroke-width='7'
+                      strokeWidth='7'
                       fill='none'
                       aria-hidden='true'
                     />
