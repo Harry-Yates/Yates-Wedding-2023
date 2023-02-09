@@ -116,7 +116,9 @@ export default function Home({ hasReadPermission }) {
         <h1 className='index__title'>Welcome</h1>
         <h2 className='index__title--name'>Johanna & Harry</h2>
         <h2 className='index__title--invite'>Invite you to Celebrate their wedding!</h2>
-        <h2 className='index__title--invite'>8-9 SEPTEMBER 2023</h2>
+        <h2 className='index__title--invite'>
+          8<sup>th</sup>-9<sup>th</sup> September 2023
+        </h2>
         <br />
         <Countdown date={weddingDate} renderer={renderer}>
           <Completionist />

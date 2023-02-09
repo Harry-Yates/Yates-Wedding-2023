@@ -14,8 +14,11 @@
 
   // Font family
   // --ff-primary: "Source Code Pro", monospace;
-  --ff-primary: "Calibre-Regular";
-  --ff-secondary: ...;
+  --ff-primary: "Hiragino Kaku Gothic";
+  --ff-primary-alt: "sackers_italian_script_stdRg";
+
+  --ff-secondary-bold: "Calibre-Bold";
+  --ff-secondary-regular: "Calibre-Regular";
 
   // Font size
   --fs-tiny: 0.6rem;
@@ -24,6 +27,7 @@
   --fs-large: 1.1rem;
   --fs-larger: 1.25rem;
   --fs-largest: 3rem;
+  --fs-mega: 3rem;
 
   // Font weight
   --fw-thin: 200;

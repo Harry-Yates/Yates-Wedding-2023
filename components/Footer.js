@@ -13,8 +13,10 @@ const Footer = () => {
     <footer>
       <div className='container'>
         <div className='container-left'>
-          <h3>8-9 September 2023</h3>
-          <h3>Colognola Di Casazza, Bergamo</h3>
+          <h3>
+            8<sup>th</sup> - 9<sup>th</sup> September 2023
+          </h3>
+          <h3>Colognola Di Casazza, Italy</h3>
           <h4>#YatesWedding23</h4>
         </div>
         <div className='container-right'>

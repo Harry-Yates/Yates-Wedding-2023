@@ -21,62 +21,52 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "Hiragino Kaku Gothic", "Helvetica";
+  font-family: var(--ff-primary), "Helvetica";
   font-size: var(--fs-small);
   background: var(--clr-white);
 }
 
 h1 {
-  font-family: "Calibre-Bold", "Helvetica";
+  font-family: var(--ff-secondary-bold), "Helvetica";
   font-size: var(--fs-larger);
   font-weight: var(--fw-heavy);
   letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--clr-primary);
 }
 
 h2 {
-  font-family: "Calibre-Bold", "Helvetica";
+  font-family: var(--ff-secondary-bold), "Helvetica";
   font-size: var(--fs-large);
   font-weight: var(--fw-heavy);
   letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--clr-primary);
 }
 
 h3 {
-  font-family: "Calibre-Regular", "Helvetica";
+  font-family: var(--ff-secondary-regular), "Helvetica";
   font-size: var(--fs-large);
-  color: var(--clr-primary);
-  text-transform: uppercase;
 }
 
 h4 {
-  font-family: "Calibre-Regular", "Helvetica";
+  font-family: var(--ff-secondary-regular), "Helvetica";
   font-size: var(--fs-medium);
-  color: var(--clr-primary);
-  text-transform: uppercase;
 }
 
 li {
-  font-family: "Calibre-Regular", "Helvetica";
+  font-family: var(--ff-secondary-regular), "Helvetica";
   font-size: var(--fs-large);
   list-style: none;
 }
 
 p {
-  font-family: "Hiragino Kaku Gothic", "Helvetica";
+  font-family: var(--ff-primary), "Helvetica";
   font-size: var(--fs-small);
 }
 
 a {
   padding-top: 0.5rem;
-  font-family: "Calibre-Regular", "Helvetica";
+  font-family: var(--ff-secondary-regular), "Helvetica";
   font-size: var(--fs-medium);
   font-weight: var(--fw-thin);
   letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--clr-primary);
   text-decoration: none;
   cursor: pointer;
 }
@@ -110,13 +100,28 @@ a:hover,
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+a {
+  text-transform: uppercase;
+  color: var(--clr-primary);
+  // font-family: var(--ff-primary-alt);
+}
+
+sup {
+  font-size: var(--fs-tiny);
+  // letter-spacing: 4px;
+}
+
 span {
   font-size: var(--fs-tiny);
   letter-spacing: 4px;
 }
 
 .btn {
-  font-family: "Calibre-Bold", "Helvetica";
+  font-family: var(--ff-secondary-bold), "Helvetica";
   font-size: var(--fs-medium);
   padding: 0.75rem 2rem;
   background-color: var(--clr-primary);
@@ -125,7 +130,7 @@ span {
   border: none;
   cursor: pointer;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 
   // &__btn[disabled] {
   //   background-color: gray;
