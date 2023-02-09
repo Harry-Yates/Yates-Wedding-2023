@@ -9,7 +9,7 @@ export const enGB = {
   header_countdown_seconds: "seconds",
   "Home Page": "",
   home_title: "Invitation",
-  home_title_invite: "Invite you to Celebrate their wedding",
+  home_title_invite: "Invite you to celebrate their wedding",
   home_footer_title_date: "September",
   "FAQ Page": "",
   faq_title: "FAQ",
