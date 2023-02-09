@@ -98,12 +98,12 @@ export default function Home({ hasReadPermission }) {
         {/* <h1 className='index__title'>Welcome</h1> */}
         <h2 className='index__title--name ohhfancy'>Johanna & Harry</h2>
         <h2 className='index__title--invite ohhfancy-medium'>{t.home_title_invite}</h2>
-
-        <h2 className='ohhfancy'>
-          8 <sup className='ohhfancy__sup'>th</sup>- 9 <sup className='ohhfancy__sup'>th</sup> {t.home_footer_title_date} 2023
+        <h2 className='index__title--invite ohhfancy-small'>
+          8<sup className='ohhfancy-small__sup'>th</sup>-9
+          <sup className='ohhfancy-small__sup'>th</sup>
+          {t.home_footer_title_date}
         </h2>
 
-        {/* <Image className='hydrangea' src={hydrangea} alt='wave' width='100' /> */}
         <div className='hydrangea'>
           <Image src={hydrangea} alt='hydrangea' width='50' />
           <Image src={hydrangea} alt='hydrangea' width='100' />

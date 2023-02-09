@@ -97,10 +97,6 @@ select {
   font-weight: 500;
   text-transform: none;
   font-size: var(--fs-mega);
-
-  &__sup {
-    font-size: var(--fs-larger1);
-  }
 }
 
 .ohhfancy-medium {
@@ -112,9 +108,14 @@ select {
 
 .ohhfancy-small {
   font-family: var(--ff-primary-alt);
-  // font-family: var(--ff-secondary);
   font-weight: 500;
-  font-size: 4rem;
+  text-transform: none;
+  font-size: var(--fs-larger4);
+
+  &__sup {
+    font-size: var(--fs-larger1);
+    margin-left: 0.7rem;
+  }
 }
 
 // #supLarge {
@@ -131,10 +132,6 @@ select {
 @media (max-width: 744px) {
   .ohhfancy {
     font-size: var(--fs-larger3);
-
-    &__sup {
-      font-size: var(--fs-large);
-    }
   }
 
   .select {
@@ -147,16 +144,17 @@ select {
 
   .ohhfancy-small {
     font-size: var(--fs-larger2);
+
+    &__sup {
+      font-size: var(--fs-large);
+      margin-left: 0.6rem;
+    }
   }
 }
 
 @media (max-width: 644px) {
   .ohhfancy {
     font-size: var(--fs-larger1);
-
-    &__sup {
-      font-size: var(--fs-medium);
-    }
   }
 
   .ohhfancy-medium {
@@ -165,16 +163,17 @@ select {
 
   .ohhfancy-small {
     font-size: var(--fs-larger);
+
+    &__sup {
+      font-size: var(--fs-medium);
+      margin-left: 0.3rem;
+    }
   }
 }
 
 @media (max-width: 375px) {
   .ohhfancy {
     font-size: var(--fs-larger);
-
-    &__sup {
-      font-size: var(--fs-small);
-    }
   }
 
   .ohhfancy-medium {
@@ -183,5 +182,10 @@ select {
 
   .ohhfancy-small {
     font-size: var(--fs-large);
+
+    &__sup {
+      font-size: var(--fs-small);
+      margin-left: 0.2rem;
+    }
   }
 }
