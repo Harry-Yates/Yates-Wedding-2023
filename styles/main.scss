@@ -88,7 +88,7 @@ h2 {
   font-family: var(--ff-secondary-bold), "Helvetica";
   font-size: var(--fs-large);
   font-weight: var(--fw-heavy);
-  letter-spacing: 1.5px;
+  // letter-spacing: 1.5px;
 }
 
 h3 {
@@ -169,7 +169,6 @@ sup {
 span {
   color: var(--clr-primary);
   font-size: 0.8rem;
-  letter-spacing: 4px;
 }
 
 .btn {

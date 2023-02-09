@@ -14,7 +14,7 @@ const Footer = () => {
       <div className='container'>
         <div className='container-left '>
           <h4>
-            8<sup>th</sup>-9<sup>th</sup> September 2023
+            8<sup>th</sup>-9<sup>th</sup> {t.home_footer_title_date} 2023
           </h4>
           <h4>Colognola Di Casazza, Italy</h4>
           <h5>#YatesWedding23</h5>

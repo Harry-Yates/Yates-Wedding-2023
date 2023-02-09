@@ -7,6 +7,10 @@ import BasePage from "../components/BasePage";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
+import Footer from "@/components/Footer";
+import Countdown from "react-countdown";
+
+//! IMAGES
 import hurlingham from "@/public/slider/hurlingham.png";
 import midsommar from "@/public/slider/midsommar.png";
 import leaving from "@/public/slider/leaving.png";
@@ -29,10 +33,6 @@ import jacket from "@/public/slider/jacket.png";
 import jitaly from "@/public/slider/jitaly.png";
 import italy3 from "@/public/slider/italy3.png";
 import hydrangea from "@/public/decoration/hydrangea.png";
-import wave from "@/public/decoration/wave.png";
-import pinkwave from "@/public/decoration/pinkwave.png";
-import Footer from "@/components/Footer";
-import Countdown from "react-countdown";
 
 // Link to docs
 // https://keen-slider.io/docs#usage
@@ -40,23 +40,7 @@ import Countdown from "react-countdown";
 export default function Home({ hasReadPermission }) {
   const router = useRouter();
   const { locale } = router;
-  const Completionist = () => <p>Welcome to Italy 🇮🇹</p>;
-  const weddingDate = new Date(Date.UTC(2023, 8, 9, 14, 0, 0, 0));
-  // UTC 2:00pm September 9th 2023
-  const [showCountdown, setShowCountdown] = useState(false);
 
-  var now = new Date();
-  var future = new Date(
-    now.getTime() + 212 * 24 * 60 * 60 * 1000 + 17 * 60 * 60 * 1000 + 23 * 60 * 1000 + 27 * 1000
-  );
-
-  const renderer = ({ days, hours, minutes, seconds }) => {
-    return (
-      <span>
-        {days} days {hours} hrs {minutes} min {seconds} sec
-      </span>
-    );
-  };
   const [sliderRef] = useKeenSlider(
     {
       loop: true
@@ -93,12 +77,6 @@ export default function Home({ hasReadPermission }) {
     ]
   );
 
-  useEffect(() => {
-    setShowCountdown(true);
-  }, []);
-
-  if (!showCountdown) return null;
-
   const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
 
   if (!hasReadPermission) {
@@ -119,16 +97,12 @@ export default function Home({ hasReadPermission }) {
         </select>
         {/* <h1 className='index__title'>Welcome</h1> */}
         <h2 className='index__title--name ohhfancy'>Johanna & Harry</h2>
-        <h2 className='index__title--invite ohhfancy-medium'>
-          Invite you to Celebrate their wedding
+        <h2 className='index__title--invite ohhfancy-medium'>{t.home_title_invite}</h2>
+
+        <h2 className='ohhfancy'>
+          8 <sup className='ohhfancy__sup'>th</sup>- 9 <sup className='ohhfancy__sup'>th</sup> {t.home_footer_title_date} 2023
         </h2>
-        <h2 className='index__title--invite ohhfancy-small'>
-          8<sup>th</sup>-9<sup>th</sup> September 2023
-        </h2>
-        <br />
-        <Countdown date={weddingDate} renderer={renderer}>
-          <Completionist />
-        </Countdown>
+
         {/* <Image className='hydrangea' src={hydrangea} alt='wave' width='100' /> */}
         <div className='hydrangea'>
           <Image src={hydrangea} alt='hydrangea' width='50' />
