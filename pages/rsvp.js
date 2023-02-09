@@ -6,7 +6,8 @@ import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import Head from "next/head";
 import Image from "next/image";
-import weeHee from "@/public/gif/wee-hee.gif";
+// import weeHee from "@/public/gif/wee-hee.gif";
+import cowboy from "@/public/gif/cowboy.gif";
 import confetti from "canvas-confetti";
 import Footer from "@/components/Footer";
 import hydrangea from "@/public/decoration/hydrangea.png";
@@ -154,10 +155,10 @@ const RSPV = ({ hasReadPermission }) => {
             content='width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no'></meta>
         </Head>
         <h1 className='rsvp__title'>{t.rsvp_title}</h1>
-        <div className='hydrangea' >
-          <Image  src={hydrangea} alt='hydrangea' width='50' />
-          <Image  src={hydrangea} alt='hydrangea' width='100' />
-          <Image  src={hydrangea} alt='hydrangea' width='50' />
+        <div className='hydrangea'>
+          <Image src={hydrangea} alt='hydrangea' width='50' />
+          <Image src={hydrangea} alt='hydrangea' width='100' />
+          <Image src={hydrangea} alt='hydrangea' width='50' />
         </div>
         <div className='rsvp_details'>
           <h3>{t.rsvp_secondHeader}</h3>
@@ -327,7 +328,14 @@ const RSPV = ({ hasReadPermission }) => {
             )}
             {confirmMessage && attending && (
               <div className={`rsvp__confirm-message ${showConfirmMessage ? "show" : ""}`}>
-                <Image src={weeHee} alt='cheersGif' width={280} height={280} loading='lazy' />
+                <Image
+                  src={cowboy}
+                  className='cowboy'
+                  alt='cowboy'
+                  width={124}
+                  height={200}
+                  loading='lazy'
+                />
               </div>
             )}
             <button

@@ -103,6 +103,8 @@ export default function Home({ hasReadPermission }) {
           <sup className='ohhfancy-small__sup'>th</sup>
           {t.home_footer_title_date}
         </h2>
+        {/* <h2 className='index__title--invite ohhfancy-tiny'>in</h2> */}
+        <h2 className='index__title--invite ohhfancy-tiny'>Casazza, Italy</h2>
 
         <div className='hydrangea'>
           <Image src={hydrangea} alt='hydrangea' width='50' />

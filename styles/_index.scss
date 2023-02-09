@@ -118,6 +118,13 @@ select {
   }
 }
 
+.ohhfancy-tiny {
+  font-family: var(--ff-primary-alt);
+  font-weight: 500;
+  text-transform: none;
+  font-size: var(--fs-larger3);
+}
+
 // #supLarge {
 //   font-size: 4rem;
 //   margin-left: 1rem;
@@ -150,6 +157,10 @@ select {
       margin-left: 0.6rem;
     }
   }
+
+  .ohhfancy-tiny {
+    font-size: var(--fs-larger1);
+  }
 }
 
 @media (max-width: 644px) {
@@ -169,6 +180,13 @@ select {
       margin-left: 0.3rem;
     }
   }
+
+  .ohhfancy-tiny {
+    font-family: var(--ff-primary-alt);
+    font-weight: 500;
+    text-transform: none;
+    font-size: var(--fs-large);
+  }
 }
 
 @media (max-width: 375px) {
@@ -187,5 +205,12 @@ select {
       font-size: var(--fs-small);
       margin-left: 0.2rem;
     }
+  }
+
+  .ohhfancy-tiny {
+    font-family: var(--ff-primary-alt);
+    font-weight: 500;
+    text-transform: none;
+    font-size: var(--fs-medium);
   }
 }

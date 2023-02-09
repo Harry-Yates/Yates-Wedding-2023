@@ -85,6 +85,16 @@ input {
       border-radius: 50%;
       border: 1px solid #ccc;
       margin-right: 1rem;
+      box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+
+      &:hover {
+        border: 1px solid #68d965;
+        animation: tilt-n-move-shaking 0.5s infinite;
+      }
+
+      &:active {
+        box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
+      }
 
       &:checked {
         background-color: #68d965;
@@ -100,6 +110,11 @@ input {
   border-radius: 50%;
   border: 1px solid #ccc;
   margin-right: 1rem;
+
+  &:hover {
+    border: 1px solid #f2452f;
+    animation: none;
+  }
 
   &:checked {
     background-color: #f2452f;
@@ -128,7 +143,6 @@ input {
 .btn-rsvp-btn:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: tilt-n-move-shaking 0.5s infinite;
-  border: 1px solid rgb(17, 237, 182);
   border: 1px solid #7cbfe4;
 }
 
@@ -170,6 +184,13 @@ input {
   gap: 0.5rem;
   margin-top: 1rem;
   line-height: 0.9rem;
+}
+
+.cowboy {
+  margin-top: 1rem;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 24px 24px 48px #b5b5b5, -24px -24px 48px #ffffff;
 }
 
 @media only screen and (max-width: 768px) {
