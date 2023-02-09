@@ -10,7 +10,6 @@ import Image from "next/image";
 import hurlingham from "@/public/slider/hurlingham.png";
 import midsommar from "@/public/slider/midsommar.png";
 import leaving from "@/public/slider/leaving.png";
-import birthday from "@/public/slider/birthday.png";
 import cyprusbluedress from "@/public/slider/cyprus-bluedress.png";
 import johannabday from "@/public/slider/johannabday.png";
 import arholma from "@/public/slider/arholma.png";
@@ -22,7 +21,6 @@ import walks from "@/public/slider/walks.png";
 import cray from "@/public/slider/cray.png";
 import jsea from "@/public/slider/jsea.png";
 import imran from "@/public/slider/imran.png";
-import snow from "@/public/slider/snow.png";
 import carnival from "@/public/slider/carnival.png";
 import cabin from "@/public/slider/cabin.png";
 import mountain from "@/public/slider/mountain.png";
@@ -132,10 +130,10 @@ export default function Home({ hasReadPermission }) {
           <Completionist />
         </Countdown>
         {/* <Image className='hydrangea' src={hydrangea} alt='wave' width='100' /> */}
-        <div className='hydrangea' >
-          <Image  src={hydrangea} alt='hydrangea' width='50' />
-          <Image  src={hydrangea} alt='hydrangea' width='100' />
-          <Image  src={hydrangea} alt='hydrangea' width='50' />
+        <div className='hydrangea'>
+          <Image src={hydrangea} alt='hydrangea' width='50' />
+          <Image src={hydrangea} alt='hydrangea' width='100' />
+          <Image src={hydrangea} alt='hydrangea' width='50' />
         </div>
 
         {/* <h4>8-9 September 2023</h4>
@@ -195,13 +193,6 @@ export default function Home({ hasReadPermission }) {
           <Image
             src={mountain}
             alt='mountain'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={birthday}
-            alt='birthday'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
@@ -293,13 +284,6 @@ export default function Home({ hasReadPermission }) {
           <Image
             src={leaving}
             alt='leaving'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={snow}
-            alt='snow'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
