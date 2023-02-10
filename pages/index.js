@@ -99,7 +99,7 @@ export default function Home({ hasReadPermission }) {
         <div className='index__title--nameContainer'>
           {/* <h2 className='index__title--name ohhfancy'>Johanna & Harry</h2> */}
           <h2 className='index__title--name ohhfancy title-style'>Johanna</h2>
-          <h2 className='index__title--name ohhfancy  title-style sign'>&</h2>
+          <h2 className='index__title--name ohhfancy  title-style sign'>and</h2>
           <h2 className='index__title--name ohhfancy title-style'>Harry</h2>
         </div>
         <h2 className='index__title--invite ohhfancy-medium'>{t.home_title_invite}</h2>
@@ -112,7 +112,7 @@ export default function Home({ hasReadPermission }) {
         <h2 className='index__title--invite ohhfancy-tiny'>In Colognola di Casazza, Italy</h2>
 
         <div className='flowers-main' >
-          <Image  src={flowersMain} alt='flowersMain' width='200' />
+          <Image  src={flowersMain} alt='flowersMain' width='180' />
         </div>
 
         {/* <h4>8-9 September 2023</h4>

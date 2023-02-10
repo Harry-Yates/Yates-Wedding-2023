@@ -82,12 +82,6 @@ select {
   letter-spacing: 0.3rem;
 }
 
-.ohhfancy-small {
-  font-family: var(--ff-primary-alt);
-  font-weight: 100;
-  font-size: var(--fs-larger2);
-}
-
 .ohhfancy-tiny {
   font-family: var(--ff-primary-alt);
   font-weight: 100;
@@ -97,6 +91,7 @@ select {
 .sign {
   font-family: var(--ff-primary-alt-sackers);
   text-transform: none;
+  letter-spacing: 0.2rem;
 }
 
 
@@ -106,26 +101,26 @@ select {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 785px) {
   .index__title--nameContainer {
   margin-bottom: 1rem;
   }
   
   .ohhfancy {
-  font-size: var(--fs-larger);
-  line-height: 1.8rem;
+  font-size: var(--fs-larger4);
+  line-height: 2rem;
   }
   
   .ohhfancy-medium {
-  font-size: var(--fs-large);
+  font-size: var(--fs-larger);
+  flex-wrap: wrap;
+  line-height: 1.9rem;
+  text-align: center;
+  max-width: 500px;
   }
-  
-  .ohhfancy-small {
-  font-size: var(--fs-medium);
-  }
-  
+
   .ohhfancy-tiny {
-  font-size: var(--fs-small);
+  font-size: var(--fs-large);
   }
   
   .flowers-main {
@@ -137,25 +132,31 @@ select {
   }
   }
   
-  @media (max-width: 479px) {
+  @media (max-width: 480px) {
   .index__title--nameContainer {
   margin-bottom: 0.5rem;
   }
   
   .ohhfancy {
-  font-size: var(--fs-large);
-  line-height: 1.5rem;
+  font-size: var(--fs-larger2);
+  line-height: 1rem;
   }
   
   .ohhfancy-medium {
-  font-size: var(--fs-medium);
+  font-size: var(--fs-large);
+  max-width: 400px;
   }
   
-  .ohhfancy-small {
-  font-size: var(--fs-small);
-  }
+  // .ohhfancy-small {
+  // font-size: var(--fs-small);
+  // }
   
   .ohhfancy-tiny {
-  font-size: var(--fs-tiny);
+  font-size: var(--fs-medium);
   }
+
+  .flowers-main {
+  width:150;
+}
+
   }
