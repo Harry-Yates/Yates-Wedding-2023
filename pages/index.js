@@ -109,7 +109,7 @@ export default function Home({ hasReadPermission }) {
           {" "}{t.home_footer_title_date}
         </h2>
         {/* <h2 className='index__title--invite ohhfancy-tiny'>in</h2> */}
-        <h2 className='index__title--invite ohhfancy-tiny'>In Colognola di Casazza, Italy</h2>
+        <h2 className='index__title--invite ohhfancy-tiny'>Colognola di Casazza, Italy</h2>
 
         <div className='flowers-main' >
           <Image  src={flowersMain} alt='flowersMain' width='180' />
