@@ -32,7 +32,7 @@ import venice from "@/public/slider/venice.png";
 import jacket from "@/public/slider/jacket.png";
 import jitaly from "@/public/slider/jitaly.png";
 import italy3 from "@/public/slider/italy3.png";
-import hydrangea from "@/public/decoration/hydrangea.png";
+import flowersMain from "@/public/decoration/flowers-main.png";
 
 // Link to docs
 // https://keen-slider.io/docs#usage
@@ -96,20 +96,23 @@ export default function Home({ hasReadPermission }) {
           <option value='it-IT'>IT 🇮🇹</option>
         </select>
         {/* <h1 className='index__title'>Welcome</h1> */}
-        <h2 className='index__title--name ohhfancy'>Johanna & Harry</h2>
+        <div className='index__title--nameContainer'>
+          {/* <h2 className='index__title--name ohhfancy'>Johanna & Harry</h2> */}
+          <h2 className='index__title--name ohhfancy title-style'>Johanna</h2>
+          <h2 className='index__title--name ohhfancy  title-style sign'>&</h2>
+          <h2 className='index__title--name ohhfancy title-style'>Harry</h2>
+        </div>
         <h2 className='index__title--invite ohhfancy-medium'>{t.home_title_invite}</h2>
-        <h2 className='index__title--invite ohhfancy-small'>
-          8<sup className='ohhfancy-small__sup'>th</sup>-9
-          <sup className='ohhfancy-small__sup'>th</sup>
-          {t.home_footer_title_date}
+        <h2 className='index__title--invite ohhfancy-medium'>
+          8<sup>th</sup>  – 9
+          <sup>th</sup>
+          {" "}{t.home_footer_title_date}
         </h2>
         {/* <h2 className='index__title--invite ohhfancy-tiny'>in</h2> */}
-        <h2 className='index__title--invite ohhfancy-tiny'>Casazza, Italy</h2>
+        <h2 className='index__title--invite ohhfancy-tiny'>In Colognola di Casazza, Italy</h2>
 
-        <div className='hydrangea'>
-          <Image src={hydrangea} alt='hydrangea' width='50' />
-          <Image src={hydrangea} alt='hydrangea' width='100' />
-          <Image src={hydrangea} alt='hydrangea' width='50' />
+        <div className='flowers-main' >
+          <Image  src={flowersMain} alt='flowersMain' width='200' />
         </div>
 
         {/* <h4>8-9 September 2023</h4>

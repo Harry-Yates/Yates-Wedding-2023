@@ -41,17 +41,6 @@
     }
   }
 
-  // .c-btn--login {
-  //   margin-top: 1rem;
-  //   padding: 0.75rem 2rem;
-  //   background-color: var(--clr-primary);
-  //   color: white;
-  //   border-radius: 5px;
-  //   border: none;
-  //   font-size: 1.2rem;
-  //   cursor: pointer;
-  // }
-
   .c-btn--login {
     cursor: pointer;
     transition: all 0.3s;
@@ -72,9 +61,9 @@
   }
 
   .c-btn--login:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: tilt-n-move-shaking 0.5s infinite;
-    border: 1px solid rgb(17, 237, 182);
-    border: 1px solid #7cbfe4;
+    // color: var(--clr-secondary);
+    border: 1px solid var(--clr-secondary);
+    transition: all 0.5s;
+    box-shadow: inset 6px 6px 12px #0c2220, inset -6px -6px 12px #102e2c;
   }
 }

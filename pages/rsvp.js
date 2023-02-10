@@ -10,7 +10,7 @@ import Image from "next/image";
 import cowboy from "@/public/gif/cowboy.gif";
 import confetti from "canvas-confetti";
 import Footer from "@/components/Footer";
-import hydrangea from "@/public/decoration/hydrangea.png";
+import flowersMain from "@/public/decoration/flowers-main.png";
 
 const RSPV = ({ hasReadPermission }) => {
   const router = useRouter();
@@ -164,10 +164,8 @@ const RSPV = ({ hasReadPermission }) => {
             content='width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no'></meta>
         </Head>
         <h1 className='rsvp__title'>{t.rsvp_title}</h1>
-        <div className='hydrangea'>
-          <Image src={hydrangea} alt='hydrangea' width='50' />
-          <Image src={hydrangea} alt='hydrangea' width='100' />
-          <Image src={hydrangea} alt='hydrangea' width='50' />
+        <div className='flowers-main ' >
+          <Image  src={flowersMain} alt='flowersMain' width='200' />
         </div>
         <div className='rsvp_details'>
           <h3>{t.rsvp_secondHeader}</h3>

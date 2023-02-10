@@ -1,5 +1,4 @@
 footer {
-  color: black;
   padding: 1rem 0;
   width: 100%;
   box-sizing: border-box;
@@ -41,24 +40,32 @@ footer {
   align-items: center;
 }
 
-// Logout button
 #btn--logout {
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.387);
-  border: 1px solid #e8e8e8;
   cursor: pointer;
   transition: all 0.3s;
   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  font-family: "Calibre-Bold", "Helvetica";
+  font-size: var(--fs-medium);
+  padding: 0.75rem 2rem;
+  background-color: var(--clr-primary);
+  color: white;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  align-self: center;
+  border: 1px solid var(--clr-primary);
 }
 
-#btn--logout:hover {
-  border: 1px solid white;
+#btn--logout:hover, #btn--logout:focus, #btn--logout:active {
+  // color: var(--clr-secondary);
+  border: 1px solid var(--clr-secondary);
+  transition: all 0.5s;
+  box-shadow: inset 6px 6px 12px #0c2220, inset -6px -6px 12px #102e2c;
 }
 
-#btn--logout:active {
-  box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
-}
 
 @media (max-width: 768px) {
   footer {

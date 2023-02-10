@@ -8,19 +8,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  // padding: 0 1rem;
 }
 
 select {
-  appearance: none;
+  // appearance: none;
+  color: var(--clr-text-primary);
   background-color: transparent;
   border: 1px solid #ccc;
   border-radius: 5px;
-  // font-size: 16px;
   padding: 5px;
-  // position: absolute;
-  // top: 1rem;
-  // right: 4rem;
+  margin-bottom: 2rem;
 
   &:focus {
     outline: none;
@@ -29,24 +26,14 @@ select {
 }
 
 .option {
-  color: var(--clr-primary);
+  color: var(--clr-text-primary);
 }
 
-.index__title {
-  font-size: 6rem;
-  font-weight: 500;
-}
 
 .index__title--name {
-  margin-top: 1rem;
-  font-size: 2rem;
   text-align: center;
 }
 
-.index__title--invite {
-  // font-size: 1.3rem;
-  text-align: center;
-}
 .keen-slider {
   max-width: 100%;
   overflow: hidden;
@@ -64,71 +51,54 @@ select {
 
 //! Pictures Start
 
-.hydrangea {
-  margin-top: 1rem;
+.flowers-main {
+  margin-bottom: 0.5rem;
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.hydrangea > img:nth-of-type(1) {
-  rotate: -200deg;
-}
-
-.hydrangea > img:nth-of-type(2) {
-  rotate: -10deg;
-}
-
-.hydrangea > img:nth-of-type(3) {
-  rotate: -90deg;
-}
-
-.wave {
-  width: 50%;
-  height: auto;
-  margin-top: 4rem;
-}
 
 //! Pictures End
 
+.index__title--nameContainer {
+  margin-bottom: 2rem;
+}
+
 .ohhfancy {
   font-family: var(--ff-primary-alt);
-  font-weight: 500;
-  text-transform: none;
+  font-weight: 100;
   font-size: var(--fs-mega);
+  letter-spacing: 0.8rem;
+  line-height: 2.4rem;
 }
 
 .ohhfancy-medium {
   font-family: var(--ff-primary-alt);
-  font-weight: 500;
-  text-transform: none;
-  font-size: var(--fs-mega);
+  font-weight: 100;
+  font-size: var(--fs-larger);
+  line-height: 1rem;
+  letter-spacing: 0.3rem;
 }
 
 .ohhfancy-small {
   font-family: var(--ff-primary-alt);
-  font-weight: 500;
-  text-transform: none;
-  font-size: var(--fs-larger4);
-
-  &__sup {
-    font-size: var(--fs-larger1);
-    margin-left: 0.7rem;
-  }
+  font-weight: 100;
+  font-size: var(--fs-larger2);
 }
 
 .ohhfancy-tiny {
   font-family: var(--ff-primary-alt);
-  font-weight: 500;
-  text-transform: none;
-  font-size: var(--fs-larger3);
+  font-weight: 100;
+  font-size: var(--fs-larger);
 }
 
-// #supLarge {
-//   font-size: 4rem;
-//   margin-left: 1rem;
-// }
+.sign {
+  font-family: var(--ff-primary-alt-sackers);
+  text-transform: none;
+}
+
 
 @media (max-width: 989px) {
   .keen-slider {
@@ -136,81 +106,56 @@ select {
   }
 }
 
-@media (max-width: 744px) {
+@media (max-width: 767px) {
+  .index__title--nameContainer {
+  margin-bottom: 1rem;
+  }
+  
   .ohhfancy {
-    font-size: var(--fs-larger3);
+  font-size: var(--fs-larger);
+  line-height: 1.8rem;
   }
-
-  .select {
-    position: static;
-  }
-
+  
   .ohhfancy-medium {
-    font-size: var(--fs-larger3);
+  font-size: var(--fs-large);
   }
-
+  
   .ohhfancy-small {
-    font-size: var(--fs-larger2);
-
-    &__sup {
-      font-size: var(--fs-large);
-      margin-left: 0.6rem;
-    }
+  font-size: var(--fs-medium);
   }
-
+  
   .ohhfancy-tiny {
-    font-size: var(--fs-larger1);
+  font-size: var(--fs-small);
   }
-}
-
-@media (max-width: 644px) {
+  
+  .flowers-main {
+  margin-bottom: 0;
+  }
+  
+  select {
+  font-size: 0.8rem;
+  }
+  }
+  
+  @media (max-width: 479px) {
+  .index__title--nameContainer {
+  margin-bottom: 0.5rem;
+  }
+  
   .ohhfancy {
-    font-size: var(--fs-larger2);
+  font-size: var(--fs-large);
+  line-height: 1.5rem;
   }
-
+  
   .ohhfancy-medium {
-    font-size: var(--fs-larger1);
+  font-size: var(--fs-medium);
   }
-
+  
   .ohhfancy-small {
-    font-size: var(--fs-larger2);
-
-    &__sup {
-      font-size: var(--fs-medium);
-      margin-left: 0.3rem;
-    }
+  font-size: var(--fs-small);
   }
-
+  
   .ohhfancy-tiny {
-    font-family: var(--ff-primary-alt);
-    font-weight: 500;
-    text-transform: none;
-    font-size: var(--fs-larger1);
+  font-size: var(--fs-tiny);
   }
-}
-
-@media (max-width: 375px) {
-  .ohhfancy {
-    font-size: var(--fs-larger2);
   }
-
-  .ohhfancy-medium {
-    font-size: var(--fs-larger);
-  }
-
-  .ohhfancy-small {
-    font-size: var(--fs-larger1);
-
-    &__sup {
-      font-size: var(--fs-larger);
-      margin-left: 0.5rem;
-    }
-  }
-
-  .ohhfancy-tiny {
-    font-family: var(--ff-primary-alt);
-    font-weight: 500;
-    text-transform: none;
-    font-size: var(--fs-larger1);
-  }
-}

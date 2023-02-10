@@ -7,7 +7,7 @@ import BasePage from "../components/BasePage";
 import React, { useState } from "react";
 import Head from "next/head";
 import Footer from "@/components/Footer";
-import hydrangea from "@/public/decoration/hydrangea.png";
+import flowersMain from "@/public/decoration/flowers-main.png";
 
 export default function FAQ({ hasReadPermission }) {
   const router = useRouter();
@@ -81,10 +81,8 @@ export default function FAQ({ hasReadPermission }) {
           <title>FAQ</title>
         </Head>
         <h1>{t.faq_title}</h1>
-        <div className='hydrangea'>
-          <Image src={hydrangea} alt='hydrangea' width='50' />
-          <Image src={hydrangea} alt='hydrangea' width='100' />
-          <Image src={hydrangea} alt='hydrangea' width='50' />
+        <div className='flowers-main' >
+          <Image  src={flowersMain} alt='flowersMain' width='200' />
         </div>
         <section>
           {questions.map((question, index) => (

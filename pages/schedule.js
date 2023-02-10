@@ -5,7 +5,7 @@ import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import Footer from "@/components/Footer";
-import hydrangea from "@/public/decoration/hydrangea.png";
+import flowersMain from "@/public/decoration/flowers-main.png";
 
 export default function Schedule({ hasReadPermission }) {
   const router = useRouter();
@@ -20,10 +20,8 @@ export default function Schedule({ hasReadPermission }) {
     <BaseLayout>
       <BasePage>
         <h1>{t.schedule_title}</h1>
-        <div className='hydrangea' >
-          <Image  src={hydrangea} alt='hydrangea' width='50' />
-          <Image  src={hydrangea} alt='hydrangea' width='100' />
-          <Image  src={hydrangea} alt='hydrangea' width='50' />
+        <div className='flowers-main' >
+          <Image  src={flowersMain} alt='flowersMain' width='200' />
         </div>
       </BasePage>
       <Footer />

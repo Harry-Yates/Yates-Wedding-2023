@@ -1,21 +1,24 @@
 :root {
   // Colors
   --clr-primary: #1a1a1a;
-  --clr-secondary: #f2f2f2;
+  --clr-primary: #0e2826;
+  --clr-secondary: #4f4f4f;
 
   --clr-white: #ffffff;
   --clr-black: #171717;
-  --clr-gray: ##fbfafa;
+  --clr-gray: #fbfafa;
 
   // Colour of text
   //   --clr-text-primary: #1a1a1a;
   --clr-text-primary: #333f48;
+  --clr-text-primary: #0e2826;;
   --clr-text-secondary: #b1acac;
 
   // Font family
   // --ff-primary: "Source Code Pro", monospace;
   --ff-primary: "Hiragino Kaku Gothic";
-  --ff-primary-alt: "sackers_italian_script_stdRg";
+  --ff-primary-alt-sackers: "sackers_italian_script_stdRg";
+  --ff-primary-alt: "gooldstylesmallcapsoldstylefigures";
 
   --ff-secondary-bold: "Calibre-Bold";
   --ff-secondary-regular: "Calibre-Regular";

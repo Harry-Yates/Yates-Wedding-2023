@@ -6,7 +6,7 @@ import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import Footer from "@/components/Footer";
-import hydrangea from "@/public/decoration/hydrangea.png";
+import flowersMain from "@/public/decoration/flowers-main.png";
 import Link from "next/link";
 
 export default function Casazza({ hasReadPermission }) {
@@ -61,10 +61,8 @@ export default function Casazza({ hasReadPermission }) {
     <BaseLayout>
       <BasePage>
         <h1>{t.casazza_title}</h1>
-        <div className='hydrangea'>
-          <Image src={hydrangea} alt='hydrangea' width='50' />
-          <Image src={hydrangea} alt='hydrangea' width='100' />
-          <Image src={hydrangea} alt='hydrangea' width='50' />
+        <div className='flowers-main' >
+          <Image  src={flowersMain} alt='flowersMain' width='200' />
         </div>
         <div className='casazza-container'>
           <section className='casazza-section-start'>
