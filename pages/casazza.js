@@ -23,22 +23,25 @@ export default function Casazza({ hasReadPermission }) {
       const currentScrollPos = window.pageYOffset;
       const isScrollingUp = prevScrollPos > currentScrollPos;
 
-      if (!section1Visible && window.pageYOffset > -1) {
+      if (!section1Visible && window.pageYOffset > 0) {
         setSection1Visible(true);
       } else if (section1Visible && isScrollingUp) {
-        setSection1Visible(false);
+        // setSection1Visible(false);
+        setSection3Visible(true);
       }
 
       if (!section2Visible && window.pageYOffset > 100) {
         setSection2Visible(true);
       } else if (section2Visible && isScrollingUp) {
-        setSection2Visible(false);
+        // setSection2Visible(false);
+        setSection3Visible(true);
       }
 
       if (!section3Visible && window.pageYOffset > 200) {
         setSection3Visible(true);
       } else if (section3Visible && isScrollingUp) {
-        setSection3Visible(false);
+        // setSection3Visible(false);
+        setSection3Visible(true);
       }
 
       setPrevScrollPos(currentScrollPos);
@@ -100,19 +103,28 @@ export default function Casazza({ hasReadPermission }) {
           </section>
 
           <section className={`section ${section1Visible ? "visible" : ""}`}>
-            <h2>Section 1</h2>
-            <p>This is the first section</p>
+            <h2>Getting There</h2>
+            <p>
+              The most convenient airport for your travels will be <b>Bergamo Airport (BGY)</b>.
+              <br />
+              Then you can continue by car, taxi or bus to your hotel.
+            </p>
+            <br />
+            <p>
+              Other airports that are also convenient are <br /> <b>Milano Linate (LIN)</b> or{" "}
+              <b>Malpensa Airport (MXP)</b>.
+            </p>
           </section>
 
           <section className={`section ${section2Visible ? "visible" : ""}`}>
-            <h2>Section 2</h2>
-            <p>This is the second section</p>
+            <h2>Site Map</h2>
+            <p>This is the third section</p>
           </section>
 
-          {/* <section className={`section ${section3Visible ? "visible" : ""}`}>
-            <h2>Section 3</h2>
+          <section className={`section ${section3Visible ? "visible" : ""}`}>
+            <h2>History of Casazza</h2>
             <p>This is the third section</p>
-          </section> */}
+          </section>
         </div>
         <Footer />
       </BasePage>
