@@ -134,13 +134,11 @@ input {
   margin-bottom: 2rem;
   max-width: 600px;
   align-self: center;
-  border: 1px solid var(--clr-primary);
 }
 
 .btn-rsvp-btn:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: tilt-n-move-shaking 0.5s infinite;
-  border: 1px solid #7cbfe4;
 }
 
 .btn-rsvp-btn:active {

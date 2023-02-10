@@ -14,11 +14,16 @@
   padding: 1rem;
 }
 
+.cazazza-hotel > li:hover {
+  animation: tilt-shaking 0.4s;
+  animation-iteration-count: infinite;
+}
+
 .cazazza-hotel-link {
   font-size: var(--fs-large);
 }
 
-.cazassa-hotel--details{
+.cazassa-hotel--details {
   margin-top: 1rem;
 }
 
@@ -59,11 +64,15 @@ h2 {
 
   &h3 {
     color: white;
+    animation: tilt-shaking 0.4s;
+    animation-iteration-count: infinite;
   }
 }
 
 #white {
   color: white;
+  animation: tilt-shaking 0.4s;
+  animation-iteration-count: infinite;
 }
 
 .icon-scroll {
@@ -73,7 +82,7 @@ h2 {
   width: 1rem;
   height: 3.125em;
   transform: scale(2);
-  z-index: 99999;
+  // z-index: 2;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
