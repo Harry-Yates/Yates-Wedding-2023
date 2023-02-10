@@ -8,7 +8,7 @@ footer {
   // margin-top: 2rem;
 }
 
-.container {
+.footer-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -65,7 +65,7 @@ footer {
     margin-top: 1.5rem;
   }
 
-  .container {
+  .footer-container {
     flex-direction: column-reverse;
     padding: 0 0rem;
   }

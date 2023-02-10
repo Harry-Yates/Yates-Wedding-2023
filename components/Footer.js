@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className='container'>
+      <div className='footer-container'>
         <div className='container-left '>
           <h4>
             8<sup>th</sup>-9<sup>th</sup> {t.home_footer_title_date} 2023

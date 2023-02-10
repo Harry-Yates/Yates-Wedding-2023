@@ -1,0 +1,31 @@
+.casazza-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.casazza-section-start {
+  width: 100%;
+  padding: 20px;
+  transform: translateY(50px);
+  // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  height: 30vh;
+}
+
+.section {
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  height: 30vh;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+}
