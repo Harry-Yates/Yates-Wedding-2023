@@ -85,9 +85,14 @@ export default function Casazza({ hasReadPermission }) {
                 className='cazazza-hotel-link'
                 href='https://www.hotelsanpancrazio.it/en/'
                 target={"_blank"}>
-                Hotel San Panrazio
+                Hotel San Panrazio*
               </Link>
-              <p>Via Fratelli Calvi, 7, 24069 Trescore Balneario BG</p>
+              <p>Via Fratelli Calvi, 7, 24069 Trescore Balneario BG*</p>
+              <br />
+              <p>
+                When reserving your room please mention <b>‘Yates Wedding’</b> for the staff to know
+                you are a part of our event.
+              </p>
             </div>
             <div className='cazazza-hotel-family'>
               <h3>We have reserved these hotels for the wedding party and family.</h3>
@@ -101,7 +106,7 @@ export default function Casazza({ hasReadPermission }) {
                   target={"_blank"}>
                   Vulcano Village
                 </Link>
-                <p>iazza del Porto, 18, 24063 Castro BG</p>
+                <p>Piazza del Porto, 18, 24063 Castro BG</p>
               </div>
 
               <div className='cazazza-hotel'>
@@ -114,6 +119,12 @@ export default function Casazza({ hasReadPermission }) {
                 </Link>
                 <p>Via Montegrappa, 41, 24060 Monasterolo del Castello BG</p>
               </div>
+            </div>
+            <div className='cazassa-hotel--details'>
+              <h3>We will be organizing transport from these hotels to venues.</h3>
+              <br />
+              <h3>There are many other beautiful hotels and B&Bs in the area</h3>
+              <h3>however we will not be able to support with transport from other Hotels. </h3>
             </div>
           </section>
 
