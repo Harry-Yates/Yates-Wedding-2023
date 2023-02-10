@@ -6,6 +6,7 @@ import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import Footer from "@/components/Footer";
 import flowersMain from "@/public/decoration/flowers-main.png";
+import Head from "next/head";
 
 export default function Schedule({ hasReadPermission }) {
   const router = useRouter();
@@ -19,6 +20,9 @@ export default function Schedule({ hasReadPermission }) {
   return (
     <BaseLayout>
       <BasePage>
+      <Head>
+          <title>Schedule</title>
+        </Head>
         <h1 class="page-title">{t.schedule_title}</h1>
         <div className='flowers-main' >
           <Image  src={flowersMain} alt='flowersMain'  width='130' />

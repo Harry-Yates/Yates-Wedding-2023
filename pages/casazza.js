@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Head from "next/head";
 import Login from "@/components/shared/Login";
 import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
@@ -60,6 +61,9 @@ export default function Casazza({ hasReadPermission }) {
   return (
     <BaseLayout>
       <BasePage>
+      <Head>
+          <title>Casazza</title>
+        </Head>
         <h1 class="page-title">{t.casazza_title}</h1>
         <div className='flowers-main' >
           <Image  src={flowersMain} alt='flowersMain'  width='130' />
