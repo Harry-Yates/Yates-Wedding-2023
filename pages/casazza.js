@@ -121,10 +121,10 @@ export default function Casazza({ hasReadPermission }) {
               </div>
             </div>
             <div className='cazassa-hotel--details'>
-              <h3>We will be organizing transport from these hotels to venues.</h3>
+              <p>We will be organizing transport from these hotels to venues.</p>
               <br />
-              <h3>There are many other beautiful hotels and B&Bs in the area</h3>
-              <h3>however we will not be able to support with transport from other Hotels. </h3>
+              <p>There are many other beautiful hotels and B&Bs in the area</p>
+              <p>however we will not be able to support with transport from other Hotels. </p>
             </div>
           </section>
 
