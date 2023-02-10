@@ -64,8 +64,15 @@ export default function Casazza({ hasReadPermission }) {
         <div className='flowers-main' >
           <Image  src={flowersMain} alt='flowersMain'  width='130' />
         </div>
+
+<div class="icon-scroll">
+  <div class="mouse">
+    <div class="wheel"></div>
+  </div>
+</div>
+
         <div className='casazza-container'>
-          <section className='casazza-section-start'>
+          <section className='cazazza-hotel-container'>
             <h2>Casazza Accomodation</h2>
             <p>We have booked rooms in the following hotels</p>
 

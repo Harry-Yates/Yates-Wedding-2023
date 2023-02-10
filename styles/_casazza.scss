@@ -30,8 +30,8 @@
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  height: 30vh;
-  //!THink you will to tweak this to get the heights right
+  height: 20vh;
+  //!Think you will to tweak this to get the heights right
 
   &.visible {
     opacity: 1;
@@ -42,3 +42,50 @@
 h2 {
   margin-bottom: 20px;
 }
+
+.icon-scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+	height: 3.125em;
+	transform:scale(2);
+	z-index: 99999;
+  margin-top: 1rem;
+}
+.icon-scroll .mouse {
+	height: 1.375em;
+	width: .875em;
+	border: 1px solid var(--clr-primary);
+	border-radius: 2em;
+}
+
+.icon-scroll .wheel {
+  position: relative;
+  display: block;
+  height: 0.1875em;
+  width: 0.1875em;
+  margin: 0.1875em auto 0;
+  background: var(--clr-primary);
+  animation: mouse-wheel 1.2s ease infinite;
+  border-radius: 50%;
+}
+
+@keyframes mouse-wheel {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(.375em);
+	}
+}
+
+@keyframes mouse-scroll {
+	0%   { opacity: 0; }
+	50%  { opacity: .5; }
+	100% { opacity: 1; }
+}
+
