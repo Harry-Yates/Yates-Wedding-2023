@@ -7,6 +7,7 @@ import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import Footer from "@/components/Footer";
 import hydrangea from "@/public/decoration/hydrangea.png";
+import Link from "next/link";
 
 export default function Casazza({ hasReadPermission }) {
   const router = useRouter();
@@ -64,8 +65,38 @@ export default function Casazza({ hasReadPermission }) {
         </div>
         <div className='casazza-container'>
           <section className='casazza-section-start'>
-            <h2>Section 0</h2>
-            <p>This is the first section</p>
+            <h2>Casazza Accomodation</h2>
+            <p>We have booked rooms in the following hotels</p>
+
+            <div className='cazazza-hotel-container'>
+              <Link
+                className='cazazza-hotel-link'
+                href='https://vulcanovillage.it/chi-siamo/'
+                target={"_blank"}>
+                Vulcano Village
+              </Link>
+              <p>iazza del Porto, 18, 24063 Castro BG</p>
+            </div>
+
+            <div className='cazazza-hotel-container'>
+              <Link
+                className='cazazza-hotel-link'
+                href='https://locandadelboscaiolo.it/'
+                target={"_blank"}>
+                Locanda Del Boscaiolo
+              </Link>
+              <p>Via Montegrappa, 41, 24060 Monasterolo del Castello BG</p>
+            </div>
+
+            <div className='cazazza-hotel-container'>
+              <Link
+                className='cazazza-hotel-link'
+                href='https://www.hotelsanpancrazio.it/en/'
+                target={"_blank"}>
+                Hotel San Panrazio
+              </Link>
+              <p>Via Fratelli Calvi, 7, 24069 Trescore Balneario BG</p>
+            </div>
           </section>
 
           <section className={`section ${section1Visible ? "visible" : ""}`}>
@@ -78,10 +109,10 @@ export default function Casazza({ hasReadPermission }) {
             <p>This is the second section</p>
           </section>
 
-          <section className={`section ${section3Visible ? "visible" : ""}`}>
+          {/* <section className={`section ${section3Visible ? "visible" : ""}`}>
             <h2>Section 3</h2>
             <p>This is the third section</p>
-          </section>
+          </section> */}
         </div>
         <Footer />
       </BasePage>

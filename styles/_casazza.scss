@@ -4,12 +4,20 @@
   align-items: center;
 }
 
+.cazazza-hotel-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+.cazazza-hotel-link {
+  font-size: var(--fs-large);
+}
+
 .casazza-section-start {
   width: 100%;
   padding: 20px;
   transform: translateY(50px);
-  // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  height: 30vh;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  height: 40vh;
 }
 
 .section {
@@ -19,6 +27,7 @@
   transform: translateY(50px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   height: 30vh;
+  margin-top: 1rem;
 
   &.visible {
     opacity: 1;
