@@ -61,46 +61,26 @@ export default function Casazza({ hasReadPermission }) {
   return (
     <BaseLayout>
       <BasePage>
-      <Head>
+        <Head>
           <title>Casazza</title>
         </Head>
-        <h1 class="page-title">{t.casazza_title}</h1>
-        <div className='flowers-main' >
-          <Image  src={flowersMain} alt='flowersMain'  width='130' />
+        <h1 className='page-title'>{t.casazza_title}</h1>
+        <div className='flowers-main'>
+          <Image src={flowersMain} alt='flowersMain' width='130' />
         </div>
 
-<div class="icon-scroll">
-  <div class="mouse">
-    <div class="wheel"></div>
-  </div>
-</div>
+        <div className='icon-scroll'>
+          <div className='mouse'>
+            <div className='wheel'></div>
+          </div>
+        </div>
 
         <div className='casazza-container'>
           <section className='cazazza-hotel-container'>
             <h2>Casazza Accomodation</h2>
-            <p>We have booked rooms in the following hotels</p>
+            <h3>We have booked rooms in the following hotels</h3>
 
-            <div className='cazazza-hotel-container'>
-              <Link
-                className='cazazza-hotel-link'
-                href='https://vulcanovillage.it/chi-siamo/'
-                target={"_blank"}>
-                Vulcano Village
-              </Link>
-              <p>iazza del Porto, 18, 24063 Castro BG</p>
-            </div>
-
-            <div className='cazazza-hotel-container'>
-              <Link
-                className='cazazza-hotel-link'
-                href='https://locandadelboscaiolo.it/'
-                target={"_blank"}>
-                Locanda Del Boscaiolo
-              </Link>
-              <p>Via Montegrappa, 41, 24060 Monasterolo del Castello BG</p>
-            </div>
-
-            <div className='cazazza-hotel-container'>
+            <div className='cazazza-hotel'>
               <Link
                 className='cazazza-hotel-link'
                 href='https://www.hotelsanpancrazio.it/en/'
@@ -108,6 +88,32 @@ export default function Casazza({ hasReadPermission }) {
                 Hotel San Panrazio
               </Link>
               <p>Via Fratelli Calvi, 7, 24069 Trescore Balneario BG</p>
+            </div>
+            <div className='cazazza-hotel-family'>
+              <h3>We have reserved these hotels for the wedding party and family.</h3>
+              <p>We will reach out to you individually about these hotels</p>
+
+              <div className='cazazza-hotel'>
+                <Link
+                  className='cazazza-hotel-link'
+                  id='white'
+                  href='https://vulcanovillage.it/chi-siamo/'
+                  target={"_blank"}>
+                  Vulcano Village
+                </Link>
+                <p>iazza del Porto, 18, 24063 Castro BG</p>
+              </div>
+
+              <div className='cazazza-hotel'>
+                <Link
+                  className='cazazza-hotel-link'
+                  id='white'
+                  href='https://locandadelboscaiolo.it/'
+                  target={"_blank"}>
+                  Locanda Del Boscaiolo
+                </Link>
+                <p>Via Montegrappa, 41, 24060 Monasterolo del Castello BG</p>
+              </div>
             </div>
           </section>
 

@@ -164,11 +164,10 @@ const RSPV = ({ hasReadPermission }) => {
             content='width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no'></meta>
         </Head>
         <h1 className='rsvp__title page-title'>{t.rsvp_title}</h1>
-        <div className='flowers-main ' >
-          <Image  src={flowersMain} alt='flowersMain'  width='130' />
+        <div className='flowers-main '>
+          <Image src={flowersMain} alt='flowersMain' width='130' />
         </div>
         <div className='rsvp_details'>
-          <h3>{t.rsvp_secondHeader}</h3>
           <p>
             {t.rsvp_deadline}
             <time dateTime='2023-05-25'>
