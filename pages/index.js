@@ -112,14 +112,9 @@ export default function Home({ hasReadPermission }) {
         <h2 className='index__title--invite ohhfancy-tiny'>Colognola di Casazza, Italy</h2>
 
         <div className='flowers-main' >
-          <Image  src={flowersMain} alt='flowersMain' width='180' />
+          <Image  src={flowersMain} alt='flowersMain' width='130' />
         </div>
-
-        {/* <h4>8-9 September 2023</h4>
-        <h4>Colognola Di Casazza, Italy</h4>
-        <h5>#YatesWedding23</h5> */}
         <div ref={sliderRef} className='keen-slider'>
-          {/* <div className='keen-slider__slide number-slide1'>1</div> */}
           <Image
             src={midsommar}
             alt='midsommar'
@@ -268,8 +263,6 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
         </div>
-        {/* <Image className='wave' src={wave} alt='wave' width={800} /> */}
-        {/* <Image className='pinkwave' src={pinkwave} alt='wave' /> */}
         <div className='pinkwave' />
         <Footer />
       </BasePage>

@@ -163,9 +163,9 @@ const RSPV = ({ hasReadPermission }) => {
             name='viewport'
             content='width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no'></meta>
         </Head>
-        <h1 className='rsvp__title'>{t.rsvp_title}</h1>
+        <h1 className='rsvp__title page-title'>{t.rsvp_title}</h1>
         <div className='flowers-main ' >
-          <Image  src={flowersMain} alt='flowersMain' width='200' />
+          <Image  src={flowersMain} alt='flowersMain'  width='130' />
         </div>
         <div className='rsvp_details'>
           <h3>{t.rsvp_secondHeader}</h3>

@@ -19,9 +19,9 @@ export default function Schedule({ hasReadPermission }) {
   return (
     <BaseLayout>
       <BasePage>
-        <h1>{t.schedule_title}</h1>
+        <h1 class="page-title">{t.schedule_title}</h1>
         <div className='flowers-main' >
-          <Image  src={flowersMain} alt='flowersMain' width='200' />
+          <Image  src={flowersMain} alt='flowersMain'  width='130' />
         </div>
       </BasePage>
       <Footer />

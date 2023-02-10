@@ -60,9 +60,9 @@ export default function Casazza({ hasReadPermission }) {
   return (
     <BaseLayout>
       <BasePage>
-        <h1>{t.casazza_title}</h1>
+        <h1 class="page-title">{t.casazza_title}</h1>
         <div className='flowers-main' >
-          <Image  src={flowersMain} alt='flowersMain' width='200' />
+          <Image  src={flowersMain} alt='flowersMain'  width='130' />
         </div>
         <div className='casazza-container'>
           <section className='casazza-section-start'>
