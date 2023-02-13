@@ -9,6 +9,7 @@ import BasePage from "../components/BasePage";
 import Footer from "@/components/Footer";
 import flowersMain from "@/public/decoration/flowers-main.png";
 import Link from "next/link";
+import Map from "@/components/shared/Map";
 
 export default function Casazza({ hasReadPermission }) {
   const router = useRouter();
@@ -81,13 +82,13 @@ export default function Casazza({ hasReadPermission }) {
             <h3>We have booked rooms in the following hotels</h3>
 
             <div className='cazazza-hotel'>
-            <li>
-              <Link
-                className='cazazza-hotel-link shake'
-                href='https://www.hotelsanpancrazio.it/en/'
-                target={"_blank"}>
-                Hotel San Panrazio*
-              </Link>
+              <li>
+                <Link
+                  className='cazazza-hotel-link shake'
+                  href='https://www.hotelsanpancrazio.it/en/'
+                  target={"_blank"}>
+                  Hotel San Panrazio*
+                </Link>
               </li>
               <p>Via Fratelli Calvi, 7, 24069 Trescore Balneario BG*</p>
               <br />
@@ -150,7 +151,7 @@ export default function Casazza({ hasReadPermission }) {
 
           <section className={`section ${section2Visible ? "visible" : ""}`}>
             <h2>Site Map</h2>
-            <p>This is the third section</p>
+            <Map />
           </section>
 
           <section className={`section ${section3Visible ? "visible" : ""}`}>

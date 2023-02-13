@@ -43,7 +43,7 @@
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  height: 20vh;
+  height: 110%;
   //!Think you will to tweak this to get the heights right
 
   &.visible {

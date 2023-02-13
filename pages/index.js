@@ -7,8 +7,7 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import { useLoadScript } from "@react-google-maps/api";
-import Map from "@/components/shared/Map";
+// import Map from "@/components/shared/Map";
 
 //! IMAGES
 import midsommar from "@/public/slider/midsommar.png";
@@ -219,7 +218,7 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
         </div>
-        <Map />
+        {/* <Map /> */}
         <Footer />
       </BasePage>
     </BaseLayout>
