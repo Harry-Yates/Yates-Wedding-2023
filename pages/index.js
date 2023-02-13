@@ -8,10 +8,8 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import Countdown from "react-countdown";
 
 //! IMAGES
-import hurlingham from "@/public/slider/hurlingham.png";
 import midsommar from "@/public/slider/midsommar.png";
 import leaving from "@/public/slider/leaving.png";
 import cyprusbluedress from "@/public/slider/cyprus-bluedress.png";
@@ -20,13 +18,8 @@ import arholma from "@/public/slider/arholma.png";
 import sunset from "@/public/slider/sunset.png";
 import venicepink from "@/public/slider/venicepink.png";
 import whisky from "@/public/slider/whisky.png";
-import fields from "@/public/slider/fields.png";
 import walks from "@/public/slider/walks.png";
-import cray from "@/public/slider/cray.png";
 import jsea from "@/public/slider/jsea.png";
-import imran from "@/public/slider/imran.png";
-import carnival from "@/public/slider/carnival.png";
-import cabin from "@/public/slider/cabin.png";
 import mountain from "@/public/slider/mountain.png";
 import venice from "@/public/slider/venice.png";
 import jacket from "@/public/slider/jacket.png";
@@ -99,20 +92,18 @@ export default function Home({ hasReadPermission }) {
         <div className='index__title--nameContainer'>
           {/* <h2 className='index__title--name ohhfancy'>Johanna & Harry</h2> */}
           <h2 className='index__title--name ohhfancy title-style'>Johanna</h2>
-          <h2 className='index__title--name ohhfancy  title-style sign'>and</h2>
+          <h2 className='index__title--name ohhfancy  title-style sign'>{t.home_title_and}</h2>
           <h2 className='index__title--name ohhfancy title-style'>Harry</h2>
         </div>
         <h2 className='index__title--invite ohhfancy-medium'>{t.home_title_invite}</h2>
         <h2 className='index__title--invite ohhfancy-medium'>
-          8<sup>th</sup>  – 9
-          <sup>th</sup>
-          {" "}{t.home_footer_title_date}
+          8<sup>th</sup> – 9<sup>th</sup> {t.home_footer_title_date}
         </h2>
         {/* <h2 className='index__title--invite ohhfancy-tiny'>in</h2> */}
         <h2 className='index__title--invite ohhfancy-tiny'>Colognola di Casazza, Italy</h2>
 
-        <div className='flowers-main' >
-          <Image  src={flowersMain} alt='flowersMain' width='130' />
+        <div className='flowers-main'>
+          <Image src={flowersMain} alt='flowersMain' width='130' />
         </div>
         <div ref={sliderRef} className='keen-slider'>
           <Image
@@ -137,29 +128,8 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
-            src={hurlingham}
-            alt='hurlingham'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
             src={johannabday}
             alt='johannabday'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={cabin}
-            alt='cabin'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={imran}
-            alt='imran'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
@@ -207,13 +177,6 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
-            src={fields}
-            alt='fields'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
             src={jacket}
             alt='jacket'
             className='keen-slider__slide number-slidex'
@@ -223,20 +186,6 @@ export default function Home({ hasReadPermission }) {
           <Image
             src={venicepink}
             alt='venicepink'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={cray}
-            alt='cray'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={carnival}
-            alt='carnival'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}

@@ -22,8 +22,7 @@ export default function Header() {
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <span>
-        {days} {t.header_countdown_days}, {hours} {t.header_countdown_hours}, {minutes}
-        {" "}
+        {days} {t.header_countdown_days}, {hours} {t.header_countdown_hours}, {minutes}{" "}
         {t.header_countdown_minutes}, {seconds} {t.header_countdown_seconds}.
       </span>
     );
@@ -73,7 +72,7 @@ export default function Header() {
       </div>
       <ul className='nav-links'>
         <li>
-          <Link href='/'>Welcome</Link>
+          <Link href='/'>{t.header_welcome}</Link>
         </li>
         <li>
           <Link href='/faq'>{t.faq_title}</Link>
