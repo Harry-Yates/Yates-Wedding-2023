@@ -92,18 +92,18 @@ export default function Casazza({ hasReadPermission }) {
                   Hotel San Panrazio*
                 </Link>
               </li>
-              <p>Via Fratelli Calvi, 7, 24069 Trescore Balneario BG*</p>
+              <p>Via Fratelli Calvi, 7, 24069 Trescore Balneario BG</p>
               <br />
 
               <p>
-                When reserving your room please mention <b>‘Yates Wedding’</b> for the staff to know
+                *When reserving your room please mention <b>‘Yates Wedding’</b> for the staff to know
                 you are a part of our event.
               </p>
             </div>
 
             <div className='cazazza-hotel-family'>
-              <h3>We have reserved this hotel for the wedding party.</h3>
-              <p>We will reach out to you individually about this hotels</p>
+              <h3>We have reserved this hotel for the wedding party</h3>
+              <p>We will reach out to you individually about this hotel</p>
 
               <div className='cazazza-hotel'>
                 <li>
@@ -120,7 +120,7 @@ export default function Casazza({ hasReadPermission }) {
             </div>
             <div className='cazazza-hotel-family'>
               <h3>We have reserved this hotels for family.</h3>
-              <p>We will reach out to you individually about this hotels</p>
+              <p>We will reach out to you individually about this hotel</p>
               <div className='cazazza-hotel'>
                 <li>
                   <Link
