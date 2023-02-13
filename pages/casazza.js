@@ -80,10 +80,12 @@ export default function Casazza({ hasReadPermission }) {
           <section className='cazazza-hotel-container'>
             <h2>Accomodation</h2>
 
-            <div className='cazazza-hotel-family top'>
+            <div className='cazazza-hotel-family' id='cazazza-hotel-family'>
               <h3>We have booked rooms in the following hotels</h3>
-              <li>
+              <br />
+              <li className='white-helper'>
                 <Link
+                  id='white-helper'
                   className='cazazza-hotel-link shake'
                   href='https://www.hotelsanpancrazio.it/en/'
                   target={"_blank"}>
@@ -92,14 +94,16 @@ export default function Casazza({ hasReadPermission }) {
               </li>
               <p>Via Fratelli Calvi, 7, 24069 Trescore Balneario BG*</p>
               <br />
+
               <p>
                 When reserving your room please mention <b>‘Yates Wedding’</b> for the staff to know
                 you are a part of our event.
               </p>
             </div>
+
             <div className='cazazza-hotel-family'>
-              <h3>We have reserved these hotels for the wedding party and family.</h3>
-              <p>We will reach out to you individually about these hotels</p>
+              <h3>We have reserved this hotel for the wedding party.</h3>
+              <p>We will reach out to you individually about this hotels</p>
 
               <div className='cazazza-hotel'>
                 <li>
@@ -113,7 +117,10 @@ export default function Casazza({ hasReadPermission }) {
                 </li>
                 <p>Piazza del Porto, 18, 24063 Castro BG</p>
               </div>
-
+            </div>
+            <div className='cazazza-hotel-family'>
+              <h3>We have reserved this hotels for family.</h3>
+              <p>We will reach out to you individually about this hotels</p>
               <div className='cazazza-hotel'>
                 <li>
                   <Link
@@ -127,6 +134,7 @@ export default function Casazza({ hasReadPermission }) {
                 <p>Via Montegrappa, 41, 24060 Monasterolo del Castello BG</p>
               </div>
             </div>
+
             <div className='cazassa-hotel--details'>
               <p>We will be organizing transport from these hotels to venues.</p>
               <br />

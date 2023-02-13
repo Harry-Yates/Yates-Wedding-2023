@@ -59,8 +59,12 @@ h2 {
 .cazazza-hotel-family {
   padding: 1rem;
   background: var(--clr-primary);
+  background: #303945;
   color: white;
   border-radius: 10px;
+  margin-bottom: 1rem;
+  max-width: 480px;
+  width: 480px;
 
   &h3 {
     color: white;
@@ -69,13 +73,23 @@ h2 {
   }
 }
 
-.top {
-  max-width: 480px;
-  margin-bottom: 1rem;
+#cazazza-hotel-family {
+  background: var(--clr-primary);
 }
 
 #white {
   color: white;
+  animation: tilt-shaking 0.4s;
+  animation-iteration-count: infinite;
+}
+
+#white-helper,
+.white-helper {
+  color: white;
+}
+
+#white-helper:hover,
+.white-helper:hover {
   animation: tilt-shaking 0.4s;
   animation-iteration-count: infinite;
 }
