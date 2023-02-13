@@ -29,7 +29,6 @@ select {
   color: var(--clr-text-primary);
 }
 
-
 .index__title--name {
   text-align: center;
   margin-left: 0.5rem;
@@ -59,7 +58,6 @@ select {
   justify-content: center;
   align-items: center;
 }
-
 
 //! Pictures End
 
@@ -95,8 +93,6 @@ select {
   letter-spacing: 0.2rem;
 }
 
-
-
 @media (max-width: 989px) {
   .keen-slider {
     border-radius: 0px;
@@ -105,60 +101,59 @@ select {
 
 @media (max-width: 785px) {
   .index__title--nameContainer {
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
-  
+
   .ohhfancy {
-  font-size: var(--fs-larger4);
-  line-height: 2rem;
+    font-size: var(--fs-larger4);
+    line-height: 2rem;
   }
-  
+
   .ohhfancy-medium {
-  font-size: var(--fs-larger);
-  flex-wrap: wrap;
-  line-height: 1.9rem;
-  text-align: center;
-  max-width: 500px;
+    font-size: var(--fs-larger);
+    flex-wrap: wrap;
+    line-height: 1.9rem;
+    text-align: center;
+    max-width: 500px;
   }
 
   .ohhfancy-tiny {
-  font-size: var(--fs-large);
+    font-size: var(--fs-large);
   }
-  
+
   .flowers-main {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
-  
+
   select {
-  font-size: 0.8rem;
+    font-size: 0.8rem;
   }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
   .index__title--nameContainer {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
   }
-  
+
   .ohhfancy {
-  font-size: var(--fs-larger2);
-  line-height: 1rem;
+    font-size: var(--fs-larger2);
+    line-height: 1rem;
   }
-  
+
   .ohhfancy-medium {
-  font-size: var(--fs-large);
-  max-width: 400px;
+    font-size: var(--fs-large);
+    max-width: 400px;
   }
-  
+
   // .ohhfancy-small {
   // font-size: var(--fs-small);
   // }
-  
+
   .ohhfancy-tiny {
-  font-size: var(--fs-medium);
+    font-size: var(--fs-medium);
   }
 
   .flowers-main {
-  width:150;
-}
-
+    width: 150;
   }
+}

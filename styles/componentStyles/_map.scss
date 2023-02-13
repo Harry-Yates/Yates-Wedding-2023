@@ -1,14 +1,24 @@
-.controls {
-  width: 20%;
-  padding: 1rem;
-  background-color: var(--clr-primary);
-  color: white;
-}
+// .controls {
+//   width: 20%;
+//   padding: 1rem;
+//   background-color: var(--clr-primary);
+//   color: white;
+// }
 
-.controls input {
-  border: none;
-}
+// .controls input {
+//   border: none;
+// }
 
 .map-container {
   margin-top: 3rem;
+  position: relative;
+}
+
+marker {
+  z-index: 9999;
+  height: 30px;
+  width: 30px;
+}
+
+#church {
 }

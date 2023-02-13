@@ -26,6 +26,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0;
   width: 60%;
 }
 
@@ -279,5 +280,9 @@ a {
 @media (max-width: 375px) {
   .logo > a > span {
     font-size: 0.75rem;
+  }
+
+  .logo {
+    margin-top: 0rem;
   }
 }
