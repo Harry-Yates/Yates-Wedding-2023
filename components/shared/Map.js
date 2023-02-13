@@ -37,9 +37,10 @@ const Map = () => {
       <div className='map-container'>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
-          zoom={14}
+          zoom={12}
           center={{ lat: 45.750038, lng: 9.90993 }}
           options={options}>
+          {/* Casazza Marker */}
           <MarkerF
             id='marker'
             position={{ lat: 45.750038, lng: 9.90993 }}
@@ -48,44 +49,48 @@ const Map = () => {
             // }}
           />
 
+          {/* Church Via Don Raimondo Bassanelli 12 24060 Spinone Al Lago BG Italy */}
           <MarkerF
             id='church'
-            label={{
-              text: "⛪️ Chiesa di San Pietro in Vincoli ⛪️",
-              color: "#0e2826",
-              fontSize: "1.5rem",
-              // fontWeight: "bold",
-              fontFamily: "cursive",
-              backgroundColor: "white",
-              borderRadius: "50%",
-              paddingBottom: "4rem 0",
-              border: "1px solid black",
-              width: "2rem",
-              height: "2rem",
-              textAlign: "center",
-              lineHeight: "2rem",
-              cursor: "pointer",
-              zIndex: 1000,
-              position: "absolute",
-              top: "200px",
-              left: "50%",
-              transform: "translate(-200%, -200%)",
-              boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.5)",
-              pointerEvents: "none",
-              userSelect: "none"
-            }}
-            position={{ lat: 45.764436, lng: 9.922672 }}
+            position={{ lat: 45.7641746, lng: 9.9220097 }}
             icon={{
               url: "https://user-images.githubusercontent.com/82885837/218527014-641fa8a9-6f0e-4e1a-9dec-b879a6096515.png"
             }}
           />
 
+          {/* Piazza Armando Diaz, 1, Casazza, BG */}
           <MarkerF
-            id='house'
-            label={{ text: "Cerimonia", color: "white" }}
-            position={{ lat: 45.746018619, lng: 9.9142906 }}
+            id='casa lodi-yates'
+            position={{ lat: 45.7459046, lng: 9.9143232 }}
             icon={{
               url: "https://user-images.githubusercontent.com/82885837/218531320-8c8c9c29-f96a-46d4-90c2-2122f8cb7524.png"
+            }}
+          />
+
+          {/* HOTEL SAN PANRAZIO* */}
+          <MarkerF
+            id='Hotel 1'
+            position={{ lat: 45.6900668, lng: 9.846434 }}
+            icon={{
+              url: "https://user-images.githubusercontent.com/82885837/218538598-388ec01e-809e-42a9-b6a9-491f47324ab5.png"
+            }}
+          />
+
+          {/* VULCANO VILLAGE  */}
+          <MarkerF
+            id='Hotel 1'
+            position={{ lat: 45.8025134, lng: 10.0656494 }}
+            icon={{
+              url: "https://user-images.githubusercontent.com/82885837/218538598-388ec01e-809e-42a9-b6a9-491f47324ab5.png"
+            }}
+          />
+
+          {/* LOCANDA DEL BOSCAIOLO */}
+          <MarkerF
+            id='Hotel 1'
+            position={{ lat: 45.76089607418838, lng: 9.92914617061615 }}
+            icon={{
+              url: "https://user-images.githubusercontent.com/82885837/218538598-388ec01e-809e-42a9-b6a9-491f47324ab5.png"
             }}
           />
         </GoogleMap>
