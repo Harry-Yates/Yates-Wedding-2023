@@ -97,10 +97,11 @@ export default function Home({ hasReadPermission }) {
         <div className='index__title--nameContainer'>
           {/* <h2 className='index__title--name ohhfancy'>Johanna & Harry</h2> */}
           <h2 className='index__title--name ohhfancy title-style'>Johanna</h2>
-          <h2 className='index__title--name ohhfancy  title-style sign'>{t.home_title_and}</h2>
+          <h2 className='index__title--name ohhfancy title-style sign'>{t.home_title_and}</h2>
           <h2 className='index__title--name ohhfancy title-style'>Harry</h2>
         </div>
         <h2 className='index__title--invite ohhfancy-medium'>{t.home_title_invite}</h2>
+
         <h2 className='index__title--invite ohhfancy-medium'>
           8<sup>th</sup> – 9<sup>th</sup> {t.home_footer_title_date}
         </h2>
