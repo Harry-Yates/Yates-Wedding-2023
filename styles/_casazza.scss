@@ -43,7 +43,7 @@
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  height: 110%;
+  height: 100%;
   //!Think you will to tweak this to get the heights right
 
   &.visible {
@@ -67,6 +67,11 @@ h2 {
     animation: tilt-shaking 0.4s;
     animation-iteration-count: infinite;
   }
+}
+
+.top {
+  max-width: 480px;
+  margin-bottom: 1rem;
 }
 
 #white {

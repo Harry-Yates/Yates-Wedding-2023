@@ -79,9 +79,9 @@ export default function Casazza({ hasReadPermission }) {
         <div className='casazza-container'>
           <section className='cazazza-hotel-container'>
             <h2>Accomodation</h2>
-            <h3>We have booked rooms in the following hotels</h3>
 
-            <div className='cazazza-hotel'>
+            <div className='cazazza-hotel-family top'>
+              <h3>We have booked rooms in the following hotels</h3>
               <li>
                 <Link
                   className='cazazza-hotel-link shake'
@@ -154,10 +154,10 @@ export default function Casazza({ hasReadPermission }) {
             <Map />
           </section>
 
-          <section className={`section ${section3Visible ? "visible" : ""}`}>
+          {/* <section className={`section ${section3Visible ? "visible" : ""}`}>
             <h2>History of Casazza</h2>
             <p>This is the third section</p>
-          </section>
+          </section> */}
         </div>
         <Footer />
       </BasePage>

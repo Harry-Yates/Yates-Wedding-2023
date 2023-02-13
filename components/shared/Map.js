@@ -34,7 +34,8 @@ const Map = () => {
 
   return (
     isLoaded && (
-      <div className='map-container'>
+      <>
+        {/* <div className='map-container'> */}
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           zoom={12}
@@ -94,7 +95,8 @@ const Map = () => {
             }}
           />
         </GoogleMap>
-      </div>
+      </>
+      // </div>
     )
   );
 };
