@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Login from "@/components/shared/Login";
 import { enGB, svSE, itIT } from "@/translations";
@@ -8,6 +7,8 @@ import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import { useLoadScript } from "@react-google-maps/api";
+import Map from "@/components/shared/Map";
 
 //! IMAGES
 import midsommar from "@/public/slider/midsommar.png";
@@ -26,6 +27,7 @@ import jacket from "@/public/slider/jacket.png";
 import jitaly from "@/public/slider/jitaly.png";
 import italy3 from "@/public/slider/italy3.png";
 import flowersMain from "@/public/decoration/flowers-main.png";
+import Head from "next/head";
 
 // Link to docs
 // https://keen-slider.io/docs#usage
@@ -72,17 +74,20 @@ export default function Home({ hasReadPermission }) {
 
   const t = locale === "en-GB" ? enGB : locale === "sv-SE" ? svSE : itIT;
 
-  if (!hasReadPermission) {
-    return <Login redirectPath={router.asPath} />;
-  }
-
   const handleLanguageToggle = (e) => {
     router.push("/", "/", { locale: e.target.value });
   };
 
+  if (!hasReadPermission) {
+    return <Login redirectPath={router.asPath} />;
+  }
+
   return (
     <BaseLayout>
       <BasePage>
+        <Head>
+          <title>Welcome</title>
+        </Head>
         <select value={locale} onChange={handleLanguageToggle}>
           <option value='en-GB'>GB 🇬🇧</option>
           <option value='sv-SE'>SE 🇸🇪</option>
@@ -103,7 +108,7 @@ export default function Home({ hasReadPermission }) {
         <h2 className='index__title--invite ohhfancy-tiny'>Colognola di Casazza, Italy</h2>
 
         <div className='flowers-main'>
-          <Image src={flowersMain} alt='flowersMain' width='130' />
+          <Image src={flowersMain} alt='flowersMain' width='130' priority />
         </div>
         <div ref={sliderRef} className='keen-slider'>
           <Image
@@ -112,6 +117,7 @@ export default function Home({ hasReadPermission }) {
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
+            priority
           />
           <Image
             src={sunset}
@@ -212,7 +218,7 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
         </div>
-        <div className='pinkwave' />
+        <Map />
         <Footer />
       </BasePage>
     </BaseLayout>
