@@ -35,12 +35,6 @@ import Head from "next/head";
 export default function Home({ hasReadPermission }) {
   const router = useRouter();
   const { locale } = router;
-  const libraries = ["places"];
-
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-    libraries
-  });
 
   const [sliderRef] = useKeenSlider(
     {
@@ -87,8 +81,6 @@ export default function Home({ hasReadPermission }) {
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
   }
-
-  if (!isLoaded) return <div>Loading</div>;
 
   return (
     <BaseLayout>
