@@ -64,7 +64,7 @@ h2 {
   border-radius: 10px;
   margin-bottom: 1rem;
   max-width: 480px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 
   &h3 {
     color: white;
@@ -81,6 +81,15 @@ h2 {
   color: white;
   animation: tilt-shaking 0.4s;
   animation-iteration-count: infinite;
+}
+
+.flex-helper {
+  display: flex;
+}
+
+.airport {
+  margin-top: 1rem;
+  font-size: 1rem
 }
 
 #white-helper,

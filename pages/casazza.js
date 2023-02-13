@@ -96,8 +96,8 @@ export default function Casazza({ hasReadPermission }) {
               <br />
 
               <p>
-                *When reserving your room please mention <b>‘Yates Wedding’</b> for the staff to know
-                you are a part of our event.
+                *When reserving your room please mention <b>‘Yates Wedding’</b> for the staff to
+                know you are a part of our event.
               </p>
             </div>
 
@@ -119,7 +119,7 @@ export default function Casazza({ hasReadPermission }) {
               </div>
             </div>
             <div className='cazazza-hotel-family'>
-              <h3>We have reserved this hotels for family.</h3>
+              <h3>We have reserved this hotels for family</h3>
               <p>We will reach out to you individually about this hotel</p>
               <div className='cazazza-hotel'>
                 <li>
@@ -146,15 +146,21 @@ export default function Casazza({ hasReadPermission }) {
           <section className={`section ${section1Visible ? "visible" : ""}`}>
             <h2>Getting There</h2>
             <p>
-              The most convenient airport for your travels will be <b>Bergamo Airport (BGY)</b>.
+              The most convenient airport for your travels will be
+              <br />
+              <h3 className='airport'>Bergamo Airport (BGY)</h3>
+              {/* <b>Bergamo Airport (BGY)</b>. */}
               <br />
               Then you can continue by car, taxi or bus to your hotel.
             </p>
             <br />
-            <p>
-              Other airports that are also convenient are <br /> <b>Milano Linate (LIN)</b> or{" "}
-              <b>Malpensa Airport (MXP)</b>.
-            </p>
+            Other airports that are also convenient are
+            <br />
+            <div>
+              <h3 className='airport'> Milano Linate (LIN)</h3>
+              <p className='airport'> or </p>
+              <h3 className='airport'> Malpensa Airport (MXP)</h3>
+            </div>
           </section>
 
           <section className={`section ${section2Visible ? "visible" : ""}`}>
