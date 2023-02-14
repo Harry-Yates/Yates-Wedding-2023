@@ -91,8 +91,34 @@ export default function Home({ hasReadPermission }) {
     <BaseLayout>
       <BasePage>
         <Head>
-          <title>Welcome</title>
+          <title>Yates Wedding 2023</title>
+          <meta name='title' content='Yates Wedding 2023' />
+          <meta name='description' content=' 8th-9th September | Colognola di Casazza, Italy' />
+
+          <meta property='og:type' content='website' />
+          <meta property='og:url' content='https://www.yates-wedding.com/' />
+          <meta property='og:title' content='Yates Wedding 2023' />
+          <meta
+            property='og:description'
+            content=' 8th-9th September | Colognola di Casazza, Italy'
+          />
+          <meta
+            property='og:image'
+            content='https://user-images.githubusercontent.com/82885837/218713112-da03d8d2-8dc9-4fc6-ba40-e3282b0def1d.png'
+          />
+
+          <meta property='twitter:card' content='summary_large_image' />
+          <meta property='twitter:url' content='https://www.yates-wedding.com/' />
+          <meta property='twitter:title' content='Yates Wedding 2023' />
+          <meta
+            property='twitter:description'
+            content=' 8th-9th September | Colognola di Casazza, Italy'
+          />
+          <meta
+            property='twitter:image'
+            content='https://user-images.githubusercontent.com/82885837/218713112-da03d8d2-8dc9-4fc6-ba40-e3282b0def1d.png'></meta>
         </Head>
+
         <select value={locale} onChange={handleLanguageToggle}>
           <option value='en-GB'>GB 🇬🇧</option>
           <option value='sv-SE'>SE 🇸🇪</option>
@@ -118,19 +144,19 @@ export default function Home({ hasReadPermission }) {
         </div>
         <div ref={sliderRef} className='keen-slider'>
           <Image
+            src={walks2}
+            alt='walks2'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
             src={midsommar}
             alt='midsommar'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
             priority
-          />
-          <Image
-            src={walks2}
-            alt='walks2'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
           />
           <Image
             src={sunset}
