@@ -6,6 +6,11 @@
   width: 100%;
 }
 
+.page-title-secondary {
+  margin-top: 1rem; 
+  margin-bottom: 2.5rem; 
+}
+
 .cazazza-hotel-container {
   text-align: center;
 }
@@ -14,13 +19,22 @@
   padding: 1rem;
 }
 
+.cazazza-hotel > a {
+  color: var(  --clr-text-primary);
+}
+
 .cazazza-hotel > li:hover {
   animation: tilt-shaking 0.4s;
   animation-iteration-count: infinite;
+  color: var(  --clr-text-primary);
 }
 
 .cazazza-hotel-link {
   font-size: var(--fs-large);
+}
+
+.cazazza-hotel > #green{
+  color: var(  --clr-text-primary);
 }
 
 .cazassa-hotel--details {

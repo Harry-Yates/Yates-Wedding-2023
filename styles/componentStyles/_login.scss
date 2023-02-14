@@ -36,8 +36,16 @@
       height: 40px;
       padding: 0.5rem;
       font-size: var(--fs-medium);
-      border-radius: 5px;
-      border: 1px solid lightgray;
+      border-radius: 1px;
+      // border: 1px solid lightgray;
+      border-bottom: 1px solid #ccc;
+
+      &:focus {
+        outline: none;
+        border-radius: 5px;
+        border-bottom: 1px solid var(--clr-primary);
+        // border-color: var(--clr-primary);
+      }
     }
   }
 

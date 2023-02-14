@@ -70,15 +70,15 @@ export default function Casazza({ hasReadPermission }) {
           <Image src={flowersMain} alt='flowersMain' width='130' />
         </div>
 
-        <div className='icon-scroll'>
+        {/* <div className='icon-scroll'>
           <div className='mouse'>
             <div className='wheel'></div>
           </div>
-        </div>
+        </div> */}
 
         <div className='casazza-container'>
           <section className='cazazza-hotel-container'>
-            <h2>Accomodation</h2>
+            <h2 className='page-title-secondary'>Accomodation</h2>
 
             <div className='cazazza-hotel-family' id='cazazza-hotel-family'>
               <h3>We have booked rooms in the following hotels</h3>
@@ -101,15 +101,15 @@ export default function Casazza({ hasReadPermission }) {
               </p>
             </div>
 
-            <div className='cazazza-hotel-family'>
-              <h3>We have reserved this hotel for the wedding party</h3>
+            <div className='cazazza-hotel'>
+              <h3>We have reserved this hotel for the wedding party and family</h3>
               <p>We will reach out to you individually about this hotel</p>
 
               <div className='cazazza-hotel'>
-                <li>
+                <li id='green'>
                   <Link
                     className='cazazza-hotel-link'
-                    id='white'
+                    // id='white'
                     href='https://vulcanovillage.it/chi-siamo/'
                     target={"_blank"}>
                     Vulcano Village
@@ -117,15 +117,11 @@ export default function Casazza({ hasReadPermission }) {
                 </li>
                 <p>Piazza del Porto, 18, 24063 Castro BG</p>
               </div>
-            </div>
-            <div className='cazazza-hotel-family'>
-              <h3>We have reserved this hotels for family</h3>
-              <p>We will reach out to you individually about this hotel</p>
               <div className='cazazza-hotel'>
-                <li>
+                <li id='green'>
                   <Link
                     className='cazazza-hotel-link'
-                    id='white'
+                    // id='white'
                     href='https://locandadelboscaiolo.it/'
                     target={"_blank"}>
                     Locanda Del Boscaiolo
@@ -144,7 +140,7 @@ export default function Casazza({ hasReadPermission }) {
           </section>
 
           <section className={`section ${section1Visible ? "visible" : ""}`}>
-            <h2>Getting There</h2>
+            <h2 className='page-title-secondary' >Getting There</h2>
             <p>
               The most convenient airport for your travels will be
               <br />

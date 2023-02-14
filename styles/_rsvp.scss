@@ -56,7 +56,7 @@ input {
   background: transparent;
 
   &:focus {
-    // outline: none;
+    outline: none;
     border-color: var(--clr-primary);
   }
 }
