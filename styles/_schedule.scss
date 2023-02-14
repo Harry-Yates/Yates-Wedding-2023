@@ -1,0 +1,23 @@
+.event-section {
+  padding: 1rem;
+  padding-bottom: 2.3rem;
+  padding-top: 1rem;
+  background: var(--clr-primary);
+  //   background: #303945;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  //   max-width: 460px;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  text-align: center;
+
+  &h3 {
+    color: white;
+    animation: tilt-shaking 0.4s;
+    animation-iteration-count: infinite;
+  }
+}
+
+p {
+  margin-bottom: 1rem;
+}
