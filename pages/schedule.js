@@ -69,45 +69,73 @@ export default function Schedule({ hasReadPermission }) {
         </div>
 
         <section className='event-section'>
-          <h2>Friday 8th September</h2>
+          <h2>{t.schedule_title_one}</h2>
 
-          <p>
-            We want to kick the wedding weekend off with an Apericena by the beautiful Lake of
-            Endine.
-          </p>
+          <p>{t.schedule_section_details_a}</p>
 
-          <p>
-            The evening will be hosted at Locanda Del Boscaiolo, one of our favourite local
-            restaurants.
-          </p>
+          <p>{t.schedule_section_details_b}</p>
 
-          <p>
-            An evening where we get the chance to meet family & friends, make new acquaintances and
-            warm up our dancing shoes. A standing Apericena will be served along with Bubbles and
-            Spritz.
-          </p>
-
-          <p>When: from 6pm</p>
-          <p>
-            Where: Locanda Del Boscaiolo, Via Montegrappa, 41, 24060 Monasterolo del Castello BG
-          </p>
-          <p>Dress code: La Dolce Vita – Italian Riviera / Colourful dresses</p>
-          <p>
-            Transport: Buses will be organized from Vulcano Village hotel and Hotel SanPancrazio for
-            pick up at 5.30pm. Return buses will be arriving for 10.30pm. You will find taxi company
-            information under F&Q. There is parking available.
-          </p>
+          <p>{t.schedule_section_details_c}</p>
+          <h3>{t.schedule_section_when}</h3>
+          <p>{t.schedule_section_time}</p>
+          <h3>{t.schedule_section_where}</h3>
+          <p>{t.schedule_section_location}</p>
+          <h3>{t.schedule_section_dresscode}</h3>
+          <p>{t.schedule_section_theme}</p>
+          <h3>{t.schedule_section_transport}</h3>
+          <p>{t.schedule_section_Travel}</p>
         </section>
 
         <section className={`event-section ${section1Visible ? "visible" : ""}`}>
-          <h2>Text</h2>
-          <p>LALA</p>
+          <h2>{t.schedule_title_two}</h2>
+          <h2>{t.schedule_title_two_title}</h2>
+
+          <p>{t.schedule_title_two_address}</p>
+          <p>
+            {t.schedule_title_two_after}
+          </p>
+
+          <h3>{t.schedule_section_when}</h3>
+          <p>2pm</p>
+
+          <h3>{t.schedule_section_where}</h3>
+          <p>{t.schedule_title_two_addresstwo}</p>
+
+          <h3>{t.schedule_section_dresscode}</h3>
+          <p>{t.schedule_title_two_dresscodesemi}</p>
+          <h3>{t.schedule_section_transport}</h3>
+          <p>{t.schedule_title_two_busses}</p>
+          <p>
+            {t.schedule_title_two_bussdeparts}
+          </p>
+
+          <p>{t.schedule_title_two_house}</p>
+          <p>{t.schedule_title_two_house_location}</p>
+
+          <h2>{t.schedule_title_reception_title}</h2>
+          <p>
+            {t.schedule_title_reception_after}
+          </p>
+          <p>
+            {t.schedule_title_reception_dinner}
+          </p>
+          <h3>{t.schedule_section_when}</h3>
+          <p>4:30pm</p>
+
+          <h3>{t.schedule_section_where}</h3>
+          <p>{t.house_address}</p>
+
+          <h3>{t.schedule_section_dresscode}</h3>
+          <p>{t.schedule_title_two_dresscodesemi}</p>
+
+          <span>{t.speach}
+          </span>
         </section>
 
-        <section className={`event-section ${section2Visible ? "visible" : ""}`}>
+        {/* <section className={`event-section ${section2Visible ? "visible" : ""}`}>
           <h2>Text</h2>
           <p>LALA</p>
-        </section>
+        </section> */}
 
         {/* <section className={`section ${section3Visible ? "visible" : ""}`}>
           <h2 className='page-title-secondary'>Text</h2>
