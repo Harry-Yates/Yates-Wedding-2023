@@ -10,7 +10,7 @@ import Image from "next/image";
 import cowboy from "@/public/gif/cowboy.gif";
 import confetti from "canvas-confetti";
 import Footer from "@/components/Footer";
-import flowersMain from "@/public/decoration/flowers-main.png";
+import flowersMain from "@/public/decoration/flowers-main.png.webp";
 
 const RSPV = ({ hasReadPermission }) => {
   const router = useRouter();

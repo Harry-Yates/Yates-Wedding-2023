@@ -8,26 +8,32 @@ import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 // import Map from "@/components/shared/Map";
-
-//! IMAGES
-import midsommar from "@/public/slider/midsommar.png";
-import leaving from "@/public/slider/leaving.png";
-import cyprusbluedress from "@/public/slider/cyprus-bluedress.png";
-import johannabday from "@/public/slider/johannabday.png";
-import arholma from "@/public/slider/arholma.png";
-import sunset from "@/public/slider/sunset.png";
-import venicepink from "@/public/slider/venicepink.png";
-import whisky from "@/public/slider/whisky.png";
-import walks from "@/public/slider/walks.png";
-import jsea from "@/public/slider/jsea.png";
-import mountain from "@/public/slider/mountain.png";
-import venice from "@/public/slider/venice.png";
-import jacket from "@/public/slider/jacket.png";
-import jitaly from "@/public/slider/jitaly.png";
-import italy3 from "@/public/slider/italy3.png";
-import flowersMain from "@/public/decoration/flowers-main.png";
 import Head from "next/head";
 
+//! IMAGES
+import flowersMain from "@/public/decoration/flowers-main.png.webp";
+import midsommar from "@/public/slider/midsommar.png.webp";
+import leaving from "@/public/slider/leaving.png.webp";
+import cyprusbluedress from "@/public/slider/cyprus-bluedress.png.webp";
+import johannabday from "@/public/slider/johannabday.png.webp";
+import arholma from "@/public/slider/arholma.png.webp";
+import sunset from "@/public/slider/sunset.png.webp";
+import venicepink from "@/public/slider/venicepink.png.webp";
+import whisky from "@/public/slider/whisky.png.webp";
+import walks from "@/public/slider/walks.png.webp";
+import mountain from "@/public/slider/mountain.png.webp";
+import venice from "@/public/slider/venice.png.webp";
+import jacket from "@/public/slider/jacket.png.webp";
+import jitaly from "@/public/slider/jitaly.png.webp";
+import italy3 from "@/public/slider/italy3.png.webp";
+import austria from "@/public/slider/austria.png.webp";
+import chloeplace from "@/public/slider/chloeplace.png.webp";
+import walks2 from "@/public/slider/walks2.png.webp";
+import climbers from "@/public/slider/climbers.png.webp";
+import water from "@/public/slider/water.png.webp";
+import smart from "@/public/slider/smart.png.webp";
+import hyde from "@/public/slider/hyde.png.webp";
+import henge from "@/public/slider/henge.png.webp";
 // Link to docs
 // https://keen-slider.io/docs#usage
 
@@ -120,6 +126,13 @@ export default function Home({ hasReadPermission }) {
             priority
           />
           <Image
+            src={walks2}
+            alt='walks2'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
             src={sunset}
             alt='sunset'
             className='keen-slider__slide number-slidex'
@@ -127,8 +140,36 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
+            src={chloeplace}
+            alt='chloeplace'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
             src={jitaly}
             alt='jitaly'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={henge}
+            alt='henge'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={hyde}
+            alt='hyde'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={climbers}
+            alt='climbers'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
@@ -148,6 +189,13 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
+            src={water}
+            alt='water'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
             src={italy3}
             alt='italy3'
             className='keen-slider__slide number-slidex'
@@ -155,22 +203,15 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
-            src={jsea}
-            alt='jsea'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={venice}
-            alt='venice'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
             src={arholma}
             alt='arholma'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
+            src={austria}
+            alt='austria'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
@@ -190,6 +231,13 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
+            src={leaving}
+            alt='leaving'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
             src={venicepink}
             alt='venicepink'
             className='keen-slider__slide number-slidex'
@@ -204,6 +252,13 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
+            src={venice}
+            alt='venice'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
+          <Image
             src={whisky}
             alt='whisky'
             className='keen-slider__slide number-slidex'
@@ -211,8 +266,8 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
-            src={leaving}
-            alt='leaving'
+            src={smart}
+            alt='smart'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}

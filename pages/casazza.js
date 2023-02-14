@@ -7,7 +7,7 @@ import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import Footer from "@/components/Footer";
-import flowersMain from "@/public/decoration/flowers-main.png";
+import flowersMain from "@/public/decoration/flowers-main.png.webp";
 import Link from "next/link";
 import Map from "@/components/shared/Map";
 

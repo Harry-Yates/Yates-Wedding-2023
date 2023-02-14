@@ -1,8 +1,5 @@
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import { styles } from "@/styles/componentStyles/mapStyles";
-// import church from "../../public/emojis/church.png";
-// import house from "../../public/emojis/house.png";
-// import hotel from "../../public/emojis/hotel.png";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -22,8 +19,6 @@ const center = [
     lng: 9.90993
   }
 ];
-
-// const center = useMemo(() => ({ lat: 45.750038, lng: 9.90993 }), []);
 
 const Map = () => {
   const { isLoaded } = useLoadScript({

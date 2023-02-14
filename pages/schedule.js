@@ -5,7 +5,7 @@ import BaseLayout from "@/components/layouts/BaseLayout";
 import { enGB, svSE, itIT } from "@/translations";
 import BasePage from "../components/BasePage";
 import Footer from "@/components/Footer";
-import flowersMain from "@/public/decoration/flowers-main.png";
+import flowersMain from "@/public/decoration/flowers-main.png.webp";
 import Head from "next/head";
 
 export default function Schedule({ hasReadPermission }) {
@@ -20,12 +20,12 @@ export default function Schedule({ hasReadPermission }) {
   return (
     <BaseLayout>
       <BasePage>
-      <Head>
+        <Head>
           <title>Schedule</title>
         </Head>
-        <h1 className="page-title">{t.schedule_title}</h1>
-        <div className='flowers-main' >
-          <Image  src={flowersMain} alt='flowersMain'  width='130' />
+        <h1 className='page-title'>{t.schedule_title}</h1>
+        <div className='flowers-main'>
+          <Image src={flowersMain} alt='flowersMain' width='130' />
         </div>
       </BasePage>
       <Footer />

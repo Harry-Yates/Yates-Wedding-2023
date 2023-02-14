@@ -7,7 +7,7 @@ import BasePage from "../components/BasePage";
 import React, { useState } from "react";
 import Head from "next/head";
 import Footer from "@/components/Footer";
-import flowersMain from "@/public/decoration/flowers-main.png";
+import flowersMain from "@/public/decoration/flowers-main.png.webp";
 
 export default function FAQ({ hasReadPermission }) {
   const router = useRouter();

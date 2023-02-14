@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { enGB, svSE, itIT } from "@/translations";
 import { useRouter } from "next/router";
-import Cookies from "universal-cookie";
 import { useState, useEffect } from "react";
-import consts from "consts";
 import Countdown from "react-countdown";
 
 export default function Header() {
