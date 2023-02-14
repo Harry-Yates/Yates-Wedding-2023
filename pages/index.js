@@ -105,7 +105,7 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='og:image'
-            content='https://user-images.githubusercontent.com/82885837/218713112-da03d8d2-8dc9-4fc6-ba40-e3282b0def1d.png'
+            content='https://user-images.githubusercontent.com/82885837/218784681-a7a77705-9c34-430a-b812-1901cbc6409c.png'
           />
 
           <meta property='twitter:card' content='summary_large_image' />
@@ -117,7 +117,7 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='twitter:image'
-            content='https://user-images.githubusercontent.com/82885837/218713112-da03d8d2-8dc9-4fc6-ba40-e3282b0def1d.png'></meta>
+            content='https://user-images.githubusercontent.com/82885837/218784681-a7a77705-9c34-430a-b812-1901cbc6409c.png'></meta>
         </Head>
 
         <select value={locale} onChange={handleLanguageToggle}>
@@ -144,6 +144,13 @@ export default function Home({ hasReadPermission }) {
           <Image src={flowersMain} alt='flowersMain' width='130' priority />
         </div>
         <div ref={sliderRef} className='keen-slider'>
+          <Image
+            src={mountain}
+            alt='mountain'
+            className='keen-slider__slide number-slidex'
+            height={400}
+            width={1000}
+          />
           <Image
             src={walks2}
             alt='walks2'
