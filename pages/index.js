@@ -12,28 +12,28 @@ import Head from "next/head";
 
 //! IMAGES
 import flowersMain from "@/public/decoration/flowers-main.png.webp";
-import midsommar from "@/public/slider/midsommar.png.webp";
-import leaving from "@/public/slider/leaving.png.webp";
-import cyprusbluedress from "@/public/slider/cyprus-bluedress.png.webp";
-import johannabday from "@/public/slider/johannabday.png.webp";
-import arholma from "@/public/slider/arholma.png.webp";
-import sunset from "@/public/slider/sunset.png.webp";
-import venicepink from "@/public/slider/venicepink.png.webp";
-import whisky from "@/public/slider/whisky.png.webp";
-import walks from "@/public/slider/walks.png.webp";
-import mountain from "@/public/slider/mountain.png.webp";
-import venice from "@/public/slider/venice.png.webp";
-import jacket from "@/public/slider/jacket.png.webp";
-import jitaly from "@/public/slider/jitaly.png.webp";
-import italy3 from "@/public/slider/italy3.png.webp";
-import austria from "@/public/slider/austria.png.webp";
-import chloeplace from "@/public/slider/chloeplace.png.webp";
-import walks2 from "@/public/slider/walks2.png.webp";
-import climbers from "@/public/slider/climbers.png.webp";
-import water from "@/public/slider/water.png.webp";
-import smart from "@/public/slider/smart.png.webp";
-import hyde from "@/public/slider/hyde.png.webp";
-import henge from "@/public/slider/henge.png.webp";
+import midsommar from "@/public/slider/midsommar.png";
+import leaving from "@/public/slider/leaving.png";
+import cyprusbluedress from "@/public/slider/cyprus-bluedress.png";
+import johannabday from "@/public/slider/johannabday.png";
+import arholma from "@/public/slider/arholma.png";
+import sunset from "@/public/slider/sunset.png";
+import venicepink from "@/public/slider/venicepink.png";
+import whisky from "@/public/slider/whisky.png";
+import walks from "@/public/slider/walks.png";
+import mountain from "@/public/slider/mountain.png";
+import venice from "@/public/slider/venice.png";
+import jacket from "@/public/slider/jacket.png";
+import jitaly from "@/public/slider/jitaly.png";
+import italy3 from "@/public/slider/italy3.png";
+import austria from "@/public/slider/austria.png";
+import chloeplace from "@/public/slider/chloeplace.png";
+import walks2 from "@/public/slider/walks2.png";
+import climbers from "@/public/slider/climbers.png";
+import water from "@/public/slider/water.png";
+import smart from "@/public/slider/smart.png";
+import hyde from "@/public/slider/hyde.png";
+import henge from "@/public/slider/henge.png";
 // Link to docs
 // https://keen-slider.io/docs#usage
 
