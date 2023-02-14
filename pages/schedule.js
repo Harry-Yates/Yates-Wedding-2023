@@ -37,7 +37,7 @@ export default function Schedule({ hasReadPermission }) {
         setSection3Visible(true);
       }
 
-      if (!section3Visible && window.pageYOffset > 600) {
+      if (!section3Visible && window.pageYOffset > 400) {
         setSection3Visible(true);
       } else if (section3Visible && isScrollingUp) {
         // setSection3Visible(false);
@@ -68,61 +68,64 @@ export default function Schedule({ hasReadPermission }) {
           <Image src={flowersMain} alt='flowersMain' width='130' />
         </div>
 
-        <section className={`event-section ${section1Visible ? "visible" : ""}`}>
-          <h2>{t.schedule_title_one}</h2>
+        <div className='schedule-container'>
+          <section className='event-section-one'>
+            <h2>{t.schedule_title_one}</h2>
 
-          <p>{t.schedule_section_details_a}</p>
+            <p>{t.schedule_section_details_a}</p>
 
-          <p>{t.schedule_section_details_b}</p>
+            <p>{t.schedule_section_details_b}</p>
 
-          <p>{t.schedule_section_details_c}</p>
-          <h3>{t.schedule_section_when}</h3>
-          <p>{t.schedule_section_time}</p>
-          <h3>{t.schedule_section_where}</h3>
-          <p>{t.schedule_section_location}</p>
-          <h3>{t.schedule_section_dresscode}</h3>
-          <p>{t.schedule_section_theme}</p>
-          <h3>{t.schedule_section_transport}</h3>
-          <p>{t.schedule_section_Travel}</p>
-        </section>
+            <p>{t.schedule_section_details_c}</p>
+            <h3>{t.schedule_section_when}</h3>
+            <p>{t.schedule_section_time}</p>
+            <h3>{t.schedule_section_where}</h3>
+            <p>{t.schedule_section_location}</p>
+            <h3>{t.schedule_section_dresscode}</h3>
+            <p>{t.schedule_section_theme}</p>
+            <h3>{t.schedule_section_transport}</h3>
+            <p>{t.schedule_section_Travel}</p>
+          </section>
 
-        <section className={`event-section ${section2Visible ? "visible" : ""}`}>
-          <h2>{t.schedule_title_two}</h2>
-          <h2>{t.schedule_title_two_title}</h2>
+          <section className={`event-section ${section2Visible ? "visible" : ""}`}>
+            <h2>{t.schedule_title_two}</h2>
+            <h2>{t.schedule_title_two_title}</h2>
 
-          <p>{t.schedule_title_two_address}</p>
-          <p>{t.schedule_title_two_after}</p>
+            <p>{t.schedule_title_two_address}</p>
+            <p>{t.schedule_title_two_after}</p>
 
-          <h3>{t.schedule_section_when}</h3>
-          <p>2pm</p>
+            <h3>{t.schedule_section_when}</h3>
+            <p>2pm</p>
 
-          <h3>{t.schedule_section_where}</h3>
-          <p>{t.schedule_title_two_addresstwo}</p>
+            <h3>{t.schedule_section_where}</h3>
+            <p>{t.schedule_title_two_addresstwo}</p>
 
-          <h3>{t.schedule_section_dresscode}</h3>
-          <p>{t.schedule_title_two_dresscodesemi}</p>
-          <h3>{t.schedule_section_transport}</h3>
-          <p>{t.schedule_title_two_busses}</p>
-          <p>{t.schedule_title_two_bussdeparts}</p>
+            <h3>{t.schedule_section_dresscode}</h3>
+            <p>{t.schedule_title_two_dresscodesemi}</p>
+            <h3>{t.schedule_section_transport}</h3>
+            <p>{t.schedule_title_two_busses}</p>
+            <p>{t.schedule_title_two_bussdeparts}</p>
 
-          <p>{t.schedule_title_two_house}</p>
-          <p>{t.schedule_title_two_house_location}</p>
+            <p>{t.schedule_title_two_house}</p>
+            <p>{t.schedule_title_two_house_location}</p>
+          </section>
 
-          <h2>{t.schedule_title_reception_title}</h2>
-          <p>{t.schedule_title_reception_after}</p>
-          <p>{t.schedule_title_reception_dinner}</p>
-          <h3>{t.schedule_section_when}</h3>
-          <p>4:30pm</p>
+          <section className={`event-section ${section3Visible ? "visible" : ""}`}>
+            <h2>{t.schedule_title_reception_title}</h2>
+            <p>{t.schedule_title_reception_after}</p>
+            <p>{t.schedule_title_reception_dinner}</p>
+            <h3>{t.schedule_section_when}</h3>
+            <p>4:30pm</p>
 
-          <h3>{t.schedule_section_where}</h3>
-          <p>{t.house_address}</p>
+            <h3>{t.schedule_section_where}</h3>
+            <p>{t.house_address}</p>
 
-          <h3>{t.schedule_section_dresscode}</h3>
-          <p>{t.schedule_title_two_dresscodesemi}</p>
+            <h3>{t.schedule_section_dresscode}</h3>
+            <p>{t.schedule_title_two_dresscodesemi}</p>
 
-          <span>{t.speach}</span>
-        </section>
-
+            <span>{t.speach}</span>
+          </section>
+        </div>
         {/* <section className={`event-section ${section2Visible ? "visible" : ""}`}>
           <h2>Text</h2>
           <p>LALA</p>

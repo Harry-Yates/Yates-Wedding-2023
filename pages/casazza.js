@@ -18,11 +18,13 @@ export default function Casazza({ hasReadPermission }) {
   const [section1Visible, setSection1Visible] = useState(false);
   const [section2Visible, setSection2Visible] = useState(false);
   const [section3Visible, setSection3Visible] = useState(false);
+  const [section4Visible, setSection4Visible] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
+      // console.log(window.pageYOffset);
       const isScrollingUp = prevScrollPos > currentScrollPos;
 
       if (!section1Visible && window.pageYOffset > 0) {
@@ -32,18 +34,25 @@ export default function Casazza({ hasReadPermission }) {
         setSection3Visible(true);
       }
 
-      if (!section2Visible && window.pageYOffset > 50) {
+      if (!section2Visible && window.pageYOffset > 80) {
         setSection2Visible(true);
       } else if (section2Visible && isScrollingUp) {
         // setSection2Visible(false);
         setSection3Visible(true);
       }
 
-      if (!section3Visible && window.pageYOffset > 450) {
+      if (!section3Visible && window.pageYOffset > 420) {
         setSection3Visible(true);
       } else if (section3Visible && isScrollingUp) {
         // setSection3Visible(false);
         setSection3Visible(true);
+      }
+
+      if (!section3Visible && window.pageYOffset > 800) {
+        setSection3Visible(true);
+      } else if (section4Visible && isScrollingUp) {
+        // setSection3Visible(false);
+        setSection4Visible(true);
       }
 
       setPrevScrollPos(currentScrollPos);
@@ -53,7 +62,7 @@ export default function Casazza({ hasReadPermission }) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [section1Visible, section2Visible, section3Visible, prevScrollPos]);
+  }, [section1Visible, section2Visible, section3Visible, section4Visible, prevScrollPos]);
 
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
@@ -138,7 +147,7 @@ export default function Casazza({ hasReadPermission }) {
             </div>
           </section>
 
-          <section className={`section ${section1Visible ? "visible" : ""}`}>
+          <section className={`section ${section2Visible ? "visible" : ""}`}>
             <h2 className='page-title-secondary'>{t.casazza_flights_title}</h2>
             <p>{t.casazza_flights_header}</p>
             <h3 className='airport'>Bergamo {t.casazza_flights_airport} (BGY)</h3>
@@ -154,12 +163,12 @@ export default function Casazza({ hasReadPermission }) {
             </div>
           </section>
 
-          <section className={`section ${section2Visible ? "visible" : ""}`}>
+          <section className={`section ${section3Visible ? "visible" : ""}`}>
             <h2>{t.casazza_flights_title_two}</h2>
             <Map />
           </section>
 
-          {/* <section className={`section ${section3Visible ? "visible" : ""}`}>
+          {/* <section className={`section ${section4Visible ? "visible" : ""}`}>
             <h2>History of Casazza</h2>
             <p>This is the third section</p>
           </section> */}
