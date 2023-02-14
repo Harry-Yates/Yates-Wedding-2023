@@ -28,22 +28,22 @@ export default function Casazza({ hasReadPermission }) {
       if (!section1Visible && window.pageYOffset > 0) {
         setSection1Visible(true);
       } else if (section1Visible && isScrollingUp) {
-        setSection1Visible(false);
-        // setSection3Visible(true);
+        // setSection1Visible(false);
+        setSection3Visible(true);
       }
 
       if (!section2Visible && window.pageYOffset > 50) {
         setSection2Visible(true);
       } else if (section2Visible && isScrollingUp) {
-        setSection2Visible(false);
-        // setSection3Visible(true);
+        // setSection2Visible(false);
+        setSection3Visible(true);
       }
 
       if (!section3Visible && window.pageYOffset > 450) {
         setSection3Visible(true);
       } else if (section3Visible && isScrollingUp) {
-        setSection3Visible(false);
-        // setSection3Visible(true);
+        // setSection3Visible(false);
+        setSection3Visible(true);
       }
 
       setPrevScrollPos(currentScrollPos);
@@ -141,19 +141,21 @@ export default function Casazza({ hasReadPermission }) {
             <h2 className='page-title-secondary' >Getting There</h2>
             <p>
               The most convenient airport for your travels will be
+              </p>
               <br />
               <h3 className='airport'>Bergamo Airport (BGY)</h3>
               {/* <b>Bergamo Airport (BGY)</b>. */}
               <br />
+              <p>
               Then you can continue by car, taxi or bus to your hotel.
             </p>
             <br />
             Other airports that are also convenient are
             <br />
             <div>
-              <h3 className='airport'> Milano Linate (LIN)</h3>
+              <h3 className='airport'>Milano Linate (LIN)</h3>
               <p className='airport'> or </p>
-              <h3 className='airport'> Malpensa Airport (MXP)</h3>
+              <h3 className='airport'>Malpensa Airport (MXP)</h3>
             </div>
           </section>
 
