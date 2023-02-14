@@ -6,11 +6,17 @@
   margin-bottom: 1rem;
   max-width: 460px;
   text-align: center;
+  opacity: 0;
   //!   Here to toggle desing
   //   box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
   //   background: var(--clr-primary);
   //   color: white;
   //   background: #303945;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 p {

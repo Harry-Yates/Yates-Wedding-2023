@@ -88,7 +88,7 @@ export default function Casazza({ hasReadPermission }) {
                   className='cazazza-hotel-link shake'
                   href='https://www.hotelsanpancrazio.it/en/'
                   target={"_blank"}>
-                  {t.casazza_hotel_one}*
+                  {t.casazza_hotel_one}
                 </Link>
               </li>
               <p>{t.casazza_hotel_address}</p>

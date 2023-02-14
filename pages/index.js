@@ -12,20 +12,14 @@ import Head from "next/head";
 
 //! IMAGES
 import flowersMain from "@/public/decoration/flowers-main.png.webp";
-import midsommar from "@/public/slider/midsommar.png";
 import leaving from "@/public/slider/leaving.png";
-import cyprusbluedress from "@/public/slider/cyprus-bluedress.png";
-import johannabday from "@/public/slider/johannabday.png";
 import arholma from "@/public/slider/arholma.png";
 import sunset from "@/public/slider/sunset.png";
-import venicepink from "@/public/slider/venicepink.png";
 import whisky from "@/public/slider/whisky.png";
 import walks from "@/public/slider/walks.png";
 import mountain from "@/public/slider/mountain.png";
 import venice from "@/public/slider/venice.png";
 import jacket from "@/public/slider/jacket.png";
-import jitaly from "@/public/slider/jitaly.png";
-import italy3 from "@/public/slider/italy3.png";
 import austria from "@/public/slider/austria.png";
 import chloeplace from "@/public/slider/chloeplace.png";
 import walks2 from "@/public/slider/walks2.png";
@@ -158,14 +152,6 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
-            src={midsommar}
-            alt='midsommar'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-            priority
-          />
-          <Image
             src={sunset}
             alt='sunset'
             className='keen-slider__slide number-slidex'
@@ -175,13 +161,6 @@ export default function Home({ hasReadPermission }) {
           <Image
             src={chloeplace}
             alt='chloeplace'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={jitaly}
-            alt='jitaly'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
@@ -208,13 +187,6 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
-            src={johannabday}
-            alt='johannabday'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
             src={mountain}
             alt='mountain'
             className='keen-slider__slide number-slidex'
@@ -224,13 +196,6 @@ export default function Home({ hasReadPermission }) {
           <Image
             src={water}
             alt='water'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={italy3}
-            alt='italy3'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}
@@ -250,13 +215,6 @@ export default function Home({ hasReadPermission }) {
             width={1000}
           />
           <Image
-            src={cyprusbluedress}
-            alt='cyprusbluedress'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
             src={jacket}
             alt='jacket'
             className='keen-slider__slide number-slidex'
@@ -266,13 +224,6 @@ export default function Home({ hasReadPermission }) {
           <Image
             src={leaving}
             alt='leaving'
-            className='keen-slider__slide number-slidex'
-            height={400}
-            width={1000}
-          />
-          <Image
-            src={venicepink}
-            alt='venicepink'
             className='keen-slider__slide number-slidex'
             height={400}
             width={1000}

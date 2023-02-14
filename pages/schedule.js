@@ -23,7 +23,7 @@ export default function Schedule({ hasReadPermission }) {
       const currentScrollPos = window.pageYOffset;
       const isScrollingUp = prevScrollPos > currentScrollPos;
 
-      if (!section1Visible && window.pageYOffset > -1) {
+      if (!section1Visible && window.pageYOffset > 1) {
         setSection1Visible(true);
       } else if (section1Visible && isScrollingUp) {
         // setSection1Visible(false);
@@ -37,7 +37,7 @@ export default function Schedule({ hasReadPermission }) {
         setSection3Visible(true);
       }
 
-      if (!section3Visible && window.pageYOffset > 450) {
+      if (!section3Visible && window.pageYOffset > 600) {
         setSection3Visible(true);
       } else if (section3Visible && isScrollingUp) {
         // setSection3Visible(false);
@@ -68,7 +68,7 @@ export default function Schedule({ hasReadPermission }) {
           <Image src={flowersMain} alt='flowersMain' width='130' />
         </div>
 
-        <section className='event-section'>
+        <section className={`event-section ${section1Visible ? "visible" : ""}`}>
           <h2>{t.schedule_title_one}</h2>
 
           <p>{t.schedule_section_details_a}</p>
@@ -86,14 +86,12 @@ export default function Schedule({ hasReadPermission }) {
           <p>{t.schedule_section_Travel}</p>
         </section>
 
-        <section className={`event-section ${section1Visible ? "visible" : ""}`}>
+        <section className={`event-section ${section2Visible ? "visible" : ""}`}>
           <h2>{t.schedule_title_two}</h2>
           <h2>{t.schedule_title_two_title}</h2>
 
           <p>{t.schedule_title_two_address}</p>
-          <p>
-            {t.schedule_title_two_after}
-          </p>
+          <p>{t.schedule_title_two_after}</p>
 
           <h3>{t.schedule_section_when}</h3>
           <p>2pm</p>
@@ -105,20 +103,14 @@ export default function Schedule({ hasReadPermission }) {
           <p>{t.schedule_title_two_dresscodesemi}</p>
           <h3>{t.schedule_section_transport}</h3>
           <p>{t.schedule_title_two_busses}</p>
-          <p>
-            {t.schedule_title_two_bussdeparts}
-          </p>
+          <p>{t.schedule_title_two_bussdeparts}</p>
 
           <p>{t.schedule_title_two_house}</p>
           <p>{t.schedule_title_two_house_location}</p>
 
           <h2>{t.schedule_title_reception_title}</h2>
-          <p>
-            {t.schedule_title_reception_after}
-          </p>
-          <p>
-            {t.schedule_title_reception_dinner}
-          </p>
+          <p>{t.schedule_title_reception_after}</p>
+          <p>{t.schedule_title_reception_dinner}</p>
           <h3>{t.schedule_section_when}</h3>
           <p>4:30pm</p>
 
@@ -128,8 +120,7 @@ export default function Schedule({ hasReadPermission }) {
           <h3>{t.schedule_section_dresscode}</h3>
           <p>{t.schedule_title_two_dresscodesemi}</p>
 
-          <span>{t.speach}
-          </span>
+          <span>{t.speach}</span>
         </section>
 
         {/* <section className={`event-section ${section2Visible ? "visible" : ""}`}>
