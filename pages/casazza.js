@@ -78,8 +78,8 @@ export default function Casazza({ hasReadPermission }) {
 
         <div className='casazza-container'>
           <section className='cazazza-hotel-container'>
-            <h2 className='page-title-secondary'>Accomodation</h2>
-              <h3 className="margin">We have booked rooms in the following hotels</h3>
+            <h2 className='page-title-secondary'>{t.casazza_header}</h2>
+            <h3 className='margin'>{t.casazza_booking_title}</h3>
             <div className='cazazza-hotel-family' id='cazazza-hotel-family'>
               <br />
               <li className='white-helper'>
@@ -88,21 +88,22 @@ export default function Casazza({ hasReadPermission }) {
                   className='cazazza-hotel-link shake'
                   href='https://www.hotelsanpancrazio.it/en/'
                   target={"_blank"}>
-                  Hotel San Panrazio*
+                  {t.casazza_hotel_one}*
                 </Link>
               </li>
-              <p>Via Fratelli Calvi, 7, 24069 Trescore Balneario BG</p>
+              <p>{t.casazza_hotel_address}</p>
               <br />
 
+              <p>*{t.casazza_mention_one}</p>
               <p>
-                *When reserving your room please mention <b>‘Yates Wedding’</b> for the staff to
-                know you are a part of our event.
+                <b>‘Yates Wedding’</b>
               </p>
+              <p>{t.casazza_mention_two}</p>
             </div>
 
             <div className='cazazza-hotel'>
-              <h3>We have reserved this hotel for the wedding party and family</h3>
-              <p>We will reach out to you individually about these hotel</p>
+              <h3>{t.casazza_transport_a}</h3>
+              <p>{t.casazza_transport_b}</p>
 
               <div className='cazazza-hotel'>
                 <li id='green'>
@@ -111,10 +112,10 @@ export default function Casazza({ hasReadPermission }) {
                     // id='white'
                     href='https://vulcanovillage.it/chi-siamo/'
                     target={"_blank"}>
-                    Vulcano Village
+                    {t.casazza_hotel_two}
                   </Link>
                 </li>
-                <p>Piazza del Porto, 18, 24063 Castro BG</p>
+                <p>{t.casazza_hotel_address_two}</p>
               </div>
               <div className='cazazza-hotel'>
                 <li id='green'>
@@ -123,44 +124,38 @@ export default function Casazza({ hasReadPermission }) {
                     // id='white'
                     href='https://locandadelboscaiolo.it/'
                     target={"_blank"}>
-                    Locanda Del Boscaiolo
+                    {t.casazza_hotel_three}
                   </Link>
                 </li>
-                <p>Via Montegrappa, 41, 24060 Monasterolo del Castello BG</p>
+                <p>{t.casazza_hotel_address_three}</p>
               </div>
             </div>
 
             <div className='cazassa-hotel--details'>
-              <p>We will be organizing transport from these three hotels to venues.</p>
-              <p>There are many other beautiful hotels and B&Bs in the area</p>
-              <p>however we will not be able to support with transport from other Hotels. </p>
+              <p>{t.casazza_hotel_details_a}</p>
+              <p>{t.casazza_hotel_details_b}</p>
+              <p>{t.casazza_hotel_details_c}</p>
             </div>
           </section>
 
           <section className={`section ${section1Visible ? "visible" : ""}`}>
-            <h2 className='page-title-secondary' >Getting There</h2>
-            <p>
-              The most convenient airport for your travels will be
-              </p>
-              <br />
-              <h3 className='airport'>Bergamo Airport (BGY)</h3>
-              {/* <b>Bergamo Airport (BGY)</b>. */}
-              <br />
-              <p>
-              Then you can continue by car, taxi or bus to your hotel.
-            </p>
+            <h2 className='page-title-secondary'>{t.casazza_flights_title}</h2>
+            <p>{t.casazza_flights_header}</p>
+            <h3 className='airport'>Bergamo {t.casazza_flights_airport} (BGY)</h3>
+            {/* <b>Bergamo Airport (BGY)</b>. */}
             <br />
-            Other airports that are also convenient are
+            <p>{t.casazza_flights_method}</p>
             <br />
+            {t.casazza_flights_other}
             <div>
               <h3 className='airport'>Milano Linate (LIN)</h3>
-              <p className='airport'> or </p>
-              <h3 className='airport'>Malpensa Airport (MXP)</h3>
+              <p className='airport'> {t.casazza_flights_or} </p>
+              <h3 className='airport'>Malpensa {t.casazza_flights_airport} (MXP)</h3>
             </div>
           </section>
 
           <section className={`section ${section2Visible ? "visible" : ""}`}>
-            <h2>Site Map</h2>
+            <h2>{t.casazza_flights_title_two}</h2>
             <Map />
           </section>
 
