@@ -11,6 +11,10 @@
   margin-bottom: 2.5rem; 
 }
 
+.margin {
+  margin-bottom: 1rem;
+}
+
 .cazazza-hotel-container {
   text-align: center;
 }
@@ -35,10 +39,6 @@
 
 .cazazza-hotel > #green{
   color: var(  --clr-text-primary);
-}
-
-.cazassa-hotel--details {
-  margin-top: 1rem;
 }
 
 .casazza-section-start {
@@ -72,6 +72,7 @@ h2 {
 
 .cazazza-hotel-family {
   padding: 1rem;
+  padding-bottom: 2.3rem;
   background: var(--clr-primary);
   background: #303945;
   color: white;

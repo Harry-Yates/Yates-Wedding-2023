@@ -80,7 +80,7 @@ export default function FAQ({ hasReadPermission }) {
         <Head>
           <title>FAQ</title>
         </Head>
-        <h1 class="page-title">{t.faq_title}</h1>
+        <h1 className="page-title">{t.faq_title}</h1>
         <div className='flowers-main' >
           <Image  src={flowersMain} alt='flowersMain'  width='130' />
         </div>

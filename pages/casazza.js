@@ -28,22 +28,22 @@ export default function Casazza({ hasReadPermission }) {
       if (!section1Visible && window.pageYOffset > 0) {
         setSection1Visible(true);
       } else if (section1Visible && isScrollingUp) {
-        // setSection1Visible(false);
-        setSection3Visible(true);
+        setSection1Visible(false);
+        // setSection3Visible(true);
       }
 
-      if (!section2Visible && window.pageYOffset > 100) {
+      if (!section2Visible && window.pageYOffset > 50) {
         setSection2Visible(true);
       } else if (section2Visible && isScrollingUp) {
-        // setSection2Visible(false);
-        setSection3Visible(true);
+        setSection2Visible(false);
+        // setSection3Visible(true);
       }
 
-      if (!section3Visible && window.pageYOffset > 200) {
+      if (!section3Visible && window.pageYOffset > 450) {
         setSection3Visible(true);
       } else if (section3Visible && isScrollingUp) {
-        // setSection3Visible(false);
-        setSection3Visible(true);
+        setSection3Visible(false);
+        // setSection3Visible(true);
       }
 
       setPrevScrollPos(currentScrollPos);
@@ -79,9 +79,8 @@ export default function Casazza({ hasReadPermission }) {
         <div className='casazza-container'>
           <section className='cazazza-hotel-container'>
             <h2 className='page-title-secondary'>Accomodation</h2>
-
+              <h3 className="margin">We have booked rooms in the following hotels</h3>
             <div className='cazazza-hotel-family' id='cazazza-hotel-family'>
-              <h3>We have booked rooms in the following hotels</h3>
               <br />
               <li className='white-helper'>
                 <Link
@@ -103,7 +102,7 @@ export default function Casazza({ hasReadPermission }) {
 
             <div className='cazazza-hotel'>
               <h3>We have reserved this hotel for the wedding party and family</h3>
-              <p>We will reach out to you individually about this hotel</p>
+              <p>We will reach out to you individually about these hotel</p>
 
               <div className='cazazza-hotel'>
                 <li id='green'>
@@ -132,8 +131,7 @@ export default function Casazza({ hasReadPermission }) {
             </div>
 
             <div className='cazassa-hotel--details'>
-              <p>We will be organizing transport from these hotels to venues.</p>
-              <br />
+              <p>We will be organizing transport from these three hotels to venues.</p>
               <p>There are many other beautiful hotels and B&Bs in the area</p>
               <p>however we will not be able to support with transport from other Hotels. </p>
             </div>
