@@ -3,14 +3,14 @@ import Cookies from "universal-cookie";
 import consts from "consts";
 import Image from "next/image";
 import yatesLogo from "@/public//loginImages/yates-logo.png";
-import Head from "next/head";
+// import Head from "next/head";
 
 const Login = ({ redirectPath }) => {
   const [password, setPassword] = useState("");
 
   return (
     <>
-                <Head>
+                {/* <Head>
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.yates-wedding.com/" />
           <meta property="og:title" content="Yates Wedding 2023" />
@@ -37,7 +37,7 @@ const Login = ({ redirectPath }) => {
           <meta
             property="twitter:image"
             content="https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png" />
-        </Head>
+        </Head> */}
     <div className='c-login'>
       <form>
         <label className='c-login__label'>
