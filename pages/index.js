@@ -50,7 +50,7 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='og:image'
-            content='https://user-images.githubusercontent.com/82885837/219100757-c1be71bb-4573-43b4-ac78-8b0135a0c42c.png'
+            content='https://user-images.githubusercontent.com/82885837/219101899-7481923d-da7f-4ab6-9fb7-a058abc086f2.jpg'
           />
 
           <meta property='twitter:card' content='summary_large_image' />
@@ -62,7 +62,7 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='twitter:image'
-            content='https://user-images.githubusercontent.com/82885837/219100757-c1be71bb-4573-43b4-ac78-8b0135a0c42c.png'></meta>
+            content='https://user-images.githubusercontent.com/82885837/219101899-7481923d-da7f-4ab6-9fb7-a058abc086f2.jpg'></meta>
         </Head>
     <BaseLayout>
       <BasePage>
