@@ -30,6 +30,7 @@ export default function Home({ hasReadPermission }) {
   return (
     <>
         <Head>
+          <title>Yates Wedding 2023</title>
           <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
           <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
           <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
@@ -37,7 +38,6 @@ export default function Home({ hasReadPermission }) {
           <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
           <meta name='msapplication-TileColor' content='#da532c' />
           <meta name='theme-color' content='#ffffff'></meta>
-          <title>Yates Wedding 2023</title>
           <meta name='title' content='Yates Wedding 2023' />
           <meta name='description' content=' 8th-9th September | Colognola di Casazza, Italy' />
 
@@ -50,7 +50,7 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='og:image'
-            content='https://user-images.githubusercontent.com/82885837/218784681-a7a77705-9c34-430a-b812-1901cbc6409c.png'
+            content='https://user-images.githubusercontent.com/82885837/219100757-c1be71bb-4573-43b4-ac78-8b0135a0c42c.png'
           />
 
           <meta property='twitter:card' content='summary_large_image' />
@@ -62,7 +62,7 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='twitter:image'
-            content='https://user-images.githubusercontent.com/82885837/218784681-a7a77705-9c34-430a-b812-1901cbc6409c.png'></meta>
+            content='https://user-images.githubusercontent.com/82885837/219100757-c1be71bb-4573-43b4-ac78-8b0135a0c42c.png'></meta>
         </Head>
     <BaseLayout>
       <BasePage>
