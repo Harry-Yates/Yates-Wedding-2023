@@ -3,7 +3,6 @@ import { enGB, svSE, itIT } from "@/translations";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Countdown from "react-countdown";
-import Head from "next/head";
 
 export default function Header() {
   const router = useRouter();
@@ -58,68 +57,40 @@ export default function Header() {
 
   return (
     <>
-            <Head>
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://www.yates-wedding.com/" />
-          <meta property="og:title" content="Yates Wedding 2023" />
-          <meta
-            property="og:description"
-            content=" 8th-9th September | Colognola di Casazza, Italy"
-          />
-          <meta
-            property="og:image"
-            content="https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png"
-          />
-
-          <title>Yates Wedding 2023</title>
-          <meta name="title" content="Yates Wedding 2023" />
-          <meta name="description" content=" 8th-9th September | Colognola di Casazza, Italy" />
-
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://www.yates-wedding.com/" />
-          <meta property="twitter:title" content="Yates Wedding 2023" />
-          <meta
-            property="twitter:description"
-            content=" 8th-9th September | Colognola di Casazza, Italy"
-          />
-          <meta
-            property="twitter:image"
-            content="https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png" />
-        </Head>
-    {/* Nav Bar */}
-    <nav>
-      {/* <div className='logo'>
+      {/* Nav Bar */}
+      <nav>
+        {/* <div className='logo'>
         <Link href='/'>{t.header_title}</Link>
       </div> */}
-      <div className='logo'>
-        <Link href='/'>
-          <Countdown date={weddingDate} renderer={renderer}>
-            <Completionist />
-          </Countdown>
-        </Link>
-      </div>
-      <ul className='nav-links'>
-        <li>
-          <Link href='/'>{t.header_welcome}</Link>
-        </li>
-        <li>
-          <Link href='/faq'>{t.faq_title}</Link>
-        </li>
-        <li>
-          <Link href='/schedule'>{t.schedule_title}</Link>
-        </li>
-        <li>
-          <Link href='/casazza'>{t.casazza_title}</Link>
-        </li>
-        <li id='highlight'>
-          <Link href='/rsvp' className='colorHigh'>
-            {t.rsvp_title}
+        <div className='logo'>
+          <Link href='/'>
+            <Countdown date={weddingDate} renderer={renderer}>
+              <Completionist />
+            </Countdown>
           </Link>
-        </li>
-        {/* <li>
+        </div>
+        <ul className='nav-links'>
+          <li>
+            <Link href='/'>{t.header_welcome}</Link>
+          </li>
+          <li>
+            <Link href='/faq'>{t.faq_title}</Link>
+          </li>
+          <li>
+            <Link href='/schedule'>{t.schedule_title}</Link>
+          </li>
+          <li>
+            <Link href='/casazza'>{t.casazza_title}</Link>
+          </li>
+          <li id='highlight'>
+            <Link href='/rsvp' className='colorHigh'>
+              {t.rsvp_title}
+            </Link>
+          </li>
+          {/* <li>
           <Link href='/photos'>Photos</Link>
         </li> */}
-        {/* <li>
+          {/* <li>
           <button
             className='btn'
             id='btn--logout'
@@ -132,14 +103,14 @@ export default function Header() {
             {t.header_logout}
           </button>
         </li> */}
-      </ul>
-      {/* Burger Menu */}
-      <div className='burger' onClick={navSlide}>
-        <div className='line1'></div>
-        <div className='line2'></div>
-        <div className='line3'></div>
-      </div>
-    </nav>
+        </ul>
+        {/* Burger Menu */}
+        <div className='burger' onClick={navSlide}>
+          <div className='line1'></div>
+          <div className='line2'></div>
+          <div className='line3'></div>
+        </div>
+      </nav>
     </>
   );
 }
