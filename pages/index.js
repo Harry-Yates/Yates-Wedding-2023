@@ -30,12 +30,6 @@ export default function Home({ hasReadPermission }) {
   return (
     <>
         <Head>
-          <title>Yates Wedding 2023</title>
-          <meta name='msapplication-TileColor' content='#da532c' />
-          <meta name='theme-color' content='#ffffff'></meta>
-          <meta name='title' content='Yates Wedding 2023' />
-          <meta name='description' content=' 8th-9th September | Colognola di Casazza, Italy' />
-
           <meta property='og:type' content='website' />
           <meta property='og:url' content='https://www.yates-wedding.com/' />
           <meta property='og:title' content='Yates Wedding 2023' />
@@ -47,6 +41,10 @@ export default function Home({ hasReadPermission }) {
             property='og:image'
             content='../public/meta.png'
           />
+
+          <title>Yates Wedding 2023</title>
+          <meta name='title' content='Yates Wedding 2023' />
+          <meta name='description' content=' 8th-9th September | Colognola di Casazza, Italy' />
 
           <meta property='twitter:card' content='summary_large_image' />
           <meta property='twitter:url' content='https://www.yates-wedding.com/' />
@@ -65,6 +63,8 @@ export default function Home({ hasReadPermission }) {
           <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
           <link rel='manifest' href='/site.webmanifest' />
           <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
+          <meta name='msapplication-TileColor' content='#da532c' />
+          <meta name='theme-color' content='#ffffff' />
         </Head>
 
 
