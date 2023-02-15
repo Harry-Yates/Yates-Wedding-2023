@@ -51,7 +51,7 @@ const Login = ({ redirectPath }) => {
       <div className='c-login'>
         <form>
           <label className='c-login__label'>
-            <Image src={yatesLogo} alt='yates logo' className='c-login-logo' />
+            <Image src={yatesLogo} alt='yatesLogo' className='c-login-logo' priority />
             <h1 className='c-login__title'>Guest Area</h1>
             <input
               type='password'
