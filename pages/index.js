@@ -30,32 +30,40 @@ export default function Home({ hasReadPermission }) {
   return (
     <>
         <Head>
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://www.yates-wedding.com/" />
-          <meta property="og:title" content="Yates Wedding 2023" />
-          <meta
-            property="og:description"
-            content=" 8th-9th September | Colognola di Casazza, Italy"
-          />
-          <meta
-            property="og:image"
-            content="https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png"
-          />
+        <title>#MB2</title>
+                <meta name="title" content="#MB2" />
+                <meta
+                    name="description"
+                    content="MB2 is a series of art vinyl toys, with limited quantities available. "
+                />
 
-          <title>Yates Wedding 2023</title>
-          <meta name="title" content="Yates Wedding 2023" />
-          <meta name="description" content=" 8th-9th September | Colognola di Casazza, Italy" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://mb2.vercel.app/" />
+                <meta property="og:title" content="#MB2" />
+                <meta
+                    property="og:description"
+                    content="MB2 is a series of art vinyl toys, with limited quantities available."
+                />
+                <meta
+                    property="og:image"
+                    content="https://user-images.githubusercontent.com/82885837/187440582-baa60537-da05-4b6e-8915-19bf8378630e.png"
+                />
 
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://www.yates-wedding.com/" />
-          <meta property="twitter:title" content="Yates Wedding 2023" />
-          <meta
-            property="twitter:description"
-            content=" 8th-9th September | Colognola di Casazza, Italy"
-          />
-          <meta
-            property="twitter:image"
-            content="https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta
+                    property="twitter:url"
+                    content="https://mb2.vercel.app/"
+                />
+                <meta property="twitter:title" content="#MB2" />
+                <meta
+                    property="twitter:description"
+                    content="MB2 is a series of art vinyl toys, with limited quantities available."
+                />
+                <meta
+                    property="twitter:image"
+                    content="https://user-images.githubusercontent.com/82885837/187440582-baa60537-da05-4b6e-8915-19bf8378630e.png"
+                />
+
 
             {/* Flavicon */}
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
