@@ -28,8 +28,7 @@ export default function Home({ hasReadPermission }) {
   }
 
   return (
-    <BaseLayout>
-      <BasePage>
+    <>
         <Head>
           <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
           <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
@@ -65,6 +64,8 @@ export default function Home({ hasReadPermission }) {
             property='twitter:image'
             content='https://user-images.githubusercontent.com/82885837/218784681-a7a77705-9c34-430a-b812-1901cbc6409c.png'></meta>
         </Head>
+    <BaseLayout>
+      <BasePage>
 
         <select value={locale} onChange={handleLanguageToggle}>
           <option value='en-GB'>GB 🇬🇧</option>
@@ -94,5 +95,6 @@ export default function Home({ hasReadPermission }) {
         <Footer />
       </BasePage>
     </BaseLayout>
+    </>
   );
 }
