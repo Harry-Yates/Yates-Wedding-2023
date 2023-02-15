@@ -31,11 +31,6 @@ export default function Home({ hasReadPermission }) {
     <>
         <Head>
           <title>Yates Wedding 2023</title>
-          <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
-          <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
-          <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
-          <link rel='manifest' href='/site.webmanifest' />
-          <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
           <meta name='msapplication-TileColor' content='#da532c' />
           <meta name='theme-color' content='#ffffff'></meta>
           <meta name='title' content='Yates Wedding 2023' />
@@ -62,8 +57,16 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='twitter:image'
-            content='https://user-images.githubusercontent.com/82885837/219101899-7481923d-da7f-4ab6-9fb7-a058abc086f2.jpg'></meta>
+            content='https://user-images.githubusercontent.com/82885837/219101899-7481923d-da7f-4ab6-9fb7-a058abc086f2.jpg' />
+
+<link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
+          <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
+          <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
+          <link rel='manifest' href='/site.webmanifest' />
+          <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
         </Head>
+
+
     <BaseLayout>
       <BasePage>
 
