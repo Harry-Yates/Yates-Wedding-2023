@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import Head from "next/head";
 import flowersMain from "@/public/decoration/flowers-main.png.webp";
 
-import Slider from '../components/shared/Slider';
+import Slider from "../components/shared/Slider";
 // Link to docs
 // https://keen-slider.io/docs#usage
 
@@ -30,41 +30,41 @@ export default function Home({ hasReadPermission }) {
   return (
     <>
         <Head>
-          <meta property='og:type' content='website' />
-          <meta property='og:url' content='https://www.yates-wedding.com/' />
-          <meta property='og:title' content='Yates Wedding 2023' />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.yates-wedding.com/" />
+          <meta property="og:title" content="Yates Wedding 2023" />
           <meta
-            property='og:description'
-            content=' 8th-9th September | Colognola di Casazza, Italy'
+            property="og:description"
+            content=" 8th-9th September | Colognola di Casazza, Italy"
           />
           <meta
-            property='og:image'
-            content='https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png'
+            property="og:image"
+            content="https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png"
           />
 
           <title>Yates Wedding 2023</title>
-          <meta name='title' content='Yates Wedding 2023' />
-          <meta name='description' content=' 8th-9th September | Colognola di Casazza, Italy' />
+          <meta name="title" content="Yates Wedding 2023" />
+          <meta name="description" content=" 8th-9th September | Colognola di Casazza, Italy" />
 
-          <meta property='twitter:card' content='summary_large_image' />
-          <meta property='twitter:url' content='https://www.yates-wedding.com/' />
-          <meta property='twitter:title' content='Yates Wedding 2023' />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://www.yates-wedding.com/" />
+          <meta property="twitter:title" content="Yates Wedding 2023" />
           <meta
-            property='twitter:description'
-            content=' 8th-9th September | Colognola di Casazza, Italy'
+            property="twitter:description"
+            content=" 8th-9th September | Colognola di Casazza, Italy"
           />
           <meta
-            property='twitter:image'
-            content='https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png' />
+            property="twitter:image"
+            content="https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png" />
 
             {/* Flavicon */}
-          <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
-          <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
-          <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
-          <link rel='manifest' href='/site.webmanifest' />
-          <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#5bbad5' />
-          <meta name='msapplication-TileColor' content='#da532c' />
-          <meta name='theme-color' content='#ffffff' />
+          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta name="msapplication-TileColor" content="#da532c" />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
 
 
@@ -72,27 +72,27 @@ export default function Home({ hasReadPermission }) {
       <BasePage>
 
         <select value={locale} onChange={handleLanguageToggle}>
-          <option value='en-GB'>GB 🇬🇧</option>
-          <option value='sv-SE'>SE 🇸🇪</option>
-          <option value='it-IT'>IT 🇮🇹</option>
+          <option value="en-GB">GB 🇬🇧</option>
+          <option value="sv-SE">SE 🇸🇪</option>
+          <option value="it-IT">IT 🇮🇹</option>
         </select>
-        {/* <h1 className='index__title'>Welcome</h1> */}
-        <div className='index__title--nameContainer'>
-          {/* <h2 className='index__title--name ohhfancy'>Johanna & Harry</h2> */}
-          <h2 className='index__title--name ohhfancy title-style'>Johanna</h2>
-          <h2 className='index__title--name ohhfancy title-style sign'>{t.home_title_and}</h2>
-          <h2 className='index__title--name ohhfancy title-style'>Harry</h2>
+        {/* <h1 className="index__title">Welcome</h1> */}
+        <div className="index__title--nameContainer">
+          {/* <h2 className="index__title--name ohhfancy">Johanna & Harry</h2> */}
+          <h2 className="index__title--name ohhfancy title-style">Johanna</h2>
+          <h2 className="index__title--name ohhfancy title-style sign">{t.home_title_and}</h2>
+          <h2 className="index__title--name ohhfancy title-style">Harry</h2>
         </div>
-        <h2 className='index__title--invite ohhfancy-medium'>{t.home_title_invite}</h2>
+        <h2 className="index__title--invite ohhfancy-medium">{t.home_title_invite}</h2>
 
-        <h2 className='index__title--invite ohhfancy-medium'>
+        <h2 className="index__title--invite ohhfancy-medium">
           8<sup>th</sup> – 9<sup>th</sup> {t.home_footer_title_date}
         </h2>
-        {/* <h2 className='index__title--invite ohhfancy-tiny'>in</h2> */}
-        <h2 className='index__title--invite ohhfancy-tiny'>Colognola di Casazza, Italy</h2>
+        {/* <h2 className="index__title--invite ohhfancy-tiny">in</h2> */}
+        <h2 className="index__title--invite ohhfancy-tiny">Colognola di Casazza, Italy</h2>
 
-        <div className='flowers-main'>
-          <Image src={flowersMain} alt='flowersMain' width='130' priority />
+        <div className="flowers-main">
+          <Image src={flowersMain} alt="flowersMain" width="130" priority />
         </div>
         <Slider/>
         {/* <Map /> */}
