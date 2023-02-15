@@ -39,7 +39,7 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='og:image'
-            content='../public/meta.png'
+            content='https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png'
           />
 
           <title>Yates Wedding 2023</title>
@@ -55,7 +55,7 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='twitter:image'
-            content='../public/homepage.jpg' />
+            content='https://user-images.githubusercontent.com/82885837/219110043-a29bdd1f-afc6-4612-b423-113f30c15a7f.png' />
 
             {/* Flavicon */}
           <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
