@@ -45,7 +45,7 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='og:image'
-            content='https://user-images.githubusercontent.com/82885837/219101899-7481923d-da7f-4ab6-9fb7-a058abc086f2.jpg'
+            content='../public/meta.png'
           />
 
           <meta property='twitter:card' content='summary_large_image' />
@@ -57,9 +57,10 @@ export default function Home({ hasReadPermission }) {
           />
           <meta
             property='twitter:image'
-            content='https://user-images.githubusercontent.com/82885837/219101899-7481923d-da7f-4ab6-9fb7-a058abc086f2.jpg' />
+            content='../public/homepage.jpg' />
 
-<link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
+            {/* Flavicon */}
+          <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
           <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
           <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
           <link rel='manifest' href='/site.webmanifest' />
