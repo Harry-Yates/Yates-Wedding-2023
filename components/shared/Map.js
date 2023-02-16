@@ -45,10 +45,10 @@ const Map = () => {
             // }}
           />
 
-          {/* Church Via Don Raimondo Bassanelli 12 24060 Spinone Al Lago BG Italy */}
+          {/* Chiesa di San Pietro in vincoli, Via San Pietro, 24060 Spinone al Lago BG, Italy */}
           <MarkerF
             id='church'
-            position={{ lat: 45.7641746, lng: 9.9220097 }}
+            position={{ lat: 45.7644535548191, lng: 9.922673633853233 }}
             icon={{
               url: "https://user-images.githubusercontent.com/82885837/218527014-641fa8a9-6f0e-4e1a-9dec-b879a6096515.png"
             }}
