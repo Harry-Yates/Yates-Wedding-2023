@@ -98,7 +98,7 @@ export default function Schedule({ hasReadPermission }) {
             <p>2pm</p>
 
             <h3>{t.schedule_section_where}</h3>
-            <p>{t.schedule_title_two_addresstwo}</p>
+            <p className='church-helepr'>{t.schedule_title_two_addresstwo}</p>
 
             <h3>{t.schedule_section_dresscode}</h3>
             <p>{t.schedule_title_two_dresscodesemi}</p>
@@ -106,8 +106,9 @@ export default function Schedule({ hasReadPermission }) {
             <p>{t.schedule_title_two_busses}</p>
             <p>{t.schedule_title_two_bussdeparts}</p>
 
-            <p>{t.schedule_title_two_house}</p>
-            <p>{t.schedule_title_two_house_location}</p>
+            {/* <p>{t.schedule_title_two_house}</p>
+            <p>{t.schedule_title_two_house_location}</p> */}
+            {/* <p>{t.house_address}</p> */}
           </section>
 
           <section className={`event-section ${section3Visible ? "visible" : ""}`}>
