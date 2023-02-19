@@ -16,12 +16,12 @@ export const enGB = {
   casazza_title: "Casazza",
   casazza_header: "Accomodation",
   casazza_booking_title: "We have booked rooms in the following hotels",
-  casazza_hotel_one: "Hotel San Panrazio*",
+  casazza_hotel_one: "Hotel San Pancrazio*",
   casazza_hotel_address: "Via Fratelli Calvi, 7, 24069 Trescore Balneario BG",
   casazza_mention_one: "When reserving your room please mention",
-  casazza_mention_two: "for the staff to know you are a part of our event.",
-  casazza_transport_a: "We have reserved this hotel for the wedding party and family",
-  casazza_transport_b: "We will reach out to you individually about these hotel",
+  casazza_mention_two: "for the staff to know you are a part of our wedding.",
+  casazza_transport_a: "We have reserved these hotels for the wedding party and close family",
+  casazza_transport_b: "We will reach out to you individually about these hotels",
   casazza_hotel_two: "Vulcano Village",
   casazza_hotel_address_two: "Piazza del Porto, 18, 24063 Castro BG",
   casazza_hotel_three: "Locanda Del Boscaiolo",
@@ -31,7 +31,7 @@ export const enGB = {
   casazza_hotel_details_c:
     "however we will not be able to support with transport from other Hotels.",
   casazza_flights_title: "GETTING THERE",
-  casazza_flights_header: "The most convenient airport for your travels will be",
+  casazza_flights_header: "The most convenient airport for your travel will be",
   casazza_flights_airport: "AIRPORT",
   casazza_flights_method: "Then you can continue by car, taxi or bus to your hotel.",
   casazza_flights_other: "Other airports that are also convenient are",
@@ -41,42 +41,44 @@ export const enGB = {
   schedule_title: "Schedule",
   schedule_title_one: "Friday 8th September",
   schedule_section_details_a:
-    "We want to kick the wedding weekend off with an Apericena by the beautiful Lake of Endine.",
+    "We want to kick the wedding weekend off with an 'Apericena' by the beautiful Lake of Endine.",
   schedule_section_details_b:
     "The evening will be hosted at Locanda Del Boscaiolo, one of our favourite local restaurants.",
   schedule_section_details_c:
-    "An evening where we get the chance to meet family & friends, make new acquaintances and warm up our dancing shoes. A standing Apericena will be served along with Bubbles and Spritz.",
+    "An evening where we get the chance to meet family & friends, make new acquaintances and warm up our dancing shoes. A standing 'Apericena' will be served along with drinks.",
   schedule_section_when: "When",
   schedule_section_time: "From 6pm",
   schedule_section_where: "Where",
   schedule_section_location:
     "Locanda Del Boscaiolo, Via Montegrappa, 41, 24060 Monasterolo del Castello BG",
   schedule_section_dresscode: "Dress code",
-  schedule_section_theme: "La Dolce Vita – Italian Riviera / Colourful dresses",
+  schedule_section_theme:
+    "La Dolce Vita – Imagine the Italian Riviera, colourful dresses & linen shirts",
   schedule_section_transport: "Transport",
   schedule_section_Travel:
-    "Buses will be organized from Vulcano Village hotel and Hotel SanPancrazio for pick up at 5.30pm. Return buses will be arriving for 10.30pm. You will find taxi company information under F&Q. There is parking available.",
+    "Buses will be organized from Vulcano Village hotel and Hotel San Pancrazio for pick up at 5.30pm. Return buses will be arriving for 10.30pm. You will find taxi company information under F&Q. There is parking available.",
   schedule_title_two: "Saturday 9th September",
   schedule_title_two_title: "Wedding Ceremony",
-  schedule_title_two_address: "The ceremony takes place in Chiesa della Beata Vergine del Carmine.",
+  schedule_title_two_address: "The ceremony takes place in Chiesa di San Pietro in Vincoli.",
   schedule_title_two_after:
-    "After the ceremony, there is an opportunity to congratulate, take photos and talk to the Bride & Groom.",
-  schedule_title_two_addresstwo: "Chiesa della Beata Vergine del Carmine",
+    "After the ceremony, there is an opportunity to congratulate, take photos and talk to the bride & groom.",
+  schedule_title_two_addresstwo:
+    "Chiesa di San Pietro in vincoli, Via San Pietro, 24060 Spinone al Lago BG, Italy",
   schedule_title_two_dresscodesemi: "Semi-Formal",
   schedule_title_two_busses:
-    "Buses depart from Vulcano Village hotel and Hotel SanPancrazio at 1:15pm.",
+    "Buses depart from Vulcano Village hotel and Hotel San Pancrazio at 1:15pm.",
   schedule_title_two_bussdeparts:
-    "Bus departs from Locanda del Boscaiolo at 1.30pm. You will find taxi company information under F&Q. Parking is limited, please reach out to us if you have your own car.",
+    "Bus departs from Locanda del Boscaiolo at 1.30pm. You will find taxi information under F&Q. Parking is limited, please reach out to us if you have your own car.",
   schedule_title_two_house: "Casa Lodi Yates",
-  schedule_title_two_house_location: "Via Madonna Monte Carmelo, 7, 24060",
+  schedule_title_two_house_location: "Via Piazza Armando Diaz, 1, Casazza, BG",
   schedule_title_reception_title: "Reception",
   schedule_title_reception_after:
-    "After the wedding ceremony, it is a short 100 meter walk to the Reception at Casa Lodi Yates. Here we will begin your journey in the medieval tower followed by aperitivo by the pool area.",
+    "After the wedding ceremony, buses will be ready to take you to the reception at Casa Lodi Yates. Here we will begin your journey by exploring the medieval tower and the historical house next door, followed by an 'Aperitivo' by the pool area.",
   schedule_title_reception_dinner:
     "This will be continued by a formal dinner in the court yard & additional festivities.",
   schedule_title_reception_speach:
-    "For speech requests, please contact the Receptions toast madame Johanna Strand at Johanna.strand@nicks.com or on +46 70 885 85 41.​",
-  house_address: "Casa Lodi Yates, Via Madonna Monte Carmelo, 7, 24060, Casazza, BG",
+    "For speech requests, please contact the Toast madame Johanna Strand at Johanna.strand@nicks.com or on +46 70 885 85 41.​",
+  house_address: "Casa Lodi Yates, Piazza Armando Diaz, 1, Casazza, BG",
   speach:
     "For speech requests, please contact the Receptions toast madame Johanna Strand at Johanna.strand@nicks.com or on +46 70 885 85 41.​",
   "FAQ Page ": "",
@@ -114,7 +116,7 @@ export const enGB = {
   faq_answer_11: "Yes we do, when sharing and uploading pics, please use our hashtag ",
   faq_question_12: "Who could I contact for other questions?",
   faq_answer_12:
-    "We ask you to primarily email wedding@yates.com, but of course you are also welcome to reach out directly to Johanna och Harry. ",
+    "We ask you to primarily email wedding@yates.com, but of course you are also welcome to reach out directly to Johanna and Harry. ",
   "RSVP Page": "",
   rsvp_title: "RSVP",
   rsvp_alert: "Please select the checkbox (Happy to be there) or (Sad to miss it)",
@@ -157,14 +159,14 @@ export const svSE = {
   home_footer_title_date: "September",
   "Casazza Page\t\t\t": "",
   casazza_title: "Casazza",
-  casazza_header: "Botemedel",
+  casazza_header: "Boende",
   casazza_booking_title: "Vi har bokat rum på följande hotell",
-  casazza_hotel_one: "Hotel San Panrazio*",
+  casazza_hotel_one: "Hotel San Pancrazio*",
   casazza_hotel_address: "Via Fratelli Calvi, 7, 24069 Trescore Balneario BG",
-  casazza_mention_one: "Nämn när du reserverar ditt rum",
-  casazza_mention_two: "För att personalen ska veta att du är en del av vårt evenemang.",
-  casazza_transport_a: "Vi har reserverat detta hotell för bröllopsfesten och familjen",
-  casazza_transport_b: "Vi kommer att nå ut dig individuellt om detta hotell",
+  casazza_mention_one: "När du reserverar ditt rum vänligen nämn",
+  casazza_mention_two: "För att personalen ska veta att du är en del av vårt bröllop.",
+  casazza_transport_a: "Vi har reserverat dessa hotell för bröllopsföljet och nära familj",
+  casazza_transport_b: "Vi kommer att nå ut dig individuellt om dessa hotell",
   casazza_hotel_two: "Vulcano Village",
   casazza_hotel_address_two: "Piazza del Porto, 18, 24063 Castro BG",
   casazza_hotel_three: "Locanda del Boscaiolo",
@@ -172,53 +174,55 @@ export const svSE = {
   casazza_hotel_details_a: "Vi kommer att organisera transport från dessa tre hotell till platser.",
   casazza_hotel_details_b: "Det finns många andra vackra hotell och B&B i området",
   casazza_hotel_details_c: "Men vi kommer inte att kunna stödja med transport från andra hotell.",
-  casazza_flights_title: "KOMMER DIT",
-  casazza_flights_header: "Den mest praktiska flygplatsen för dina resor kommer att vara",
+  casazza_flights_title: "ANKOMST",
+  casazza_flights_header: "Den mest praktiska flygplatsen för din resa kommer att vara",
   casazza_flights_airport: "FLYGPLATS",
-  casazza_flights_method: "Då kan du fortsätta med bil, taxi eller buss till ditt hotell.",
+  casazza_flights_method: "Sen kan du fortsätta med bil, taxi eller buss till ditt hotell.",
   casazza_flights_other: "Andra flygplatser som också är praktiska är",
   casazza_flights_or: "eller",
-  casazza_flights_title_two: "Webbplatskarta",
+  casazza_flights_title_two: "Karta",
   "Schedule Page": "",
   schedule_title: "Schema",
   schedule_title_one: "Fredag ​​8 september",
   schedule_section_details_a:
-    "Vi vill sparka av bröllopshelgen med en apericena vid den vackra sjön i Endine.",
+    "Vi vill börja bröllopshelgen med en ’Apericena’ vid den vackra sjön i Endine.",
   schedule_section_details_b:
-    "Kvällen kommer att vara värd på Locanda del Boscaiolo, en av våra favorit lokala restauranger.",
+    "Kvällen kommer att vara på Locanda del Boscaiolo, en av våra favorit restauranger i området.",
   schedule_section_details_c:
-    "En kväll där vi får chansen att träffa familj och vänner, göra nya bekanta och värma upp våra dansskor. En stående apericena serveras tillsammans med bubblor och spritz.",
+    "En kväll där vi får chansen att träffa familj och vänner, lära känna nya och värma upp dansskorna. En stående 'Apericena' kommer att serveras tillsammans med dryck.",
   schedule_section_when: "När",
   schedule_section_time: "Från 18:00",
   schedule_section_where: "Var",
   schedule_section_location:
     "Locanda del Boscaiolo, via Montegrappa, 41, 24060 Monasterolo del Castello BG",
   schedule_section_dresscode: "Klädkod",
-  schedule_section_theme: "La Dolce Vita - Italiensk riviera / färgglada klänningar",
+  schedule_section_theme:
+    "La Dolce Vita - Föreställ dig den italienska rivieran, färgglada klänningar och linneskjortor",
   schedule_section_transport: "Transport",
   schedule_section_Travel:
-    "Bussar kommer att organiseras från Vulcano Village Hotel och Hotel Sanpancrazio för hämtning kl 17:30. Returbussar kommer till 22:30. Du hittar taxiföretagsinformation under F&Q. Det finns parkering tillgänglig.",
+    "Bussar kommer att organiseras från Vulcano Village Hotel och Hotel San Pancrazio för hämtning kl 17:30. Returbussar kommer till 22:30. Du hittar taxiföretagsinformation under F&Q. Det finns parkering tillgänglig.",
   schedule_title_two: "Lördag 9 september",
-  schedule_title_two_title: "Bröllopsceremoni",
-  schedule_title_two_address: "Ceremonin äger rum i Chiesa della Beata Vergine del Carmine.",
+  schedule_title_two_title: "Vigsel",
+  schedule_title_two_address: "Ceremonin äger rum i Chiesa di San Pietro in Vincoli.",
   schedule_title_two_after:
     "Efter ceremonin finns det en möjlighet att gratulera, ta foton och prata med bruden & brudgummen.",
-  schedule_title_two_addresstwo: "Chiesa della Beata Vergine del Carmine",
-  schedule_title_two_dresscodesemi: "Halvformal",
+  schedule_title_two_addresstwo:
+    "Chiesa di San Pietro in vincoli, Via San Pietro, 24060 Spinone al Lago BG, Italien",
+  schedule_title_two_dresscodesemi: "Semi-Formal / Kavaj",
   schedule_title_two_busses:
-    "Bussar avgår från Vulcano Village Hotel och Hotel Sanpancrazio kl. 13:15.",
+    "Bussar avgår från Vulcano Village Hotel och Hotel San Pancrazio kl. 13:15.",
   schedule_title_two_bussdeparts:
-    "Bussen avgår från Locanda del Boscaiolo kl. 13.30. Du hittar taxiföretagsinformation under F&Q. Parkering är begränsad, vänligen nå ut till oss om du har din egen bil.",
+    "Bussen avgår från Locanda del Boscaiolo kl. 13.30. Du hittar taxi information under F&Q. Parkering är begränsad, vänligen nå ut till oss om du har din egen bil.",
   schedule_title_two_house: "Casa Lodi Yates",
-  schedule_title_two_house_location: "Via Madonna Monte Carmelo, 7, 24060",
-  schedule_title_reception_title: "Reception",
+  schedule_title_two_house_location: "Via Piazza Armando Diaz, 1, Casazza, BG",
+  schedule_title_reception_title: "Mottagning",
   schedule_title_reception_after:
-    "Efter bröllopsceremonin är det en kort 100 meter promenad till receptionen på Casa Lodi Yates. Här kommer vi att börja din resa i det medeltida tornet följt av aperitivo vid poolområdet.",
+    "Efter vigseln kommer bussar att vara redo att ta er till mottagningen på Casa Lodi Yates. Här börjar vi din resa med att besöka det medeltida tornet och det historiska grann huset, följt av en ’Aperitivo’ vid poolområdet.",
   schedule_title_reception_dinner:
-    "Detta kommer att fortsätta med en formell middag på domstolens gård och ytterligare festligheter.",
+    "Detta kommer att fortsätta med en middag på gårdsplanen och mer festligheter.",
   schedule_title_reception_speach:
-    "För talförfrågningar, vänligen kontakta mottagningarna Toast Madame Johanna Strand på Johanna.strand@nicks.com eller på +46 70 885 85 41.",
-  house_address: "Casa Lodi Yates, Via Madonna Monte Carmelo, 7, 24060, Casazza, BG",
+    "För talförfrågningar, vänligen kontakta Toast Madame Johanna Strand på Johanna.strand@nicks.com eller på +46 70 885 85 41.",
+  house_address: "Casa Lodi Yates, Piazza Armando Diaz, 1, Casazza, BG",
   speach:
     "För talförfrågningar, vänligen kontakta mottagningarna Toast Madame Johanna Strand på Johanna.strand@nicks.com eller på +46 70 885 85 41.",
   "FAQ Page ": "",
@@ -301,11 +305,11 @@ export const itIT = {
   casazza_title: "Casazza",
   casazza_header: "Alloggio",
   casazza_booking_title: "Abbiamo prenotato stanze nei seguenti hotel",
-  casazza_hotel_one: "Hotel San Panrazio*",
+  casazza_hotel_one: "Hotel San Pancrazio*",
   casazza_hotel_address: "Via Fratelli Calvi, 7, 24069 Trescore Balneario BG",
   casazza_mention_one: "Quando si riserva la tua stanza, menzionati",
-  casazza_mention_two: "Per lo staff di sapere che sei parte del nostro evento.",
-  casazza_transport_a: "Abbiamo riservato questo hotel per la festa e la famiglia",
+  casazza_mention_two: "Per lo staff di sapere che fai parte del nostro matrimonio.",
+  casazza_transport_a: "Abbiamo riservato questi hotel per la festa di nozze e la famiglia stretta",
   casazza_transport_b: "Ti contatteremo individualmente su questi hotel",
   casazza_hotel_two: "Vulcano Village",
   casazza_hotel_address_two: "Piazza del Porto, 18, 24063 Castro BG",
@@ -316,7 +320,7 @@ export const itIT = {
   casazza_hotel_details_c:
     "Tuttavia non saremo in grado di supportare con il trasporto da altri hotel.",
   casazza_flights_title: "ARRIVARCI",
-  casazza_flights_header: "L'aeroporto più conveniente per i tuoi viaggi sarà",
+  casazza_flights_header: "L'aeroporto più conveniente per il tuo viaggio sarà",
   casazza_flights_airport: "AEROPORTO",
   casazza_flights_method: "Quindi puoi continuare in auto, taxi o autobus per il tuo hotel.",
   casazza_flights_other: "Altri aeroporti che sono anche convenienti lo sono",
@@ -326,34 +330,36 @@ export const itIT = {
   schedule_title: "Programma",
   schedule_title_one: "Venerdì 8 settembre",
   schedule_section_details_a:
-    "Vogliamo calciare il weekend del matrimonio con un Apericena dal bellissimo lago di Endine.",
+    "Vogliamo incominciare il weekend del matrimonio con un Apericena al bellissimo lago di Endine.",
   schedule_section_details_b:
     "La serata sarà ospitata a Locanda del Boscaiolo, uno dei nostri ristoranti locali preferiti.",
   schedule_section_details_c:
-    "Una serata in cui abbiamo la possibilità di incontrare familiari e amici, fare nuovi conoscenti e riscaldare le nostre scarpe da ballo. Verrà servita un aperista in piedi insieme a bolle e spritz.",
+    "Una serata in cui abbiamo la possibilità di incontrare familiari e amici, fare nuovi conoscenti e riscaldare le nostre scarpe da ballo. Verrà servita un aperitivo in piedi insieme a bolle e spritz.",
   schedule_section_when: "Quando",
   schedule_section_time: "Dalle 18:00",
   schedule_section_where: "Dove",
   schedule_section_location:
     "Locanda del Boscaiolo, via Montegrappa, 41, 24060 Monasterolo del Castello BG",
   schedule_section_dresscode: "Codice di abbigliamento",
-  schedule_section_theme: "La Dolce Vita - Riviera italiana / abiti colorati",
+  schedule_section_theme:
+    "La Dolce Vita - Immagina la Riviera italiana, abiti colorati e camicie in lino",
   schedule_section_transport: "Trasporto",
   schedule_section_Travel:
-    "Gli autobus saranno organizzati dal Vulcano Village Hotel e dall'hotel Sanpancrazio per il ritiro alle 17.30. Gli autobus di ritorno arriveranno per le 22.30. Troverai informazioni sulla compagnia di taxi ai sensi di F&Q. C'è un parcheggio disponibile.",
+    "Gli autobus saranno organizzati dal Vulcano Village Hotel e dall'hotel San Pancrazio per il ritiro alle 17.30. Gli autobus di ritorno arriveranno per le 22.30. Troverai informazioni sulla compagnia di taxi ai sensi di F&Q. C'è un parcheggio disponibile.",
   schedule_title_two: "Sabato 9 settembre",
   schedule_title_two_title: "Cerimonia matrimoniale",
   schedule_title_two_address: "La cerimonia si svolge nel Chiesa della Beata Vergine del Carmine.",
   schedule_title_two_after:
     "Dopo la cerimonia, c'è l'opportunità di congratularsi, scattare foto e parlare con la sposa.",
-  schedule_title_two_addresstwo: "CHIESA DELA BEATA VERGINE DEL Carmine",
+  schedule_title_two_addresstwo:
+    "Chiesa di San Pietro in vincoli, Via San Pietro, 24060 Spinone al Lago BG, Italia",
   schedule_title_two_dresscodesemi: "Semi formale",
   schedule_title_two_busses:
-    "Gli autobus partono dal Vulcano Village Hotel e dall'hotel Sanpancrazio alle 13:15.",
+    "Gli autobus partono dal Vulcano Village Hotel e dall'hotel San Pancrazio alle 13:15.",
   schedule_title_two_bussdeparts:
-    "L'autobus parte da Locanda del Boscaiolo alle 13.30. Troverai informazioni sulla compagnia di taxi ai sensi di F&Q. Il parcheggio è limitato, ti preghiamo di contattarci se hai la tua auto.",
+    "L'autobus parte da Locanda del Boscaiolo alle 13.30. Troverai le informazioni sui taxi nell'ambito di F&Q. Il parcheggio è limitato, ti preghiamo di contattarci se hai la tua auto.",
   schedule_title_two_house: "Casa Lodi Yates",
-  schedule_title_two_house_location: "Via Madonna Monte Carmelo, 7, 24060",
+  schedule_title_two_house_location: "Via Piazza Armando Diaz, 1, Casazza, BG",
   schedule_title_reception_title: "Ricezione",
   schedule_title_reception_after:
     "Dopo la cerimonia di nozze, si trova a una breve passeggiata di 100 metri al ricevimento di Casa Lodi Yates. Qui inizieremo il tuo viaggio nella torre medievale seguita da Aperitivo dall'area della piscina.",
@@ -361,7 +367,7 @@ export const itIT = {
     "Ciò sarà continuato da una cena formale nel cortile di corte e festeggiamenti aggiuntivi.",
   schedule_title_reception_speach:
     "Per le richieste di parola, si prega di contattare i ricevimenti toast madame johanna strand a johanna.strand@nicks.com o su +46 70 885 85 41.",
-  house_address: "Casa Lodi Yates, Via Madonna Monte Carmelo, 7, 24060, Casazza, BG",
+  house_address: "Casa Lodi Yates, Piazza Armando Diaz, 1, Casazza, BG",
   speach:
     "Per le richieste di parola, si prega di contattare i ricevimenti toast madame johanna strand a johanna.strand@nicks.com o su +46 70 885 85 41.",
   "FAQ Page ": "",
@@ -385,7 +391,7 @@ export const itIT = {
     "Si consiglia di utilizzare il servizio di taxi locale Autoservizi Zambetti S.N.C. - +3935 810742.",
   faq_question_7: "Qual è il codice di abbigliamento?",
   faq_answer_7:
-    "Nella sezione \"Programma\" sopra puoi vedere il codice di abbigliamento per ogni giorno.\n\nLake Party: La Dolce Vita. Immagina la Riviera italiana, abbigliamento colorato, lino\n\nMatrimonio e ricevimento: semi-formale. Le donne dovrebbero indossare un vestito (per favore evita il bianco, il beige o l'avorio) e i signori dovrebbero indossare abiti e cravatta/bowtie\n\nRegola l'abbigliamento per tempo e temperatura poiché la maggior parte di tutti i festeggiamenti saranno all'aperto. Signore, le scarpe con un tallone grosso sono raccomandate a causa di molte località con pietre di ciottoli.",
+    '"Nella sezione ""Programma"" sopra puoi vedere il codice di abbigliamento per ogni giorno.\n\nLake Party: La Dolce Vita. Immagina la Riviera italiana, abbigliamento colorato, lino\n\nMatrimonio e ricevimento: semi-formale. Le donne dovrebbero indossare un vestito (per favore evita il bianco, il beige o l\'avorio) e i signori dovrebbero indossare abiti e cravatta/bowtie\n\nRegola l\'abbigliamento per tempo e temperatura poiché la maggior parte di tutti i festeggiamenti saranno all\'aperto. Signore, le scarpe con un tallone grosso sono raccomandate a causa di molte località con pietre di ciottoli."',
   faq_question_8: "Hai un registro regalo?",
   faq_answer_8:
     "Siamo così onorati che arriverai fino in Italia per celebrarci, la tua presenza nella nostra giornata è tutto ciò che chiediamo. Tuttavia, se vuoi regalarci in qualche altro modo, un po 'di aiuto per la nostra luna di miele è qualcosa che faremmo apprezzare!",
