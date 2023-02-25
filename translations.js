@@ -116,7 +116,7 @@ export const enGB = {
   faq_answer_11: "Yes we do, when sharing and uploading pics, please use our hashtag ",
   faq_question_12: "Who could I contact for other questions?",
   faq_answer_12:
-    "We ask you to primarily email wedding@yates.com, but of course you are also welcome to reach out directly to Johanna and Harry. ",
+    "We ask you to primarily email johanna.blomstedtn@gmail.com , but of course you are also welcome to reach out directly to Johanna and Harry. ",
   "RSVP Page": "",
   rsvp_title: "RSVP",
   rsvp_alert: "Please select the checkbox (Happy to be there) or (Sad to miss it)",
@@ -197,7 +197,7 @@ export const svSE = {
     "Locanda del Boscaiolo, via Montegrappa, 41, 24060 Monasterolo del Castello BG",
   schedule_section_dresscode: "Klädkod",
   schedule_section_theme:
-    "La Dolce Vita - Föreställ dig den italienska rivieran, färgglada klänningar och linneskjortor",
+    "La Dolce Vita - Föreställ dig den italienska rivieran, färgglada klänningar och linntröjor",
   schedule_section_transport: "Transport",
   schedule_section_Travel:
     "Bussar kommer att organiseras från Vulcano Village Hotel och Hotel San Pancrazio för hämtning kl 17:30. Returbussar kommer till 22:30. Du hittar taxiföretagsinformation under F&Q. Det finns parkering tillgänglig.",
@@ -260,7 +260,7 @@ export const svSE = {
   faq_answer_11: "Ja, det gör vi, när du delar och laddar upp bilder, använd vår hashtag",
   faq_question_12: "Vart hör jag av mig om jag har frågor?",
   faq_answer_12:
-    "I första hand ber vi er maila wedding@yates.com, men självklart är du också välkommen att kontakta Johanna och Harry direkt.",
+    "I första hand ber vi er maila johanna.blomstedtn@gmail.com, men självklart är du också välkommen att kontakta Johanna och Harry direkt.",
   "RSVP Page": "",
   rsvp_title: "RSVP",
   rsvp_alert: "Välj kryssrutan (glad att vara där) eller (ledsen att missa den)",
@@ -405,7 +405,7 @@ export const itIT = {
   faq_answer_11: "Sì, quando condividiamo e caricando foto, usa il nostro hashtag",
   faq_question_12: "Chi potrei contattare per altre domande?",
   faq_answer_12:
-    "Ti chiediamo di e -mail principalmente di email wedding@yates.com, ma ovviamente sei anche invitato a contattarti direttamente a Johanna Och Harry.",
+    "Ti chiediamo di e -mail principalmente di email johanna.blomstedtn@gmail.com, ma ovviamente sei anche invitato a contattarti direttamente a Johanna Och Harry.",
   "RSVP Page": "",
   rsvp_title: "RSVP",
   rsvp_alert: "Seleziona la casella di controllo (felice di essere lì) o (triste di perderla)",
