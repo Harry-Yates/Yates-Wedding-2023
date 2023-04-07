@@ -12,6 +12,13 @@ export const enGB = {
   home_title_and: "and",
   home_title_invite: "Invite you to celebrate their wedding",
   home_footer_title_date: "September",
+  "Registry Page": "",
+  registry_title: "Registry",
+  registry_link_copy_one:
+    "Welcome to Johanna and Harry's honeymoon fund, where memories are worth more than a posh kettle! Lend a hand in sending our lovebirds on a brilliant adventure that'll last longer than a cuppa.",
+  registry_link_copy_two:
+    "Pop a few quid into their virtual piggy bank, and let's raise a toast to a love story more smashing than any rom-com!",
+  registry_link_name: "Registry Page",
   "Casazza Page\t\t\t": "",
   casazza_title: "Casazza",
   casazza_header: "Accomodation",
@@ -157,6 +164,13 @@ export const svSE = {
   home_title_and: "och",
   home_title_invite: "Bjuder in er att fira vårt bröllop",
   home_footer_title_date: "September",
+  "Registry Page": "",
+  registry_title: "Register",
+  registry_link_copy_one:
+    "Välkommen till Johanna och Harrys smekmånadsfond, där minnen är värda mer än en posh vattenkokare! Låna en hand i att skicka våra kärleksfåglar på ett lysande äventyr som kommer att hålla längre än en kopp.",
+  registry_link_copy_two:
+    "Poppa några pund i deras virtuella spargrisbank, och låt oss höja en rostat bröd till en kärlekshistoria som är mer krossande än någon rom-com!",
+  registry_link_name: "Registersida",
   "Casazza Page\t\t\t": "",
   casazza_title: "Casazza",
   casazza_header: "Boende",
@@ -301,20 +315,28 @@ export const itIT = {
   home_title_and: "e",
   home_title_invite: "Ti invita a celebrare il loro matrimonio",
   home_footer_title_date: "Settembre",
+  "Registry Page": "",
+  registry_title: "Registro",
+  registry_link_copy_one:
+    "Benvenuti nel fondo per la luna di miele di Johanna e Harry, in cui i ricordi valgono più di un elegante bollitore! Dai una mano nell'invio dei nostri piccioncini in una brillante avventura che durerà più a lungo di una tazza.",
+  registry_link_copy_two:
+    "Fai un po 'di sterline nel loro salvadanaio virtuale e solleviamo un brindisi a una storia d'amore più schiantata di qualsiasi rom-com!",
+  registry_link_name: "Pagina del registro",
   "Casazza Page\t\t\t": "",
   casazza_title: "Casazza",
   casazza_header: "Alloggio",
   casazza_booking_title: "Abbiamo prenotato stanze nei seguenti hotel",
   casazza_hotel_one: "Hotel San Pancrazio*",
   casazza_hotel_address: "Via Fratelli Calvi, 7, 24069 Trescore Balneario BG",
-  casazza_mention_one: "Quando si riserva la tua stanza, menzionati",
-  casazza_mention_two: "Per lo staff di sapere che fai parte del nostro matrimonio.",
-  casazza_transport_a: "Abbiamo riservato questi hotel per la festa di nozze e la famiglia stretta",
+  casazza_mention_one:
+    "Al momento di prenotare una camera, si prega di avvisare lo staff che fai parte della festa nuziale.",
+  casazza_mention_two: "",
+  casazza_transport_a: ":",
   casazza_transport_b: "Ti contatteremo individualmente su questi hotel",
   casazza_hotel_two: "Vulcano Village",
   casazza_hotel_address_two: "Piazza del Porto, 18, 24063 Castro BG",
   casazza_hotel_three: "Locanda del Boscaiolo",
-  casazza_hotel_address_three: "Via Montegrappa, 41, 24060 Monasterolo del Castello BG",
+  casazza_hotel_address_three: "Via Montegrappa, 41, 24060 Monastolo del Castello BG",
   casazza_hotel_details_a: "Organizzeremo il trasporto da questi tre hotel ai luoghi.",
   casazza_hotel_details_b: "Ci sono molti altri bellissimi hotel e B&B nella zona",
   casazza_hotel_details_c:
@@ -342,7 +364,7 @@ export const itIT = {
     "Locanda del Boscaiolo, via Montegrappa, 41, 24060 Monasterolo del Castello BG",
   schedule_section_dresscode: "Codice di abbigliamento",
   schedule_section_theme:
-    "La Dolce Vita - Immagina la Riviera italiana, abiti colorati e camicie in lino",
+    "La Dolce Vita - Immagina la Riviera italiana, abiti colorati e camicie di lino",
   schedule_section_transport: "Trasporto",
   schedule_section_Travel:
     "Gli autobus saranno organizzati dal Vulcano Village Hotel e dall'hotel San Pancrazio per il ritiro alle 17.30. Gli autobus di ritorno arriveranno per le 22.30. Troverai informazioni sulla compagnia di taxi ai sensi di F&Q. C'è un parcheggio disponibile.",
@@ -357,7 +379,7 @@ export const itIT = {
   schedule_title_two_busses:
     "Gli autobus partono dal Vulcano Village Hotel e dall'hotel San Pancrazio alle 13:15.",
   schedule_title_two_bussdeparts:
-    "L'autobus parte da Locanda del Boscaiolo alle 13.30. Troverai le informazioni sui taxi nell'ambito di F&Q. Il parcheggio è limitato, ti preghiamo di contattarci se hai la tua auto.",
+    "L'autobus parte da Locanda del Boscaiolo alle 13.30. Troverai le informazioni sui taxi sotto F&Q. Il parcheggio è limitato, ti preghiamo di contattarci se hai la tua auto.",
   schedule_title_two_house: "Casa Lodi Yates",
   schedule_title_two_house_location: "Via Piazza Armando Diaz, 1, Casazza, BG",
   schedule_title_reception_title: "Ricezione",
@@ -377,7 +399,7 @@ export const itIT = {
     "Per le richieste di parole, si prega di contattare i ricevimenti Toastmadame Johanna Strand a Johanna.strand@nicks.com o su +46 70 885 85 41.",
   faq_question_2: "Non siamo in grado di partecipare a tutti i giorni, va bene?",
   faq_answer_2: "Ovviamente! Informici nell'RSVP, quando puoi partecipare.",
-  faq_question_3: "Come possiamo arrivare dall'alloggio alle celebrazioni, alla chiesa, ecc.?",
+  faq_question_3: "Come possiamo arrivare dall'alloggio alle celebrazioni, alla chiesa ecc.?",
   faq_answer_3:
     "Gli autobus saranno organizzati dal Vulcano Village Hotel, dal Locanda del Boscaiolo Hotel e dall'hotel San Pancrazio per il ritiro e il ritorno in entrambi i giorni. Se stai altrove, dovrai organizzare il tuo trasporto.",
   faq_question_4: "I bambini sono i benvenuti?",
