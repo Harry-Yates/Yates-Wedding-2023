@@ -33,11 +33,24 @@ export default function Casazza({ hasReadPermission }) {
           <p>{t.registry_link_copy_one}</p>
           <p>{t.registry_link_copy_two}</p>
         </div>
-        <div className='cazazza-hotel'>
+        {/* <div className='cazazza-hotel'>
           <li id='green'>
             <Link
               className='cazazza-hotel-link'
               // id='white'
+              href='https://www.honeyfund.com/site/blomstedt-nelson-yates-09-09-2023'
+              target={"_blank"}>
+              {t.registry_link_name}
+            </Link>
+          </li>
+        </div> */}
+<br />  
+        <div className='cazazza-hotel-family' id='cazazza-hotel-family'>
+          <br />
+          <li className='white-helper'>
+            <Link
+              id='white-helper'
+              className='cazazza-hotel-link shake'
               href='https://www.honeyfund.com/site/blomstedt-nelson-yates-09-09-2023'
               target={"_blank"}>
               {t.registry_link_name}
