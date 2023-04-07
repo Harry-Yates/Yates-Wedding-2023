@@ -1,0 +1,19 @@
+.registry-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+  margin-top: 2rem;
+}
+
+.registry-link {
+  font-size: var(--fs-large);
+}
+
+.registry-link:hover {
+  animation: tilt-shaking 0.4s;
+  animation-iteration-count: infinite;
+  color: var(--clr-text-primary);
+}

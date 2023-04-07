@@ -77,6 +77,9 @@ export default function Header() {
             <Link href='/faq'>{t.faq_title}</Link>
           </li>
           <li>
+            <Link href='/registry'>Registry</Link>
+          </li>
+          <li>
             <Link href='/schedule'>{t.schedule_title}</Link>
           </li>
           <li>
