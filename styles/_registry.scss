@@ -17,3 +17,14 @@
   animation-iteration-count: infinite;
   color: var(--clr-text-primary);
 }
+
+.loader {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--clr-text-primary);
+  font-size: var(--fs-larger);
+}
+.loader > p {
+  font-size: var(--fs-large);
+  margin: 0rem;
+}

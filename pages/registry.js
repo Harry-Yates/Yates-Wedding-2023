@@ -27,11 +27,16 @@ export default function Casazza({ hasReadPermission }) {
         <Head>
           <title>Registry</title>
         </Head>
-        {isLoading && <div className='loader'>Loading...</div>}
+        {isLoading && (
+          <div className='loader'>
+            <h2>Registry page is loading</h2>
+            <h2>Please wait a moment</h2>
+          </div>
+        )}
         <iframe
           src='https://www.honeyfund.com/site/blomstedt-nelson-yates-09-09-2023'
           title='Example Website'
-          width='100%'
+          width='80%'
           height='1000'
           frameBorder='0'
           allowFullScreen
