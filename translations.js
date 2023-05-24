@@ -23,24 +23,30 @@ export const enGB = {
   casazza_title: "Casazza",
   casazza_header: "Accomodation",
   casazza_booking_title: "We have booked rooms in the following hotels",
-  casazza_hotel_one: "Hotel San Pancrazio*",
-  casazza_hotel_address: "Via Fratelli Calvi, 7, 24069 Trescore Balneario BG",
+  casazza_hotel_one: "Hotel Lovere*",
+  casazza_hotel_address: "Via Marconi, n. 91 - 24065 Lovere (BG)",
   casazza_mention_one: "When reserving your room please mention",
   casazza_mention_two: "for the staff to know you are a part of our wedding.",
-  casazza_transport_a: "We have reserved these hotels for the wedding party and close family",
-  casazza_transport_b: "We will reach out to you individually about these hotels",
+  casazza_transport_a:
+    "We have reserved these hotels for the wedding party and close family",
+  casazza_transport_b:
+    "We will reach out to you individually about these hotels",
   casazza_hotel_two: "Vulcano Village",
   casazza_hotel_address_two: "Piazza del Porto, 18, 24063 Castro BG",
   casazza_hotel_three: "Locanda Del Boscaiolo",
-  casazza_hotel_address_three: "Via Montegrappa, 41, 24060 Monasterolo del Castello BG",
-  casazza_hotel_details_a: "We will be organizing transport from these three hotels to venues.",
-  casazza_hotel_details_b: "There are many other beautiful hotels and B&Bs in the area",
+  casazza_hotel_address_three:
+    "Via Montegrappa, 41, 24060 Monasterolo del Castello BG",
+  casazza_hotel_details_a:
+    "We will be organizing transport from these three hotels to venues.",
+  casazza_hotel_details_b:
+    "There are many other beautiful hotels and B&Bs in the area",
   casazza_hotel_details_c:
     "however we will not be able to support with transport from other Hotels.",
   casazza_flights_title: "GETTING THERE",
   casazza_flights_header: "The most convenient airport for your travel will be",
   casazza_flights_airport: "AIRPORT",
-  casazza_flights_method: "Then you can continue by car, taxi or bus to your hotel.",
+  casazza_flights_method:
+    "Then you can continue by car, taxi or bus to your hotel.",
   casazza_flights_other: "Other airports that are also convenient are",
   casazza_flights_or: "or",
   casazza_flights_title_two: "SITE MAP",
@@ -66,7 +72,8 @@ export const enGB = {
     "Buses will be organized from Vulcano Village hotel and Hotel San Pancrazio for pick up at 5.30pm. Return buses will be arriving for 10.30pm. You will find taxi company information under F&Q. There is parking available.",
   schedule_title_two: "Saturday 9th September",
   schedule_title_two_title: "Wedding Ceremony",
-  schedule_title_two_address: "The ceremony takes place in Chiesa di San Pietro in Vincoli.",
+  schedule_title_two_address:
+    "The ceremony takes place in Chiesa di San Pietro in Vincoli.",
   schedule_title_two_after:
     "After the ceremony, there is an opportunity to congratulate, take photos and talk to the bride & groom.",
   schedule_title_two_addresstwo:
@@ -95,7 +102,8 @@ export const enGB = {
     "For speech requests, please contact the Receptions toastmadame Johanna Strand at Johanna.strand@nicks.com or on +46 70 885 85 41.​",
   faq_question_2: "We are not able to attend all the days, is that ok?",
   faq_answer_2: "Of course! Inform us in the RSVP, when you can attend. ",
-  faq_question_3: "How do we get from the accommodation to the celebrations, church etc?",
+  faq_question_3:
+    "How do we get from the accommodation to the celebrations, church etc?",
   faq_answer_3:
     "Buses will be organised from Vulcano Village hotel, Locanda Del Boscaiolo Hotel and Hotel San Pancrazio for pick up and return on both days. If you are staying somewhere else, you will need to organise your own transportation. ",
   faq_question_4: "Are children welcome?",
@@ -120,17 +128,20 @@ export const enGB = {
   faq_answer_10:
     "We have a strict guest list, due to space limitations at our reception location.  Our wedding is strictly RSVP only. We will only able to accommodate those listed on your invitation.",
   faq_question_11: "Do you have a wedding hashtag?",
-  faq_answer_11: "Yes we do, when sharing and uploading pics, please use our hashtag ",
+  faq_answer_11:
+    "Yes we do, when sharing and uploading pics, please use our hashtag ",
   faq_question_12: "Who could I contact for other questions?",
   faq_answer_12:
     "We ask you to primarily email johanna.blomstedtn@gmail.com , but of course you are also welcome to reach out directly to Johanna and Harry. ",
   "RSVP Page": "",
   rsvp_title: "RSVP",
-  rsvp_alert: "Please select the checkbox (Happy to be there) or (Sad to miss it)",
+  rsvp_alert:
+    "Please select the checkbox (Happy to be there) or (Sad to miss it)",
   rsvp_secondHeader: "Invite only",
   rsvp_deadline: "Kindly RSVP no later than",
   rsvp_deadline_date: " 25th May 2023",
-  rsvp_noKids: "UNFORTUNATELY WE ARE NOT ABLE TO EXTEND AN INVITE TO PLUS ONES OR CHILDREN",
+  rsvp_noKids:
+    "UNFORTUNATELY WE ARE NOT ABLE TO EXTEND AN INVITE TO PLUS ONES OR CHILDREN",
   rsvp_confirmUpper: "RSVP received",
   rsvp_confirmLower: "We're sorry you can't make it.",
   rsvp_yes: "Happy to be there",
@@ -147,7 +158,7 @@ export const enGB = {
   rsvp_partySize_names: "Additional party member names:",
   rsvp_anythingElse: "Anything we should know?",
   rsvp_btn_send: "Send RSVP",
-  rsvp_btn_sent: "Sent"
+  rsvp_btn_sent: "Sent",
 };
 
 export const svSE = {
@@ -169,29 +180,37 @@ export const svSE = {
   registry_link_copy_one:
     "Välkommen till Johanna och Harrys smekmånadsfond, där minnen är värda mer än en posh vattenkokare! Låna en hand i att skicka våra kärleksfåglar på ett lysande äventyr som kommer att hålla längre än en kopp.",
   registry_link_copy_two:
-    "Poppa några pund i deras virtuella spargrisbank, och låt oss höja en rostat bröd till en kärlekshistoria som är mer krossande än någon rom-com!",
+    "Poppa några pund i deras virtuella spargrisbank, och låt oss höja en skål till en kärlekshistoria som är mer krossande än någon rom-com!",
   registry_link_name: "Registersida",
   "Casazza Page\t\t\t": "",
   casazza_title: "Casazza",
   casazza_header: "Boende",
   casazza_booking_title: "Vi har bokat rum på följande hotell",
-  casazza_hotel_one: "Hotel San Pancrazio*",
-  casazza_hotel_address: "Via Fratelli Calvi, 7, 24069 Trescore Balneario BG",
+  casazza_hotel_one: "Hotel Lovere*",
+  casazza_hotel_address: "Via Marconi, n. 91 - 24065 Lovere (BG)",
   casazza_mention_one: "När du reserverar ditt rum vänligen nämn",
-  casazza_mention_two: "För att personalen ska veta att du är en del av vårt bröllop.",
-  casazza_transport_a: "Vi har reserverat dessa hotell för bröllopsföljet och nära familj",
+  casazza_mention_two:
+    "För att personalen ska veta att du är en del av vårt bröllop.",
+  casazza_transport_a:
+    "Vi har reserverat dessa hotell för bröllopsföljet och nära familj",
   casazza_transport_b: "Vi kommer att nå ut dig individuellt om dessa hotell",
   casazza_hotel_two: "Vulcano Village",
   casazza_hotel_address_two: "Piazza del Porto, 18, 24063 Castro BG",
   casazza_hotel_three: "Locanda del Boscaiolo",
-  casazza_hotel_address_three: "Via Montegrappa, 41, 24060 Monasterolo del Castello BG",
-  casazza_hotel_details_a: "Vi kommer att organisera transport från dessa tre hotell till platser.",
-  casazza_hotel_details_b: "Det finns många andra vackra hotell och B&B i området",
-  casazza_hotel_details_c: "Men vi kommer inte att kunna stödja med transport från andra hotell.",
+  casazza_hotel_address_three:
+    "Via Montegrappa, 41, 24060 Monasterolo del Castello BG",
+  casazza_hotel_details_a:
+    "Vi kommer att organisera transport från dessa tre hotell till platser.",
+  casazza_hotel_details_b:
+    "Det finns många andra vackra hotell och B&B i området",
+  casazza_hotel_details_c:
+    "Men vi kommer inte att kunna stödja med transport från andra hotell.",
   casazza_flights_title: "ANKOMST",
-  casazza_flights_header: "Den mest praktiska flygplatsen för din resa kommer att vara",
+  casazza_flights_header:
+    "Den mest praktiska flygplatsen för din resa kommer att vara",
   casazza_flights_airport: "FLYGPLATS",
-  casazza_flights_method: "Sen kan du fortsätta med bil, taxi eller buss till ditt hotell.",
+  casazza_flights_method:
+    "Sen kan du fortsätta med bil, taxi eller buss till ditt hotell.",
   casazza_flights_other: "Andra flygplatser som också är praktiska är",
   casazza_flights_or: "eller",
   casazza_flights_title_two: "Karta",
@@ -217,7 +236,8 @@ export const svSE = {
     "Bussar kommer att organiseras från Vulcano Village Hotel och Hotel San Pancrazio för hämtning kl 17:30. Returbussar kommer till 22:30. Du hittar taxiföretagsinformation under F&Q. Det finns parkering tillgänglig.",
   schedule_title_two: "Lördag 9 september",
   schedule_title_two_title: "Vigsel",
-  schedule_title_two_address: "Ceremonin äger rum i Chiesa di San Pietro in Vincoli.",
+  schedule_title_two_address:
+    "Ceremonin äger rum i Chiesa di San Pietro in Vincoli.",
   schedule_title_two_after:
     "Efter ceremonin finns det en möjlighet att gratulera, ta foton och prata med bruden & brudgummen.",
   schedule_title_two_addresstwo:
@@ -271,17 +291,20 @@ export const svSE = {
   faq_answer_10:
     "Vi har en strikt gästlista på grund av utrymmesbegränsningar i vår lokal. Vårt bröllop är bara strikt RSVP. Vi kan bara rymma de som listas på din inbjudan.",
   faq_question_11: "Har ni en bröllopshashtag?",
-  faq_answer_11: "Ja, det gör vi, när du delar och laddar upp bilder, använd vår hashtag",
+  faq_answer_11:
+    "Ja det gör vi, när du delar och laddar upp bilder, använd vår hashtagg",
   faq_question_12: "Vart hör jag av mig om jag har frågor?",
   faq_answer_12:
     "I första hand ber vi er maila johanna.blomstedtn@gmail.com, men självklart är du också välkommen att kontakta Johanna och Harry direkt.",
   "RSVP Page": "",
   rsvp_title: "RSVP",
-  rsvp_alert: "Välj kryssrutan (glad att vara där) eller (ledsen att missa den)",
+  rsvp_alert:
+    "Välj kryssrutan (glad att vara där) eller (ledsen att missa den)",
   rsvp_secondHeader: "Endast inbjudna",
   rsvp_deadline: "Vänligen RSVP senast",
   rsvp_deadline_date: " 25 maj 2023",
-  rsvp_noKids: "Tyvärr kan vi inte utöka en inbjudan till respektive eller barn",
+  rsvp_noKids:
+    "Tyvärr kan vi inte utöka en inbjudan till respektive eller barn",
   rsvp_confirmUpper: "RSVP mottagen",
   rsvp_confirmLower: "Vi är ledsna över att du inte kan komma.",
   rsvp_yes: "Jag kommer gärna",
@@ -298,7 +321,7 @@ export const svSE = {
   rsvp_partySize_names: "Namn på gästerna i din grupp",
   rsvp_anythingElse: "Något vi borde veta?",
   rsvp_btn_send: "Skicka RSVP",
-  rsvp_btn_sent: "Skickad"
+  rsvp_btn_sent: "Skickad",
 };
 
 export const itIT = {
@@ -326,8 +349,8 @@ export const itIT = {
   casazza_title: "Casazza",
   casazza_header: "Alloggio",
   casazza_booking_title: "Abbiamo prenotato stanze nei seguenti hotel",
-  casazza_hotel_one: "Hotel San Pancrazio*",
-  casazza_hotel_address: "Via Fratelli Calvi, 7, 24069 Trescore Balneario BG",
+  casazza_hotel_one: "Hotel Lovere*",
+  casazza_hotel_address: "Via Marconi, n. 91 - 24065 Lovere (BG)",
   casazza_mention_one:
     "Al momento di prenotare una camera, si prega di avvisare lo staff che fai parte della festa nuziale.",
   casazza_mention_two: "",
@@ -336,15 +359,19 @@ export const itIT = {
   casazza_hotel_two: "Vulcano Village",
   casazza_hotel_address_two: "Piazza del Porto, 18, 24063 Castro BG",
   casazza_hotel_three: "Locanda del Boscaiolo",
-  casazza_hotel_address_three: "Via Montegrappa, 41, 24060 Monastolo del Castello BG",
-  casazza_hotel_details_a: "Organizzeremo il trasporto da questi tre hotel ai luoghi.",
-  casazza_hotel_details_b: "Ci sono molti altri bellissimi hotel e B&B nella zona",
+  casazza_hotel_address_three:
+    "Via Montegrappa, 41, 24060 Monastolo del Castello BG",
+  casazza_hotel_details_a:
+    "Organizzeremo il trasporto da questi tre hotel ai luoghi.",
+  casazza_hotel_details_b:
+    "Ci sono molti altri bellissimi hotel e B&B nella zona",
   casazza_hotel_details_c:
     "Tuttavia non saremo in grado di supportare con il trasporto da altri hotel.",
   casazza_flights_title: "ARRIVARCI",
   casazza_flights_header: "L'aeroporto più conveniente per il tuo viaggio sarà",
   casazza_flights_airport: "AEROPORTO",
-  casazza_flights_method: "Quindi puoi continuare in auto, taxi o autobus per il tuo hotel.",
+  casazza_flights_method:
+    "Quindi puoi continuare in auto, taxi o autobus per il tuo hotel.",
   casazza_flights_other: "Altri aeroporti che sono anche convenienti lo sono",
   casazza_flights_or: "O",
   casazza_flights_title_two: "MAPPA DEL SITO",
@@ -370,7 +397,8 @@ export const itIT = {
     "Gli autobus saranno organizzati dal Vulcano Village Hotel e dall'hotel San Pancrazio per il ritiro alle 17.30. Gli autobus di ritorno arriveranno per le 22.30. Troverai informazioni sulla compagnia di taxi ai sensi di F&Q. C'è un parcheggio disponibile.",
   schedule_title_two: "Sabato 9 settembre",
   schedule_title_two_title: "Cerimonia matrimoniale",
-  schedule_title_two_address: "La cerimonia si svolge nel Chiesa della Beata Vergine del Carmine.",
+  schedule_title_two_address:
+    "La cerimonia si svolge nel Chiesa della Beata Vergine del Carmine.",
   schedule_title_two_after:
     "Dopo la cerimonia, c'è l'opportunità di congratularsi, scattare foto e parlare con la sposa.",
   schedule_title_two_addresstwo:
@@ -397,9 +425,11 @@ export const itIT = {
   faq_question_1: "Chi contatto se voglio fare un discorso?",
   faq_answer_1:
     "Per le richieste di parole, si prega di contattare i ricevimenti Toastmadame Johanna Strand a Johanna.strand@nicks.com o su +46 70 885 85 41.",
-  faq_question_2: "Non siamo in grado di partecipare a tutti i giorni, va bene?",
+  faq_question_2:
+    "Non siamo in grado di partecipare a tutti i giorni, va bene?",
   faq_answer_2: "Ovviamente! Informici nell'RSVP, quando puoi partecipare.",
-  faq_question_3: "Come possiamo arrivare dall'alloggio alle celebrazioni, alla chiesa ecc.?",
+  faq_question_3:
+    "Come possiamo arrivare dall'alloggio alle celebrazioni, alla chiesa ecc.?",
   faq_answer_3:
     "Gli autobus saranno organizzati dal Vulcano Village Hotel, dal Locanda del Boscaiolo Hotel e dall'hotel San Pancrazio per il ritiro e il ritorno in entrambi i giorni. Se stai altrove, dovrai organizzare il tuo trasporto.",
   faq_question_4: "I bambini sono i benvenuti?",
@@ -424,17 +454,20 @@ export const itIT = {
   faq_answer_10:
     "Abbiamo un elenco di ospiti rigoroso, a causa delle limitazioni di spazio nella nostra posizione di accoglienza. Il nostro matrimonio è rigorosamente solo RSVP. Saremo in grado di accogliere solo quelli elencati sul tuo invito.",
   faq_question_11: "Hai un hashtag di nozze?",
-  faq_answer_11: "Sì, quando condividiamo e caricando foto, usa il nostro hashtag",
+  faq_answer_11:
+    "Sì, quando condividiamo e caricando foto, usa il nostro hashtag",
   faq_question_12: "Chi potrei contattare per altre domande?",
   faq_answer_12:
     "Ti chiediamo di e -mail principalmente di email johanna.blomstedtn@gmail.com, ma ovviamente sei anche invitato a contattarti direttamente a Johanna Och Harry.",
   "RSVP Page": "",
   rsvp_title: "RSVP",
-  rsvp_alert: "Seleziona la casella di controllo (felice di essere lì) o (triste di perderla)",
+  rsvp_alert:
+    "Seleziona la casella di controllo (felice di essere lì) o (triste di perderla)",
   rsvp_secondHeader: "Solo su invito",
   rsvp_deadline: "Gentilmente RSVP entro e non oltre",
   rsvp_deadline_date: " 25 maggio 2023",
-  rsvp_noKids: "Purtroppo non siamo in grado di estendere un invito a quelli più quelli o bambini",
+  rsvp_noKids:
+    "Purtroppo non siamo in grado di estendere un invito a quelli più quelli o bambini",
   rsvp_confirmUpper: "RSVP ricevuto",
   rsvp_confirmLower: "Siamo spiacenti che non puoi farcela.",
   rsvp_yes: "Felice di essere lì",
@@ -451,5 +484,5 @@ export const itIT = {
   rsvp_partySize_names: "Nomi dei membri del partito aggiuntivi:",
   rsvp_anythingElse: "Qualcosa che dovremmo sapere?",
   rsvp_btn_send: "Invia RSVP",
-  rsvp_btn_sent: "Inviato"
+  rsvp_btn_sent: "Inviato",
 };

@@ -62,7 +62,13 @@ export default function Casazza({ hasReadPermission }) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [section1Visible, section2Visible, section3Visible, section4Visible, prevScrollPos]);
+  }, [
+    section1Visible,
+    section2Visible,
+    section3Visible,
+    section4Visible,
+    prevScrollPos,
+  ]);
 
   if (!hasReadPermission) {
     return <Login redirectPath={router.asPath} />;
@@ -74,9 +80,13 @@ export default function Casazza({ hasReadPermission }) {
         <Head>
           <title>Casazza</title>
         </Head>
-        <h1 className='page-title'>{t.casazza_title}</h1>
-        <div className='flowers-main'>
-          <Image src={flowersMain} alt='flowersMain' width='130' />
+        <h1 className="page-title">{t.casazza_title}</h1>
+        <div className="flowers-main">
+          <Image
+            src={flowersMain}
+            alt="flowersMain"
+            width="130"
+          />
         </div>
 
         {/* <div className='icon-scroll'>
@@ -85,17 +95,19 @@ export default function Casazza({ hasReadPermission }) {
           </div>
         </div> */}
 
-        <div className='casazza-container'>
-          <section className='cazazza-hotel-container'>
-            <h2 className='page-title-secondary'>{t.casazza_header}</h2>
-            <h3 className='margin'>{t.casazza_booking_title}</h3>
-            <div className='cazazza-hotel-family' id='cazazza-hotel-family'>
+        <div className="casazza-container">
+          <section className="cazazza-hotel-container">
+            <h2 className="page-title-secondary">{t.casazza_header}</h2>
+            <h3 className="margin">{t.casazza_booking_title}</h3>
+            <div
+              className="cazazza-hotel-family"
+              id="cazazza-hotel-family">
               <br />
-              <li className='white-helper'>
+              <li className="white-helper">
                 <Link
-                  id='white-helper'
-                  className='cazazza-hotel-link shake'
-                  href='https://www.hotelsanpancrazio.it/en/'
+                  id="white-helper"
+                  className="cazazza-hotel-link shake"
+                  href="https://www.hotellovere.it/it/"
                   target={"_blank"}>
                   {t.casazza_hotel_one}
                 </Link>
@@ -110,28 +122,28 @@ export default function Casazza({ hasReadPermission }) {
               <p>{t.casazza_mention_two}</p>
             </div>
 
-            <div className='cazazza-hotel'>
+            <div className="cazazza-hotel">
               <h3>{t.casazza_transport_a}</h3>
               <p>{t.casazza_transport_b}</p>
 
-              <div className='cazazza-hotel'>
-                <li id='green'>
+              <div className="cazazza-hotel">
+                <li id="green">
                   <Link
-                    className='cazazza-hotel-link'
+                    className="cazazza-hotel-link"
                     // id='white'
-                    href='https://vulcanovillage.it/chi-siamo/'
+                    href="https://vulcanovillage.it/chi-siamo/"
                     target={"_blank"}>
                     {t.casazza_hotel_two}
                   </Link>
                 </li>
                 <p>{t.casazza_hotel_address_two}</p>
               </div>
-              <div className='cazazza-hotel'>
-                <li id='green'>
+              <div className="cazazza-hotel">
+                <li id="green">
                   <Link
-                    className='cazazza-hotel-link'
+                    className="cazazza-hotel-link"
                     // id='white'
-                    href='https://locandadelboscaiolo.it/'
+                    href="https://locandadelboscaiolo.it/"
                     target={"_blank"}>
                     {t.casazza_hotel_three}
                   </Link>
@@ -140,7 +152,7 @@ export default function Casazza({ hasReadPermission }) {
               </div>
             </div>
 
-            <div className='cazassa-hotel--details'>
+            <div className="cazassa-hotel--details">
               <p>{t.casazza_hotel_details_a}</p>
               <p>{t.casazza_hotel_details_b}</p>
               <p>{t.casazza_hotel_details_c}</p>
@@ -148,18 +160,22 @@ export default function Casazza({ hasReadPermission }) {
           </section>
 
           <section className={`section ${section2Visible ? "visible" : ""}`}>
-            <h2 className='page-title-secondary'>{t.casazza_flights_title}</h2>
+            <h2 className="page-title-secondary">{t.casazza_flights_title}</h2>
             <p>{t.casazza_flights_header}</p>
-            <h3 className='airport'>Bergamo {t.casazza_flights_airport} (BGY)</h3>
+            <h3 className="airport">
+              Bergamo {t.casazza_flights_airport} (BGY)
+            </h3>
             {/* <b>Bergamo Airport (BGY)</b>. */}
             <br />
             <p>{t.casazza_flights_method}</p>
             <br />
             {t.casazza_flights_other}
             <div>
-              <h3 className='airport'>Milano Linate (LIN)</h3>
-              <p className='airport'> {t.casazza_flights_or} </p>
-              <h3 className='airport'>Malpensa {t.casazza_flights_airport} (MXP)</h3>
+              <h3 className="airport">Milano Linate (LIN)</h3>
+              <p className="airport"> {t.casazza_flights_or} </p>
+              <h3 className="airport">
+                Malpensa {t.casazza_flights_airport} (MXP)
+              </h3>
             </div>
           </section>
 
