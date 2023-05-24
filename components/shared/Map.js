@@ -36,12 +36,12 @@ const markers = [
     icon: "https://user-images.githubusercontent.com/82885837/218531320-8c8c9c29-f96a-46d4-90c2-2122f8cb7524.png",
   },
   {
-    id: "Vulcano Village",
+    id: "Hotel Lovere Resort & Spa",
     position: { lat: 45.82195, lng: 10.08195 },
     icon: "https://user-images.githubusercontent.com/82885837/218538598-388ec01e-809e-42a9-b6a9-491f47324ab5.png",
   },
   {
-    id: "Hotel Lovere Resort & Spa",
+    id: "Vulcano Village",
     position: { lat: 45.8025134, lng: 10.0656494 },
     icon: "https://user-images.githubusercontent.com/82885837/218538598-388ec01e-809e-42a9-b6a9-491f47324ab5.png",
   },
