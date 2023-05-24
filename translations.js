@@ -23,10 +23,11 @@ export const enGB = {
   casazza_title: "Casazza",
   casazza_header: "Accomodation",
   casazza_booking_title: "We have booked rooms in the following hotels",
-  casazza_hotel_one: "Hotel Lovere*",
+  casazza_hotel_one: "Hotel Lovere Resort and Spa*",
   casazza_hotel_address: "Via Marconi, n. 91 - 24065 Lovere (BG)",
   casazza_mention_one: "When reserving your room please mention",
-  casazza_mention_two: "for the staff to know you are a part of our wedding.",
+  casazza_mention_two:
+    "in order to get a minimum of 20% discount and for the staff to know you are a part of our wedding.",
   casazza_transport_a:
     "We have reserved these hotels for the wedding party and close family",
   casazza_transport_b:
@@ -186,11 +187,11 @@ export const svSE = {
   casazza_title: "Casazza",
   casazza_header: "Boende",
   casazza_booking_title: "Vi har bokat rum på följande hotell",
-  casazza_hotel_one: "Hotel Lovere*",
+  casazza_hotel_one: "Hotel Lovere Resort and Spa*",
   casazza_hotel_address: "Via Marconi, n. 91 - 24065 Lovere (BG)",
   casazza_mention_one: "När du reserverar ditt rum vänligen nämn",
   casazza_mention_two:
-    "För att personalen ska veta att du är en del av vårt bröllop.",
+    "För att få minst 20% rabatt och för personalen att veta att du är en del av vårt bröllop.",
   casazza_transport_a:
     "Vi har reserverat dessa hotell för bröllopsföljet och nära familj",
   casazza_transport_b: "Vi kommer att nå ut dig individuellt om dessa hotell",
@@ -349,12 +350,14 @@ export const itIT = {
   casazza_title: "Casazza",
   casazza_header: "Alloggio",
   casazza_booking_title: "Abbiamo prenotato stanze nei seguenti hotel",
-  casazza_hotel_one: "Hotel Lovere*",
+  casazza_hotel_one: "Hotel Lovere Resort and Spa*",
   casazza_hotel_address: "Via Marconi, n. 91 - 24065 Lovere (BG)",
   casazza_mention_one:
     "Al momento di prenotare una camera, si prega di avvisare lo staff che fai parte della festa nuziale.",
-  casazza_mention_two: "",
-  casazza_transport_a: ":",
+  casazza_mention_two:
+    "Al fine di ottenere uno sconto minimo del 20% e per il personale per sapere che fai parte del nostro matrimonio.",
+  casazza_transport_a:
+    "Abbiamo riservato questi hotel per la festa di nozze e la famiglia stretta",
   casazza_transport_b: "Ti contatteremo individualmente su questi hotel",
   casazza_hotel_two: "Vulcano Village",
   casazza_hotel_address_two: "Piazza del Porto, 18, 24063 Castro BG",
