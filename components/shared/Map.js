@@ -50,6 +50,11 @@ const markers = [
     position: { lat: 45.76089607418838, lng: 9.92914617061615 },
     icon: "https://user-images.githubusercontent.com/82885837/218538598-388ec01e-809e-42a9-b6a9-491f47324ab5.png",
   },
+  {
+    id: "Bergamo Orio al Serio Airport",
+    position: { lat: 45.66608845296611, lng: 9.698146632212836 },
+    icon: "https://github.com/Harry-Yates/PhaserGame-RPG-Caves/assets/82885837/b106e713-5c7d-4bbf-b1fb-321936da8a75",
+  },
 ];
 
 // Function to adjust the position of the InfoWindow
