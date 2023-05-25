@@ -70,7 +70,7 @@ export const enGB = {
     "La Dolce Vita – Imagine the Italian Riviera, colourful dresses & linen shirts",
   schedule_section_transport: "Transport",
   schedule_section_Travel:
-    "Buses will be organized from Vulcano Village hotel and Hotel San Pancrazio for pick up at 5.30pm. Return buses will be arriving for 10.30pm. You will find taxi company information under F&Q. There is parking available.",
+    "Buses will be organized from Vulcano Village hotel and Hotel Lovere Resport and Spa for pick up at 5.30pm. Return buses will be arriving for 10.30pm. You will find taxi company information under F&Q. There is parking available.",
   schedule_title_two: "Saturday 9th September",
   schedule_title_two_title: "Wedding Ceremony",
   schedule_title_two_address:
@@ -234,7 +234,7 @@ export const svSE = {
     "La Dolce Vita - Föreställ dig den italienska rivieran, färgglada klänningar och linntröjor",
   schedule_section_transport: "Transport",
   schedule_section_Travel:
-    "Bussar kommer att organiseras från Vulcano Village Hotel och Hotel San Pancrazio för hämtning kl 17:30. Returbussar kommer till 22:30. Du hittar taxiföretagsinformation under F&Q. Det finns parkering tillgänglig.",
+    "Bussar kommer att organiseras från Vulcano Village Hotel och Hotel Lovere Resport and Spa för hämtning kl 17:30. Returbussar kommer till 22:30. Du hittar taxiföretagsinformation under F&Q. Det finns parkering tillgänglig.",
   schedule_title_two: "Lördag 9 september",
   schedule_title_two_title: "Vigsel",
   schedule_title_two_address:
@@ -397,7 +397,7 @@ export const itIT = {
     "La Dolce Vita - Immagina la Riviera italiana, abiti colorati e camicie di lino",
   schedule_section_transport: "Trasporto",
   schedule_section_Travel:
-    "Gli autobus saranno organizzati dal Vulcano Village Hotel e dall'hotel San Pancrazio per il ritiro alle 17.30. Gli autobus di ritorno arriveranno per le 22.30. Troverai informazioni sulla compagnia di taxi ai sensi di F&Q. C'è un parcheggio disponibile.",
+    "Gli autobus saranno organizzati dal Vulcano Village Hotel e Hotel Lovere Resport and Spa per il ritiro alle 17.30. Gli autobus di ritorno arriveranno per le 22.30. Troverai informazioni sulla compagnia di taxi ai sensi di F&Q. C'è un parcheggio disponibile.",
   schedule_title_two: "Sabato 9 settembre",
   schedule_title_two_title: "Cerimonia matrimoniale",
   schedule_title_two_address:
