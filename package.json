@@ -22,6 +22,7 @@
     "react-countdown": "^2.3.5",
     "react-dom": "18.2.0",
     "sass": "^1.58.0",
+    "sharp": "^0.32.1",
     "universal-cookie": "^4.0.4"
   }
 }
