@@ -23,13 +23,17 @@ export default function Casazza({ hasReadPermission }) {
     <BaseLayout>
       <BasePage>
         <Head>
-          <title>Casazza</title>
+          <title>{t.registry_title}</title>
         </Head>
-        <h1 className='page-title'>{t.registry_title}</h1>
-        <div className='flowers-main'>
-          <Image src={flowersMain} alt='flowersMain' width='130' />
+        <h1 className="page-title">{t.registry_title}</h1>
+        <div className="flowers-main">
+          <Image
+            src={flowersMain}
+            alt="flowersMain"
+            width="130"
+          />
         </div>
-        <div className='registry-container'>
+        <div className="registry-container">
           <p>{t.registry_link_copy_one}</p>
           <p>{t.registry_link_copy_two}</p>
         </div>
@@ -44,20 +48,22 @@ export default function Casazza({ hasReadPermission }) {
             </Link>
           </li>
         </div> */}
-<br />  
-        <div className='cazazza-hotel-family' id='cazazza-hotel-family'>
+        <br />
+        <div
+          className="cazazza-hotel-family"
+          id="cazazza-hotel-family">
           <br />
-          <li className='white-helper'>
+          <li className="white-helper">
             <Link
-              id='white-helper'
-              className='cazazza-hotel-link shake'
-              href='https://www.honeyfund.com/site/blomstedt-nelson-yates-09-09-2023'
+              id="white-helper"
+              className="cazazza-hotel-link shake"
+              href="https://www.honeyfund.com/site/blomstedt-nelson-yates-09-09-2023"
               target={"_blank"}>
               {t.registry_link_name}
             </Link>
           </li>
         </div>
-        <div className='registry-container'></div>
+        <div className="registry-container"></div>
         <Footer />
       </BasePage>
     </BaseLayout>

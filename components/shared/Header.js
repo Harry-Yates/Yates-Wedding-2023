@@ -14,14 +14,19 @@ export default function Header() {
 
   var now = new Date();
   var future = new Date(
-    now.getTime() + 212 * 24 * 60 * 60 * 1000 + 17 * 60 * 60 * 1000 + 23 * 60 * 1000 + 27 * 1000
+    now.getTime() +
+      212 * 24 * 60 * 60 * 1000 +
+      17 * 60 * 60 * 1000 +
+      23 * 60 * 1000 +
+      27 * 1000
   );
 
   const renderer = ({ days, hours, minutes, seconds }) => {
     return (
       <span>
-        {days} {t.header_countdown_days}, {hours} {t.header_countdown_hours}, {minutes}{" "}
-        {t.header_countdown_minutes}, {seconds} {t.header_countdown_seconds}.
+        {days} {t.header_countdown_days}, {hours} {t.header_countdown_hours},{" "}
+        {minutes} {t.header_countdown_minutes}, {seconds}{" "}
+        {t.header_countdown_seconds}.
       </span>
     );
   };
@@ -41,7 +46,9 @@ export default function Header() {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.7s ease forwards ${index / 7 + 0.3}s`;
+        link.style.animation = `navLinkFade 0.7s ease forwards ${
+          index / 7 + 0.3
+        }s`;
       }
     });
 
@@ -62,31 +69,41 @@ export default function Header() {
         {/* <div className='logo'>
         <Link href='/'>{t.header_title}</Link>
       </div> */}
-        <div className='logo'>
-          <Link href='/'>
-            <Countdown date={weddingDate} renderer={renderer}>
+        <div className="logo">
+          <Link href="/">
+            <Countdown
+              date={weddingDate}
+              renderer={renderer}>
               <Completionist />
             </Countdown>
           </Link>
         </div>
-        <ul className='nav-links'>
+        <ul className="nav-links">
           <li>
-            <Link href='/'>{t.header_welcome}</Link>
+            <Link href="/">{t.header_welcome}</Link>
           </li>
           <li>
-            <Link href='/faq'>{t.faq_title}</Link>
+            <Link href="/faq">{t.faq_title}</Link>
           </li>
           <li>
-            <Link href='/registry'>{t.registry_title}</Link>
+            <Link href="/registry">{t.registry_title}</Link>
           </li>
           <li>
-            <Link href='/schedule'>{t.schedule_title}</Link>
+            <Link href="/schedule">{t.schedule_title}</Link>
           </li>
           <li>
-            <Link href='/casazza'>{t.casazza_title}</Link>
+            <Link href="/casazza">{t.casazza_title}</Link>
           </li>
-          <li id='highlight'>
-            <Link href='/rsvp' className='colorHigh'>
+          <li>
+            <Link href="/lakes">The Great Lakes</Link>
+          </li>
+          <li>
+            <Link href="/history">History</Link>
+          </li>
+          <li id="highlight">
+            <Link
+              href="/rsvp"
+              className="colorHigh">
               {t.rsvp_title}
             </Link>
           </li>
@@ -108,10 +125,12 @@ export default function Header() {
         </li> */}
         </ul>
         {/* Burger Menu */}
-        <div className='burger' onClick={navSlide}>
-          <div className='line1'></div>
-          <div className='line2'></div>
-          <div className='line3'></div>
+        <div
+          className="burger"
+          onClick={navSlide}>
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
         </div>
       </nav>
     </>
