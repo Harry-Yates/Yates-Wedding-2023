@@ -95,10 +95,10 @@ export default function Header() {
             <Link href="/casazza">{t.casazza_title}</Link>
           </li>
           <li>
-            <Link href="/lakes">The Great Lakes</Link>
+            <Link href="/lakes">{t.lakes_title}</Link>
           </li>
           <li>
-            <Link href="/history">History</Link>
+            <Link href="/history">{t.history_title}</Link>
           </li>
           <li id="highlight">
             <Link
