@@ -61,44 +61,44 @@ export default function ItalianLakes({ hasReadPermission }) {
         {activeTab === "garda" && (
           <section>
             <h2>{t.lakes_Garda_title}</h2>
-            <p>{t.lakes_Garda_p1}</p>
-            <p>{t.lakes_Garda_p2}</p>
-            <p>{t.lakes_Garda_p3}</p>
-            <p>{t.lakes_Garda_p4}</p>
-            <p>{t.lakes_Garda_p5}</p>
+            <p className="p-lakes">{t.lakes_Garda_p1}</p>
+            <p className="p-lakes">{t.lakes_Garda_p2}</p>
+            <p className="p-lakes">{t.lakes_Garda_p3}</p>
+            <p className="p-lakes">{t.lakes_Garda_p4}</p>
+            <p className="p-lakes">{t.lakes_Garda_p5}</p>
           </section>
         )}
 
         {activeTab === "maggiore" && (
           <section>
             <h2>{t.lakes_Maggiore_title}</h2>
-            <p>{t.lakes_Maggiore_p1}</p>
-            <p>{t.lakes_Maggiore_p2}</p>
-            <p>{t.lakes_Maggiore_p3}</p>
-            <p>{t.lakes_Maggiore_p4}</p>
-            <p>{t.lakes_Maggiore_p5}</p>
-            <p>{t.lakes_Maggiore_p6}</p>
-            <p>{t.lakes_Maggiore_p7}</p>
-            <p>{t.lakes_Maggiore_p8}</p>
+            <p className="p-lakes">{t.lakes_Maggiore_p1}</p>
+            <p className="p-lakes">{t.lakes_Maggiore_p2}</p>
+            <p className="p-lakes">{t.lakes_Maggiore_p3}</p>
+            <p className="p-lakes">{t.lakes_Maggiore_p4}</p>
+            <p className="p-lakes">{t.lakes_Maggiore_p5}</p>
+            <p className="p-lakes">{t.lakes_Maggiore_p6}</p>
+            <p className="p-lakes">{t.lakes_Maggiore_p7}</p>
+            <p className="p-lakes">{t.lakes_Maggiore_p8}</p>
           </section>
         )}
 
         {activeTab === "como" && (
           <section>
             <h2>{t.lakes_Como_title}</h2>
-            <p>{t.lakes_Como_p1}</p>
-            <p>{t.lakes_Como_p2}</p>
-            <p>{t.lakes_Como_p3}</p>
-            <p>{t.lakes_Como_p4}</p>
+            <p className="p-lakes">{t.lakes_Como_p1}</p>
+            <p className="p-lakes">{t.lakes_Como_p2}</p>
+            <p className="p-lakes">{t.lakes_Como_p3}</p>
+            <p className="p-lakes">{t.lakes_Como_p4}</p>
           </section>
         )}
 
         {activeTab === "iseo" && (
           <section>
             <h2>{t.lakes_Iseo_title}</h2>
-            <p>{t.lakes_Iseo_p1}</p>
-            <p>{t.lakes_Iseo_p2}</p>
-            <p>{t.lakes_Iseo_p3}</p>
+            <p className="p-lakes">{t.lakes_Iseo_p1}</p>
+            <p className="p-lakes">{t.lakes_Iseo_p2}</p>
+            <p className="p-lakes">{t.lakes_Iseo_p3}</p>
           </section>
         )}
 

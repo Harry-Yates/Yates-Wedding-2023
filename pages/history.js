@@ -76,75 +76,68 @@ export default function ItalianLakes({ hasReadPermission }) {
         {activeTab === "church" && (
           <section>
             <h2>{t.history_church_title}</h2>
-            <p>{t.history_church_p1}</p>
-            <p>{t.history_church_p2}</p>
-            <p>{t.history_church_p3}</p>
-            <p>{t.history_church_p4}</p>
-            <p>{t.history_church_p5}</p>
-            <p>{t.history_church_p6}</p>
-            <p>{t.history_church_p7}</p>
-            <p>{t.history_church_p8}</p>
-            <p>{t.history_church_p9}</p>
-            <p>{t.history_church_p10}</p>
-            <p>{t.history_church_p11}</p>
+            <p className="p-history">{t.history_church_p1}</p>
+            <p className="p-history">{t.history_church_p2}</p>
+            <p className="p-history">{t.history_church_p3}</p>
+            <p className="p-history">{t.history_church_p4}</p>
+            <p className="p-history">{t.history_church_p5}</p>
+            <p className="p-history">{t.history_church_p6}</p>
+            <p className="p-history">{t.history_church_p7}</p>
+            <p className="p-history">{t.history_church_p8}</p>
+            <p className="p-history">{t.history_church_p9}</p>
+            <p className="p-history">{t.history_church_p10}</p>
+            <p className="p-history">{t.history_church_p11}</p>
           </section>
         )}
 
         {activeTab === "casazza" && (
           <section>
             <h2>{t.history_casazza_title}</h2>
-            <p>{t.history_casazza_p1}</p>
-            <p>{t.history_casazza_p2}</p>
-            <p>{t.history_casazza_p3}</p>
-            <p>{t.history_casazza_p4}</p>
+            <p className="p-history">{t.history_casazza_p1}</p>
+            <p className="p-history">{t.history_casazza_p2}</p>
+            <p className="p-history">{t.history_casazza_p3}</p>
+            <p className="p-history">{t.history_casazza_p4}</p>
           </section>
         )}
 
         {activeTab === "cly" && (
           <section>
             <h2>{t.history_cly_title}</h2>
-            <p>{t.history_cly_p1}</p>
-            <p>{t.history_cly_p2}</p>
-            <p>{t.history_cly_p3}</p>
-            <p>{t.history_cly_p4}</p>
-            <p>{t.history_cly_p5}</p>
+            <p className="p-history">{t.history_cly_p1}</p>
+            <p className="p-history">{t.history_cly_p2}</p>
+            <p className="p-history">{t.history_cly_p3}</p>
+            <p className="p-history">{t.history_cly_p4}</p>
+            <p className="p-history">{t.history_cly_p5}</p>
           </section>
         )}
 
         {activeTab === "colognola" && (
           <section>
             <h2>{t.history_colognola_title}</h2>
-            <p>{t.history_colognola_p1}</p>
-            <p>{t.history_colognola_p2}</p>
-            <p>{t.history_colognola_p3}</p>
-            <p>{t.history_colognola_p4}</p>
-            <p>{t.history_colognola_p5}</p>
-            <p>{t.history_colognola_p6}</p>
-            <p>{t.history_colognola_p7}</p>
-            <p>{t.history_colognola_p8}</p>
-            <p>{t.history_colognola_p9}</p>
+            <p className="p-history">{t.history_colognola_p1}</p>
+            <p className="p-history">{t.history_colognola_p2}</p>
           </section>
         )}
 
         {activeTab === "tower" && (
           <section>
             <h2>{t.history_tower_title}</h2>
-            <p>{t.history_tower_p1}</p>
-            <p>{t.history_tower_p2}</p>
-            <p>{t.history_tower_p3}</p>
-            <p>{t.history_tower_p4}</p>
-            <p>{t.history_tower_p5}</p>
+            <p className="p-history">{t.history_tower_p1}</p>
+            <p className="p-history">{t.history_tower_p2}</p>
+            <p className="p-history">{t.history_tower_p3}</p>
+            <p className="p-history">{t.history_tower_p4}</p>
+            <p className="p-history">{t.history_tower_p5}</p>
           </section>
         )}
 
         {activeTab === "suardi" && (
           <section>
             <h2>{t.history_suardi_title}</h2>
-            <p>{t.history_suardi_p1}</p>
-            <p>{t.history_suardi_p2}</p>
-            <p>{t.history_suardi_p3}</p>
-            <p>{t.history_suardi_p4}</p>
-            <p>{t.history_suardi_p5}</p>
+            <p className="p-history">{t.history_suardi_p1}</p>
+            <p className="p-history">{t.history_suardi_p2}</p>
+            <p className="p-history">{t.history_suardi_p3}</p>
+            <p className="p-history">{t.history_suardi_p4}</p>
+            <p className="p-history">{t.history_suardi_p5}</p>
           </section>
         )}
 
