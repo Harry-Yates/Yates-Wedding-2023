@@ -35,24 +35,24 @@ export default function ItalianLakes({ hasReadPermission }) {
           />
         </div>
 
-        <div className="tabs">
+        <div className="tabs-lakes">
           <button
-            className="tab-button"
+            className="tab-lakes-button"
             onClick={() => setActiveTab("garda")}>
             {t.lakes_Garda_btn}
           </button>
           <button
-            className="tab-button"
+            className="tab-lakes-button"
             onClick={() => setActiveTab("maggiore")}>
             {t.lakes_Maggiore_btn}
           </button>
           <button
-            className="tab-button"
+            className="tab-lakes-button"
             onClick={() => setActiveTab("como")}>
             {t.lakes_Como_btn}
           </button>
           <button
-            className="tab-button"
+            className="tab-lakes-button"
             onClick={() => setActiveTab("iseo")}>
             {t.lakes_Iseo_btn}
           </button>
