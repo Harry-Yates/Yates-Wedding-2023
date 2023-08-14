@@ -23,11 +23,11 @@ export const enGB = {
   casazza_title: "Casazza",
   casazza_header: "Accommodation",
   casazza_booking_title: "We have booked rooms in the following hotels",
-  casazza_hotel_one: "Hotel Lovere Resort and Spa*",
-  casazza_hotel_address: "Via Marconi, n. 91 - 24065 Lovere (BG)",
+  casazza_hotel_one: "Lovere Resort Hotel and Spa*",
+  casazza_hotel_address:
+    "Hotel Lovere Resort & Spa, Via G. Marconi, 97, 24065 Lovere BG",
   casazza_mention_one: "When reserving your room please mention",
-  casazza_mention_two:
-    "in order to get a minimum of 20% discount and for the staff to know you are a part of our wedding.",
+  casazza_mention_two: "for the staff to know you are a part of our wedding.",
   casazza_transport_a:
     "We have reserved these hotels for the wedding party and close family",
   casazza_transport_b:
@@ -57,7 +57,7 @@ export const enGB = {
   schedule_section_details_a:
     "We want to kick the wedding weekend off with an 'Apericena' by the beautiful Lake of Endine.",
   schedule_section_details_b:
-    "The evening will be hosted at Locanda Del Boscaiolo, one of our favorite local restaurants.",
+    "The evening will be hosted at Locanda del Boscaiolo, one of our favorite local restaurants.",
   schedule_section_details_c:
     "An evening where we get the chance to meet family & friends, make new acquaintances and warm up our dancing shoes. A standing 'Apericena' will be served along with drinks.",
   schedule_section_when: "When",
@@ -70,7 +70,7 @@ export const enGB = {
     "La Dolce Vita – Imagine the Italian Riviera, colorful dresses & linen shirts",
   schedule_section_transport: "Transport",
   schedule_section_Travel:
-    "Buses will be organized from Vulcano Village hotel and Hotel Lovere Resport and Spa for pick up at 5.30pm. Return buses will be arriving for 10.30pm. You will find taxi company information under F&Q. There is parking available.",
+    "Buses will be organized from Lovere Hotel Resort Hotel and Spa and Vulcano Village hotel for pick up at 5.00pm. Return buses will be arriving for 10.00pm. You will find taxi company information under F&Q. There is parking available. ",
   schedule_title_two: "Saturday 9th September",
   schedule_title_two_title: "Wedding Ceremony",
   schedule_title_two_address:
@@ -81,14 +81,14 @@ export const enGB = {
     "Chiesa di San Pietro in vincoli, Via San Pietro, 24060 Spinone al Lago BG, Italy",
   schedule_title_two_dresscodesemi: "Semi-Formal",
   schedule_title_two_busses:
-    "Buses depart from Vulcano Village hotel and Hotel San Pancrazio at 1:15pm.",
+    "Buses depart from Lovere Hotel Resort and Spa and Vulcano Village hotel at 1:00pm.",
   schedule_title_two_bussdeparts:
     "Bus departs from Locanda del Boscaiolo at 1.30pm. You will find taxi information under F&Q. Parking is limited, please reach out to us if you have your own car.",
   schedule_title_two_house: "Casa Lodi Yates",
   schedule_title_two_house_location: "Via Piazza Armando Diaz, 1, Casazza, BG",
   schedule_title_reception_title: "Reception",
   schedule_title_reception_after:
-    "After the wedding ceremony, buses will be ready to take you to the reception at Casa Lodi Yates. Here we will begin your journey by exploring the medieval tower and the historical house next door, followed by an 'Aperitivo' by the pool area.",
+    "After the wedding ceremony, buses will be ready to take you to the reception at Casa Lodi Yates. Here we will begin your journey by exploring the medieval tower and the historical house and museum next door, followed by an 'Aperitivo ' by the pool area.",
   schedule_title_reception_dinner:
     "This will be continued by a formal dinner in the court yard & additional festivities.",
   schedule_title_reception_speach:
@@ -106,16 +106,16 @@ export const enGB = {
   faq_question_3:
     "How do we get from the accommodation to the celebrations, church etc?",
   faq_answer_3:
-    "Buses will be organized from Vulcano Village hotel, Locanda Del Boscaiolo Hotel and Hotel San Pancrazio for pick up and return on both days. If you are staying somewhere else, you will need to organize your own transportation.",
+    "Buses will be organized from Vulcano Village hotel, Locanda Del Boscaiolo Hotel and Lovere Hotel Resort and Spa for pick up and return on both days. If you are staying somewhere else, you will need to organize your own transportation.",
   faq_question_4: "Are children welcome?",
   faq_answer_4:
     "While we love your little ones, we want you to relax and enjoy the weekend. We appreciate you making arrangements ahead of time and leaving the kids at home so you can celebrate with us.",
   faq_question_5: "What is the best place to stay?",
   faq_answer_5:
-    "We recommend staying in the lovely Hotel San Pancrazio https://www.hotelsanpancrazio.it/en/. We have reserved rooms for you there at a discounted price, 75-120 euros depending on your selected room. When booking please mention 'Yates Wedding' in order for them to know you are our guest. If you decide to stay at other hotels, we recommend choosing something close to Casazza. However, we won't be able to support you with transfers. But of course there are local taxi companies or cars to hire.",
+    "We recommend staying in the lovely Lovere Hotel Resort and Spa, we have reserved rooms for you there at a discounted price. When booking please mention 'Yates Wedding' in order for them to know you are our guest. If you decide to stay at other hotels, we recommend choosing something close to Casazza. However, we won't be able to support you with transfers. But of course there are local taxi companies or cars to hire.",
   faq_question_6: "What taxi company can I use?",
   faq_answer_6:
-    "We recommend using the local taxi service Autoservizi Zambetti SNC - +3935 810742.",
+    "We recommend using the local taxi service Autoservizi Zambetti SNC - +3935 810742 or Nino's Taxi +393937958929",
   faq_question_7: "What is the dress code?",
   faq_answer_7:
     "In the section 'Schedule' above you can see the dress code for each day. \n\nLake Party: La Dolce Vita. Imagine the Italian riviera, colorful attire, linen\n\nWedding & Reception: Semi- Formal. Ladies should wear a dress (please avoid white, beige or ivory) and Gentlemen should wear suit and tie/bowtie\n\nAdjust the attire by the weather & temperature since most time of all festivities will be outdoors. Ladies, shoes with a chunky heel is recommended due to a lot of locations with cobble stones.",
@@ -307,21 +307,21 @@ export const svSE = {
   home_title_invite: "Inviting you to celebrate our wedding",
   home_footer_title_date: "September",
   "Registry Page": "",
-  registry_title: "Registry",
+  registry_title: "Presents",
   registry_link_copy_one:
-    "Welcome to Johanna and Harry's Honeymoon Fund, where memories are worth more than a posh kettle! Lend a hand in sending our lovebirds on a brilliant adventure that will last longer than a cuppa.",
+    "Welcome to Johanna and Harry's Honeymoon Fund, where memories are worth more than a cool kettle! Help our lovebirds send them on a brilliant adventure that will last longer than a cup of tea.",
   registry_link_copy_two:
-    "Pop a few quid into their virtual piggy bank, and let's raise a toast to a love story more heartbreaking than any rom-com!",
-  registry_link_name: "Registry Page",
+    "Put a penny in their virtual piggy bank, and let's toast to a love story better than any rom-com!",
+  registry_link_name: "Present page",
   "Casazza Page\t\t\t": "",
   casazza_title: "Casazza",
   casazza_header: "Accommodation",
   casazza_booking_title: "We have booked rooms at the following hotels",
-  casazza_hotel_one: "Hotel Lovere Resort and Spa*",
-  casazza_hotel_address: "Via Marconi, n. 91 - 24065 Lovere (BG)",
+  casazza_hotel_one: "Lovere Resort Hotel and Spa*",
+  casazza_hotel_address:
+    "Hotel Lovere Resort & Spa, Via G. Marconi, 97, 24065 Lovere BG",
   casazza_mention_one: "When reserving your room please mention",
-  casazza_mention_two:
-    "To get at least a 20% discount and for the staff to know that you are part of our wedding.",
+  casazza_mention_two: "To let the staff know you are part of our wedding.",
   casazza_transport_a:
     "We have reserved these hotels for the wedding party and close family",
   casazza_transport_b:
@@ -365,7 +365,7 @@ export const svSE = {
     "La Dolce Vita - Imagine the Italian Riviera, colorful dresses and linen shirts",
   schedule_section_transport: "Transport",
   schedule_section_Travel:
-    "Buses will be organized from Vulcano Village Hotel and Hotel Lovere Resport and Spa for pickup at 17:30. Return buses arrive at 22:30. You will find taxi company information under F&Q. There is parking available.",
+    "Buses will be organized from Lovere Hotel Resort Hotel and Spa and Vulcano Village Hotel for pickup at 17:00. Return buses arrive until 22:00. You will find taxi company information under F&Q. There is parking available.",
   schedule_title_two: "Saturday September 9",
   schedule_title_two_title: "Wedding",
   schedule_title_two_address:
@@ -376,14 +376,14 @@ export const svSE = {
     "Chiesa di San Pietro in vincoli, Via San Pietro, 24060 Spinone al Lago BG, Italy",
   schedule_title_two_dresscodesemi: "Semi-Formal / Blazer",
   schedule_title_two_busses:
-    "Buses depart from Vulcano Village Hotel and Hotel San Pancrazio at 13:15.",
+    "Buses depart from Lovere Hotel Resort and Spa and Vulcano Village Hotel at 13:00.",
   schedule_title_two_bussdeparts:
     "The bus departs from Locanda del Boscaiolo at 13:30. You will find taxi information under F&Q. Parking is limited, please reach out to us if you have your own car.",
   schedule_title_two_house: "Casa Lodi Yates",
   schedule_title_two_house_location: "Via Piazza Armando Diaz, 1, Casazza, BG",
   schedule_title_reception_title: "Reception",
   schedule_title_reception_after:
-    "After the wedding, buses will be ready to take you to the reception at Casa Lodi Yates. Here we begin your journey with a visit to the medieval tower and the historic neighboring house, followed by an 'Aperitivo' by the pool area.",
+    "After the wedding, buses will be ready to take you to the reception at Casa Lodi Yates. Here we will begin your journey with a visit to the medieval tower and the historic neighboring house, which is also a museum, followed by an 'Aperitivo ' by the pool area.",
   schedule_title_reception_dinner:
     "This will continue with a dinner in the courtyard and more festivities.",
   schedule_title_reception_speach:
@@ -402,16 +402,16 @@ export const svSE = {
   faq_question_3:
     "How do we get from the accommodation to the celebration, church etc?",
   faq_answer_3:
-    "Buses will be organized from Vulcano Village Hotel, Locanda del Boscaiolo Hotel and Hotel San Pancrazio to pick up and drop off on both days. If you are staying elsewhere you will need to organize your own transport.",
+    "Buses will be organized from Vulcano Village Hotel, Locanda del Boscaiolo Hotel and Lovere Hotel resort and Spa to pick up and drop off on both days. If you are staying elsewhere you will need to organize your own transport.",
   faq_question_4: "Are children welcome?",
   faq_answer_4:
     "While we love your little ones, we want you to relax and enjoy the weekend. We appreciate you organizing ahead of time and leaving the kids at home so you can celebrate with us.",
   faq_question_5: "What is the best place to live?",
   faq_answer_5:
-    'We recommend staying at Hotel San Pancrazio https://www.hotelsanpancrazio.it/en/. We have reserved rooms for you there at a reduced price, 75-120 euros depending on which room you choose. When you book please mention "Yates Wedding" so they know you are our guest. If you decide to stay at other hotels, we recommend you choose something close to Casazza. However, we will not be able to help you with transportation . But of course there are local taxi companies or cars to rent.',
+    'We recommend staying at the Lovere Hotel Resort and Spa. We have reserved rooms for you there at a reduced rate. When you book, mention "Yates Wedding" so they know you are our guest. If you decide to stay in other hotels, we recommend you choose something close to Casazza. But we won\'t be able to help you with transportation. But of course there are local taxi companies or cars for rent.',
   faq_question_6: "Which taxi company can I use?",
   faq_answer_6:
-    "We recommend using the local taxi service Autoservizi Zambetti SNC - +3935 810742.",
+    "We recommend using the local taxi service Autoservizi Zambetti SNC - +3935 810742 or Nino's taxi +393937958929",
   faq_question_7: "What is the dress code?",
   faq_answer_7:
     "In the 'Schedule' area above you can see the dress code for each day.\r\n\r\nLake Party: La Dolce Vita. Imagine the Italian Riviera, colorful attire, linen\r\n\r nWedding and Reception: Semi-Formal Ladies should wear a dress (avoid white, beige or ivory) and men should wear a suit and tie/bowtie\r\n\r\nDress for weather and temperature as most of all the festivities will be outdoors. Girls, avoid stilettos and choose a more stable shoe as many places have cobblestones.\r\n\n",
@@ -611,14 +611,13 @@ export const itIT = {
   casazza_title: "Casazza",
   casazza_header: "Alloggio",
   casazza_booking_title: "Abbiamo prenotato stanze nei seguenti hotel",
-  casazza_hotel_one: "Hotel Lovere Resort and Spa*",
-  casazza_hotel_address: "Via Marconi, n. 91 - 24065 Lovere (BG)",
+  casazza_hotel_one: "Lovere Resort Hotel and Spa*",
+  casazza_hotel_address:
+    "Hotel Lovere Resort & Spa, Via G. Marconi, 97, 24065 Lovere BG",
   casazza_mention_one:
     "Al momento di nebtere una camera, si prega di avisare lo staff che fai parte della festa nuziale.",
-  casazza_mention_two:
-    "Al fine di ottenere uno sconto minimo del 20% e per il staffe per sapere che fai parte del nostro matrimonio.",
-  casazza_transport_a:
-    "Abbiamo riservato questi hotel per la festa di nozze e la famiglia stretta",
+  casazza_mention_two: "",
+  casazza_transport_a: ":",
   casazza_transport_b: "Ti contatteremo individually su questi hotel",
   casazza_hotel_two: "Vulcano Village",
   casazza_hotel_address_two: "Piazza del Porto, 18, 24063 Castro BG",
@@ -631,11 +630,11 @@ export const itIT = {
     "Ci sono molti altri bellissimi hotel e B&B nella zona",
   casazza_hotel_details_c:
     "Tuttavia non saremo in grado di supportare con il trasporto da altri hotel.",
-  "casazza_fligh ts_title": "ARRIVARCI",
+  casazza_flights_title: "ARRIVARCI",
   casazza_flights_header: "The airport più conveniente per il tuo viaggio sarà",
   casazza_flights_airport: "AEROPORTO",
   casazza_flights_method:
-    "Quindi puoi continuare in auto, taxi o autobus per il tuo hotel.",
+    "Quindi puoi continuare in auto, t axi o autobus per il tuo hotel.",
   casazza_flights_other: "Altri airporti che sono anche convenienti lo sono",
   casazza_flights_or: "O",
   casazza_flights_title_two: "MAPPA DEL SITO",
@@ -658,7 +657,7 @@ export const itIT = {
     "La Dolce Vita - Immagina la Riviera italiana, abiti colorati e camicie di lino",
   schedule_section_transport: "Transport",
   schedule_section_Travel:
-    "Gli autobus saranno organizzati dal Vulcano Village Hotel e Hotel Lovere Resport and Spa per il ritiro alle 17.30. Gli autobus di ritorno arriveranno per le 22.30. Troverai informazioni sulla compagnia di taxi ai sensi di F&Q. C'è un parcheggio available.",
+    "Gli autobus saranno organizzati dal Vulcano Village Hotel e dall'hotel San Pancrazio per il ritiro alle 17.30. Gli autobus di ritorno arriveranno per le 22.30. Troverai informazioni sulla compagnia di taxi ai sensi di F&Q. C'è un parcheggio available.",
   schedule_title_two: "Sabato 9 settembre",
   schedule_title_two_title: "Cerimonia matrimoniale",
   schedule_title_two_address:
@@ -669,7 +668,7 @@ export const itIT = {
     "Chiesa di San Pietro in vincoli, Via San Pietro, 24060 Spinone al Lago BG, Italia",
   schedule_title_two_dresscodesemi: "Semi formal",
   schedule_title_two_busses:
-    "Gli autobus partono dal Vulcano Village Hotel e dall'hotel San Pancrazio alle 13:15.",
+    "Gli autobus partono dal Vulcano Village Hotel e dall'hotel San Pancrazio alle 13:00.",
   schedule_title_two_bussdeparts:
     "L'autobus parte da Locanda del Boscaiolo alle 13.30. Troverai le informaziones sui taxi sotto F&Q. Il parcheggio è limitato, ti pengimentato di contaccia se hai la tua auto.",
   schedule_title_two_house: "Casa Lodi Yates",
@@ -694,16 +693,16 @@ export const itIT = {
   faq_question_3:
     "Come possiamo arrivare dall'alloggio alle celebrazioni, alla chiesa ecc.?",
   faq_answer_3:
-    "Gli autobus saranno organizzati dal Vulcano Village Hotel, dal Locanda del Boscaiolo Hotel e dall'hotel San Pancrazio per il ritiro e il ritorno in entrambi i giorni. Se stai altrove, duvare organizazione il tuo trasporto.",
+    "Gli autobus saranno organizzati dal Vulcano Village Hotel, dal Locanda del Boscaiolo Hotel e nel Wiker Hotel Resort and Spa per il ritiro and il ritorno in entrambi i giorni. Se stai altrove, duvare organizazione il tuo trasporto.",
   faq_question_4: "I bambini sono i benvenuti?",
   faq_answer_4:
     "Mentre amiamo i tuoi piccoli, vogliamo che ti rilassi e ti godi il fine settimana. Aprezziamo che tu prenda accordi in anticipo e lasciassi i bambini a casa in modo da poter festeggiare con noi.",
   faq_question_5: "Qual è il posto migliore in cui soggiornare?",
   faq_answer_5:
-    'Ti consigliamo di soggiornare nel delizioso hotel San Pancrazio https://www.hotelsanpancrazio.it/en/. Abbiamo camere reserve per te a un prezzo disorso, 75-120 euro a seconda della stanza selecionata. Durante la prenotazione , mention "Yates Wedding" to know that you are our guest. Se decidi di soggiornare in altri hotel, ti consigliamo di scegliere falcosa di vicino a Casazza. However, we won\'t be able to support you with transfers. But obviously we are companies di taxi o auto locali da assumer.',
+    'Ti consigliamo di soggiornare nel delizioso Lovere Hotel Resort and Spa. Abbiamo camere reserve per te a un prezzo disorso. Durante la prenotazione, mention "Yates Wedding" per sapere che sei nostro ospite. Se decidi di soggiornare in other hotels, we advise you to choose something close to Casazza. However, we will not be able to support you with transfers. But obviously there are taxi companies or local auto companies to hire.',
   faq_question_6: "Che compagnia di taxi posso usare?",
   faq_answer_6:
-    "Si consiglia di utilizzare il servizio di taxi locale Autoservizi Zambetti SNC - +3935 810742.",
+    "Si consiglia di utilizzare il servizio di taxi locale Autoservizi Zambetti SNC - +3935 810742 o taxi Nino +393937958929",
   faq_question_7: "Qual è il codice di abbigliamento?",
   faq_answer_7:
     '"Nella sezione ""Programma"" sopra puoi vedere il codice di abbigliamento per ogni giorno.\n\nLake Party: La Dolce Vita. Immagina la Riviera italiana, abbigliamento colorato, lino\n\nMatrimonio e ricevimento: semi-formale. The ladies should wear a dress (per favore evita il bianco, il beige o l\'ivorio) and the ladies should wear a dress and a cravatta/bowtie\n\nRegola l\'abbigliamento per tempo e temperatura since the major part of all the festivities will be all \'aperto. Signore, le scarpe con un tallone grosso sono raccomandate a causa di molte località con pietre di ciottoli."',
@@ -783,13 +782,13 @@ export const itIT = {
   lakes_Como_btn: "Lake Como",
   lakes_Como_title: "Lake Como (Lago di Como)",
   lakes_Como_p1:
-    'Lake Como, or Lago di Como in Italian, is one of the deepest and most popular lakes in Europe. It is located in the Lombardy region in northern Italy. The lake has the shape of an inverted "Y" and is circondato da montagne e colline, che offorno una breathtaking view of the lake and surrounding area. The area has been immortalized in the classic novel by Alessandro Manzoni, "I Promessi Sposi" (\'The God-dothed\'), published in 1827.',
+    'Lake Como, or Lago di Como in Italian, is one of the deepest and most popular lakes in Europe. It is located in the Lombardy region in northern Italy. The lake has the shape of an inverted "Y" and is circondato da montagne e colline, che offorno una breathtaking view of the lake and surrounding area. The area has been immortalized in the classic novel by Alessandro Manzoni, "I Promessi Sposi" ("The God-dothed"), published in 1827.',
   lakes_Como_p2:
     "Il lago Como ha una ricca storia che risale all'era romana. I romani, attratti dalla naturale bellezza del lago, costruirono ville intorno al lago. Plinio il giovane, un famoso scrittore romano, aveva due ville sulle rive del lago.",
   lakes_Como_p3:
     "In terms of accommodation, Lake Como is known for its luxurious and historic hotels. The Grand Hotel Villa Serbelloni in Bellagio, for example, dates back to the XIX century and offers breathtaking views of the lake. It is one of the oldest ed elegant hotel della zona and has hosted numerous celebrities and reali.",
   lakes_Como_p4:
-    "Lake Como is also a popular destination for lovers of food and wine. The region is notable for local dishes such as 'risotto con pesce persico', 'Missultin'  '(pesce essiccato al sole) and \"polenta' (farina di mais). La regione che circonda il lago è anche nota per i suoi vini, tra cui i vini della Valtellina, che sono prodotti nelle montagne a nord del lago. \n",
+    "Lake Como is also a popular destination for lovers of food and wine. The region is notable for local dishes such as 'risotto con pesce persico', 'Missultin' '(pesce essiccato al sole) and 'polenta' (farina di mais). La regione che circonda il lago è anche nota per i suoi vini, tra cui i vini della Valtellina, che sono prodotti nelle montagne a nord del lago. \n",
   lakes_Iseo_btn: "Lago Iseo",
   lakes_Iseo_title: "Lago Iseo (Lago d'Iseo)",
   lakes_Iseo_p1:
