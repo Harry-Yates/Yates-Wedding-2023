@@ -59,7 +59,7 @@ export const enGB = {
   schedule_section_details_b:
     "The evening will be hosted at Locanda del Boscaiolo, one of our favorite local restaurants.",
   schedule_section_details_c:
-    "An evening where we get the chance to meet family & friends, make new acquaintances and warm up our dancing shoes. A standing 'Apericena' will be served along with drinks.",
+    "An evening where we get the chance to meet family & friends, make new acquaintances and warm up our dancing shoes. An 'Apericena' will be served along with drinks.",
   schedule_section_when: "When",
   schedule_section_time: "From 6pm",
   schedule_section_where: "Where",
@@ -354,7 +354,7 @@ export const svSE = {
   schedule_section_details_b:
     "The evening will be at Locanda del Boscaiolo, one of our favorite restaurants in the area.",
   schedule_section_details_c:
-    "An evening where we get the chance to meet family and friends, meet new ones and warm up the dancing shoes. A standing 'Apericena' will be served along with drinks.",
+    "An evening where we get the chance to meet family and friends, meet new people and warm up the dancing shoes. An 'Apericena' will be served along with drinks.",
   schedule_section_when: "When",
   schedule_section_time: "From 18:00",
   schedule_section_where: "Where",
@@ -362,7 +362,7 @@ export const svSE = {
     "Locanda del Boscaiolo, via Montegrappa, 41, 24060 Monasterolo del Castello BG",
   schedule_section_dresscode: "Dress Code",
   schedule_section_theme:
-    "La Dolce Vita - Imagine the Italian Riviera, colorful dresses and linen shirts",
+    "La Dolce Vita - Imagine the Italian Riviera, colorful dresses and linen sweaters",
   schedule_section_transport: "Transport",
   schedule_section_Travel:
     "Buses will be organized from Lovere Hotel Resort Hotel and Spa and Vulcano Village Hotel for pickup at 17:00. Return buses arrive until 22:00. You will find taxi company information under F&Q. There is parking available.",
@@ -551,9 +551,9 @@ export const svSE = {
   history_cly_p4:
     "Torre di Colognola is a historic fortified tower house nestled in the picturesque village of Kolognola, part of Casazza in the Val Cavallina, Lombardy region of Italy. This monumental structure, which forms part of the residential complex Casa Lodi Yates, dating back to the 13th century, is an excellent example of the medieval architecture of the region and one of the best preserved tower houses in Lombardy, it now belongs to the municipality and is now used for art and photographic exhibitions and cultural events, but by the 1980s had fallen in disrepair and used as a chicken shed.",
   history_cly_p5:
-    "The tower faces are constructed of local stone arranged in regular courses and worked to a rusted pattern with a small strip at the corners. The tower was originally much taller, but it was truncated as a visible punishment to the Suardi family, the owners, when they fell in favor of the Republic of Venice (the overlord of the region at the time) and had many of its assets confiscated. Despite this, the tower retains its original structure, albeit without its original crown.",
-  history_colognola_btn: "COLOBROLA DI CASAZZA",
-  history_colognola_title: "COLOBROLA DI CASAZZA",
+    "The tower faces are constructed of local stone arranged in regular courses and worked to a rusted pattern with a small strip at the corners. The tower was originally much taller, but it was truncated as a visible punishment to the Suardi family, the owners, when they fell in favor of the Republic of Venice (the region's overlord at the time) and had many of its assets confiscated. Despite this, the tower retains its original structure, albeit without its original crown.",
+  history_colognola_btn: "COLOBNOLA DI CASAZZA",
+  history_colognola_title: "COLOBNOLA DI CASAZZA",
   history_colognola_p1:
     "Colognola (not to be confused with another Colognola just outside Bergamo) has its origins in Roman times. There are many places named Colognola throughout Italy and it has been suggested that these were originally colonies or properties given to Roman soldiers at their retirement. It is centuries older than Casazza down in the valley, which grew up in the second half of the 20th century. Kolognola in Val Cavallina has on an old map shown in the Vatican in Rome from the 14th/16th century.",
   history_colognola_p2:
@@ -634,7 +634,7 @@ export const itIT = {
   casazza_flights_header: "The airport più conveniente per il tuo viaggio sarà",
   casazza_flights_airport: "AEROPORTO",
   casazza_flights_method:
-    "Quindi puoi continuare in auto, t axi o autobus per il tuo hotel.",
+    "Quindi puoi continuare in auto, taxi o autobus per i l tuo hotel.",
   casazza_flights_other: "Altri airporti che sono anche convenienti lo sono",
   casazza_flights_or: "O",
   casazza_flights_title_two: "MAPPA DEL SITO",
@@ -646,7 +646,7 @@ export const itIT = {
   schedule_section_details_b:
     "La serata sarà hosted a Locanda del Boscaiolo, uno dei nostri ristoranti locali preferiti.",
   schedule_section_details_c:
-    "Una serata in cui abbiamo la possibility di incontrare familiari e amici, fare nuovi conoscenti e riscaldare le nostre scarpe da ballo. Verrà servita un aperitivo in piedi insieme a bolle e spritz.",
+    "Una serata in cui abbiamo la possibility di incontrare familiari e amici, fare nuovi conoscenti e riscaldare le nostre scarpe da ballo. Verrà servita un apericena insieme a bolle e spritz.",
   schedule_section_when: "Quando",
   schedule_section_time: "Dalle 18:00",
   schedule_section_where: "Dove",
@@ -691,7 +691,7 @@ export const itIT = {
   faq_question_2: "Non siamo in grado di parteciple a tutti i giorni, va bene?",
   faq_answer_2: "Ovviamente! Informici nell'RSVP, quando puoi parteculo.",
   faq_question_3:
-    "Come possiamo arrivare dall'alloggio alle celebrazioni, alla chiesa ecc.?",
+    "Come possiamo ottenere dall'alloggio alle celebrazioni, alla chiesa ecc.?",
   faq_answer_3:
     "Gli autobus saranno organizzati dal Vulcano Village Hotel, dal Locanda del Boscaiolo Hotel e nel Wiker Hotel Resort and Spa per il ritiro and il ritorno in entrambi i giorni. Se stai altrove, duvare organizazione il tuo trasporto.",
   faq_question_4: "I bambini sono i benvenuti?",
@@ -699,7 +699,7 @@ export const itIT = {
     "Mentre amiamo i tuoi piccoli, vogliamo che ti rilassi e ti godi il fine settimana. Aprezziamo che tu prenda accordi in anticipo e lasciassi i bambini a casa in modo da poter festeggiare con noi.",
   faq_question_5: "Qual è il posto migliore in cui soggiornare?",
   faq_answer_5:
-    'Ti consigliamo di soggiornare nel delizioso Lovere Hotel Resort and Spa. Abbiamo camere reserve per te a un prezzo disorso. Durante la prenotazione, mention "Yates Wedding" per sapere che sei nostro ospite. Se decidi di soggiornare in other hotels, we advise you to choose something close to Casazza. However, we will not be able to support you with transfers. But obviously there are taxi companies or local auto companies to hire.',
+    'Ti consigliamo di soggiornare nel delizioso Lovere Hotel Resort and Spa. Abbiamo camere reserve per te a un prezzo disorso. Durante la prenotazione, menzionare "Yates Wedding" per sapere che sei nostro ospite. Se decidi di soggiornare in other hotels, we advise you to choose something close to Casazza. However, we will not be able to support you with transfers. But obviously there are taxi companies or local auto companies to hire.',
   faq_question_6: "Che compagnia di taxi posso usare?",
   faq_answer_6:
     "Si consiglia di utilizzare il servizio di taxi locale Autoservizi Zambetti SNC - +3935 810742 o taxi Nino +393937958929",
@@ -756,7 +756,7 @@ export const itIT = {
   lakes_Garda_p2:
     "La storia del lago Garda risale all'era glaciale quando era formata da ghiacciai. Il lago è stato un luogo ambito sin dai tempi antichi, con prove di case a tracolla dell'età del bronzo e ville romane.",
   lakes_Garda_p3:
-    "In the Middle Ages, the Scaliger family of Verona controlled the area and built several castles, many of which can still be visited today. del lago. Una delle ville più famose è il complexo archeologico della Grotte di Catulo on the peninsula of Sirmione. Questo consiste nei resti di una grande villa situata su una collina, che ofre uno sguardo al luxuoso stile di vita dell'elite romana.",
+    "In the Middle Ages, the Scaliger family of Verona controlled the area and built several castles, many of which can still be visited today. del lago. Una delle ville più famose è il complexo archeologico della Grotte di Catulo on the peninsula of Sirmione. Questo consiste nei resti di una grande villa situata su una collina, che ofre uno sguardo al luxuoso stile di vita dell'elite Romana.",
   lakes_Garda_p4:
     "In terms of accommodation, there are many historical hotels around Lake Garda. The Grand Hotel Fasano in Gardone Riviera, for example, was originally a hunting lodge for the Austrian royal family and has been transformed into a hotel all fine part of the XIX century. It is surrounded by a large park and offers a breathtaking view of the lake.",
   lakes_Garda_p5:
@@ -772,7 +772,7 @@ export const itIT = {
   lakes_Maggiore_p4:
     "Stresa, a city on the shores of Lake Maggiore, is a famous tourist destination known for its opulent towns and old hotels. The Grand Hotel Des Iles Borromees, opened in 1863, is one of the most famous hotels in the area, avendo hospitato numerosi ospiti illustri, tra cui Ernest Hemingway.",
   lakes_Maggiore_p5:
-    'Hemingway was a frequent visitor in Italy and spent a significant period in the country during the first world war and the second world war. During the first world war, Hemingway was an ambulance pilot in Italy and his experiences during questo periodo hanno notably influenced his writing. His novel "A Farewell to Arms" is set in Italy during the First World War and includes a description of a retreat from the Italian-Austrian front traversing the plains of Veneto and into the lakes del Nord Italia.',
+    'Hemingway was a frequent visitor in Italy and spent a significant period in the country during the first world war and the second world war. During the first world war, Hemingway was an ambulance pilot in Italy and his experiences during questo periodo hanno notably influenced his writing. His novel "A Farewell to Arms" is set in Italy during the first world war and includes a description of a retreat from the Italian-Austrian front traversing the plains of Veneto and into the lakes del Nord Italia.',
   lakes_Maggiore_p6:
     "The climate of the lake and its geographical position make it an ideal place for the production of wine. The hills of Novara on the western side of the lake are notable for their vineyards that produce wines like Ghemme and Gattinara, both fatti dall'uva Nebbiolo.",
   lakes_Maggiore_p7:
@@ -782,13 +782,13 @@ export const itIT = {
   lakes_Como_btn: "Lake Como",
   lakes_Como_title: "Lake Como (Lago di Como)",
   lakes_Como_p1:
-    'Lake Como, or Lago di Como in Italian, is one of the deepest and most popular lakes in Europe. It is located in the Lombardy region in northern Italy. The lake has the shape of an inverted "Y" and is circondato da montagne e colline, che offorno una breathtaking view of the lake and surrounding area. The area has been immortalized in the classic novel by Alessandro Manzoni, "I Promessi Sposi" ("The God-dothed"), published in 1827.',
+    'Lake Como, or Lago di Como in Italian, is one of the deepest and most popular lakes in Europe. It is located in the Lombardy region in northern Italy. The lake has the shape of an inverted "Y" and is circondato da montagne e colline, che offorno una breathtaking view of the lake and surrounding area. The area has been immortalized in the classic novel by Alessandro Manzoni, "I Promessi Sposi" (The God-dothed), published in 1827.',
   lakes_Como_p2:
     "Il lago Como ha una ricca storia che risale all'era romana. I romani, attratti dalla naturale bellezza del lago, costruirono ville intorno al lago. Plinio il giovane, un famoso scrittore romano, aveva due ville sulle rive del lago.",
   lakes_Como_p3:
     "In terms of accommodation, Lake Como is known for its luxurious and historic hotels. The Grand Hotel Villa Serbelloni in Bellagio, for example, dates back to the XIX century and offers breathtaking views of the lake. It is one of the oldest ed elegant hotel della zona and has hosted numerous celebrities and reali.",
   lakes_Como_p4:
-    "Lake Como is also a popular destination for lovers of food and wine. The region is notable for local dishes such as 'risotto con pesce persico', 'Missultin' '(pesce essiccato al sole) and 'polenta' (farina di mais). La regione che circonda il lago è anche nota per i suoi vini, tra cui i vini della Valtellina, che sono prodotti nelle montagne a nord del lago. \n",
+    "Lake Como is also a popular destination for lovers of food and wine. The region is noted for local dishes such as 'risotto con pesce persico', 'Missultin' '(pesce essiccato al sole) and \"polenta\" (farina di mais). La regione che circonda il lago è anche nota per i suoi vini, tra cui i vini della Valtellina, che sono prodotti nelle montagne a nord del lago. \n",
   lakes_Iseo_btn: "Lago Iseo",
   lakes_Iseo_title: "Lago Iseo (Lago d'Iseo)",
   lakes_Iseo_p1:
@@ -842,13 +842,13 @@ export const itIT = {
   history_cly_p3:
     "The position of Casa Lodi Yates offers a unique mix of history, tranquility and natural beauty. The surrounding area is ideal for exploring the pre-alps of Lombardy, where the Alps meet the plains. It is a mountain country e di lago, ea distanza di guida dalle principali località sciistiche delle Dolomiti, oltre al Great Lakes Garda, Como e Maggiore.",
   history_cly_p4:
-    "La Torre di Colonia is a historic fortified tower immersed in the picturesque fraction of Colonia, a part of Casazza nella Val Cavalla, Lombardy region in Italy. This monumental structure, che fa parte della complessa abitazione di Casa Lodi Yates, rises al 13 ° secolo, it is an excellent example of the medieval architecture of the region and one of the best preserved tower houses in Lombardy. caduti in rovina e veniva usato come capannone di pollo.",
+    "La Torre di Colonia is a historic fortified tower immersed in the picturesque fraction of Colonia, una parte di Casazza nella Val Cavalla, region Lombarda in Italia. Questa structura monumentale, che fa parte della complessa abitazione di Casa Lodi Yates, risale al 13 ° secolo, it is an excellent example of the medieval architecture of the region and one of the best preserved tower houses in Lombardy. caduti in rovina e veniva usato come capannone di pollo.",
   history_cly_p5:
     "Costruito con pietra locale disposta in corsi regulari, le facce della torre vengono lavorate in un motif arrugginito con una piccola strista agli angoli. La torre era originally molto più alta, ma era truncata come una punizione visibile per la famiglia Suardi , in proprietario di case, quando caddero in disgrace with the Republic of Venice (all'epoca in signori della regione) e avevano confiscato molti dei loro beni. Nonostante ciò, la torre mantiene la sua structure originale, sebbene senza la sua corona originale. ",
   history_colognola_btn: "Colonia di Casazza",
   history_colognola_title: "Colonia di Casazza",
   history_colognola_p1:
-    "La colony (da non confondere con un'altra Colonia appena fuori Bergamo) ha le sue origini in tempi Romani. Ci sono molti posti con il nome Colonia in tutta Italia ed è stato suggerto che queste erano originally colonie o beni somministrati ai soldati romani al loro pensionamento. È secoli più vecchi di Casazza nella valle, che è cresciuta nella seconda metà del 20 ° secolo. La colonia nella Val Cavallina presenta un antica mappa esposta in Vaticano in Roma risalente al XIV/15 ° secolo.",
+    "La colony (da non confondere con un'altra Colonia appena fuori Bergamo) ha le sue origini in tempi romani. Ci sono molti posti con il nome Colonia in tutta Italia ed è stato suggerto che queste erano originally colonie o beni somministrati ai soldati romani al loro pensionamento. È secoli più vecchi di Casazza nella valle, che è cresciuta nella seconda metà del 20 ° secolo. La colonia nella Val Cavallina presenta un antica mappa esposta in Vaticano in Roma risalente al XIV/15 ° secolo.",
   history_colognola_p2:
     "The actual baroque incarnation of the small church of Colonia, the church of the Madonna del Monte Carmelo, was built on the remains of a previous church and a Carmelite convent.",
   history_tower_btn: "La torre di colonia (la torre)",
